@@ -28,27 +28,34 @@ header-includes:
 
 # Logic in General
 
->- Before we get into inductive logic, let us first try to say what a logic is in general.
-
 >- A logic is a \textcolor{red}{formal system} for representing something whose \textcolor{red}{structure}, as opposed to \textcolor{red}{content}, we wish to describe.
 
 >- The word "formal" here means that in logic we are concerned with the \textcolor{red}{form}, i.e., \textcolor{red}{uninterpreted symbols or formulas}, not their \textcolor{red}{material content}. Inevitably, this will involve both \textcolor{red}{abstraction} and \textcolor{red}{idealization}.
 
 >- This distinction between "form" and "content" is crucial to understand a logic in general because logicians distinguish between the formal aspect of a language (\textcolor{red}{syntax}) and its content, meaning or interpretation (\textcolor{red}{semantics}). 
 
->- Finally, the word "system" means that given (1) these symbols and (2) rules of transforming these symbols; we can get (3) other symbols that also \textcolor{red}{belong to the representation}. 
+>- Finally, the word "system" means that given (1) these symbols and (2) rules of transforming these symbols; we can get (3) other symbols that also \textcolor{red}{belong to the representation}. The symbols that belong to the representation are called, you guessed it, \textcolor{red}{formulas}!
 
 ***
 
-# Toy Example of a Logic
+# Toy Example of a Logic\footnote{This example is from Gerstein, "Introduction to Mathematical Structures and Proofs" p. 3}
 
->- Here's a toy example of a logic.
+>- The symbols are $a$, $b$ and $S$.
+
+>- The rules of transformation are: \begin{enumerate} \item S is a formula. 
+\item The result of replacing $S$ with $aSb$ is a formula.
+\item The result of deleting $S$ and closing up any resulting space is a formula.
+\end{enumerate}
+
+>- Closure condition: Nothing else is a formula.
+
+>- Verify that all these are examples of formulas of the logic: $S$, $ab$, $aaSbb$, $aabb$. 
 
 ***
 
 # Sentential Logic: Sentences
 
->- Sentential logic is a logic for representing the \textcolor{red}{sentence structure} of a fragment or piece of natural language.
+>- Sentential logic is a logic for representing the \textcolor{red}{sentence structure} of a fragment or piece of natural language. The natural language in our case will be English.
 
 >- Philosophers like to distinguish between \textcolor{red}{sentences} and \textcolor{red}{propositions}. 
 
@@ -65,14 +72,14 @@ header-includes:
 
 >- I assume we all know what a sentence is.
 
->- For this class (or, more specifically \textcolor{red}{classical logic}) a sentence must be \textcolor{red}{unambiguously true} or \textcolor{red}{false}. This is just a convenient restriction.
+>- But! For this class (or, more specifically \textcolor{red}{classical logic}) a sentence must be \textcolor{red}{unambiguously true} or \textcolor{red}{false}. This is just a convenient restriction.
 
 >- Examples of sentences: \begin{enumerate}  \item The number two is an even prime number.
 \item Kamala Harris was not a California Senator.
 \item Michelle Yeoh won an Oscar Award.
 \end{enumerate}
 
->- These are not sentences (in our sense) because their truth value is either \textcolor{red}{context dependent} or \textcolor{red}{vague}: 
+>- The following examples are not sentences (in our sense) because their truth value is either \textcolor{red}{context dependent} or \textcolor{red}{vague}: 
 \begin{enumerate}  
 \item He did it.
 \item This is black.
@@ -114,7 +121,7 @@ header-includes:
 >- We are now in a position to describe sentential logic itself. Recall that I need three things: (1) formal symbols (formulas), (2) rules of transformation (for getting other formulas) and (3) a closure condition.
 
 >- The \textcolor{red}{formal symbols} of sentential logic are:
-\begin{enumerate} \item $p$, $q$, $r$, $s$ and $t$ as symbols for sentences. If we need more than 4 symbols (rarely), then add the following countably many symbols $p_{1}$, $p_{2}$, $p_{3}$, \dots.
+\begin{enumerate} \item $p$, $q$, $r$, $s$ and $t$ as symbols for sentences. If we need more than 5 symbols (rarely!), then add the following countably many symbols $p_{1}$, $p_{2}$, $p_{3}$, \dots.
 \item $\vee$ for "or", $\lnot$ for "not" since the other symbols for "and" and "if..., then..." can be defined from these. (More of this later)
 \end{enumerate}
 
