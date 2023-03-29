@@ -20,4 +20,7 @@ header-includes:
 \item Quantifiers
 
 \item Quantified Predicate Logic
+
+\item Paraphrasing/representing sentences using Quantified Predicate Logic
 \end{itemize}
+

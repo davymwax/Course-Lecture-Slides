@@ -101,13 +101,13 @@ header-includes:
 
 # Sentential Logic: Truth-functional connectives
 
->- In \textcolor{red}{Case 1}, the truth-value of the compound sentence is \textcolor{red}{uniquely and fully determined} by truth-value of the simpler sentences it is composed of.
+>- In \textcolor{red}{Case 1}, the truth-value of the compound sentence is \textcolor{red}{uniquely and fully determined} by the truth-values of the simpler sentences it is composed of.
 
 >- The connectives (\textcolor{red}{and}, \textcolor{red}{not}, \textcolor{red}{or}, \textcolor{red}{if..., then...}) in \textcolor{red}{Case 1} are said to be \textcolor{red}{truth-functional}.
 
->- By contrast, the connectives (\textcolor{red}{until}, \textcolor{red}{because}) in \textcolor{red}{Case 2} are not \textcolor{red}{truth-functional}. In order to determine the truth-value of the compound sentences which involve them, we need \textcolor{red}{extra information} beyond the truth-value of the simpler sentences. 
+>- In contrast, the connectives (\textcolor{red}{until}, \textcolor{red}{because}) in \textcolor{red}{Case 2} are not \textcolor{red}{truth-functional}. In order to determine the truth-value of the compound sentences which involve them, we need \textcolor{red}{extra information} beyond the truth-value of the simpler sentences. 
 
->- Sentential logic captures the sentence structure of a fragment of natural language using truth-functional connectives.
+>- Sentential logic is the logic for representing the sentence structure of a fragment of natural language using truth-functional connectives.
 
 # Sentential Logic: The Logic Itself
 
