@@ -118,18 +118,19 @@ header-includes:
 
 # Sentential Logic: The Logic Itself
 
->- We are now in a position to describe sentential logic itself. Recall that I need three things: (1) formal symbols (formulas), (2) rules of transformation (for getting other formulas) and (3) a closure condition.
+>- We are now in a position to describe sentential logic itself. I need: (1) formal symbols, (2) rules of transformation for getting formulas and (3) a closure condition.
 
 >- The \textcolor{red}{formal symbols} of sentential logic are:
-\begin{enumerate} \item $p$, $q$, $r$, $s$ and $t$ as symbols for sentences. If we need more than 5 symbols (rarely!), then add the following countably many symbols $p_{1}$, $p_{2}$, $p_{3}$, \dots.
-\item $\vee$ for "or", $\lnot$ for "not" since the other symbols for "and" and "if..., then..." can be defined from these. (More of this later)
+\begin{enumerate} \item \textcolor{red}{$p$}, \textcolor{red}{$q$}, \textcolor{red}{$r$}, \textcolor{red}{$s$} and \textcolor{red}{$t$} as symbols for sentences. If we need more than 5 symbols (rarely!), then add the following countably many symbols \textcolor{red}{$p_{1}$}, \textcolor{red}{$p_{2}$}, \textcolor{red}{$p_{3}$}, \dots.
+\item \textcolor{red}{$\vee$} for "or", \textcolor{red}{$\lnot$} for "not" since the other symbols for "and" and "if..., then..." can be defined from these. (More of this later)
+\item \textcolor{red}{$($} for left bracket and \textcolor{red}{$)$} for right bracket.
 \end{enumerate}
 
 >- The \textcolor{red}{transformation rules} (also known as "syntactic rules") are:
 \begin{enumerate}
-\item Any sentence $p$ is a formula.
-\item If $p$ is a formula, then $\lnot p$ is formula (Read inelegantly as, "It is not the case that $p$").
-\item If $p$ is a formula and $q$ is a formula, then $(p \vee q)$ is a formula.
+\item Any sentence \textcolor{red}{$p$} is a formula.
+\item If \textcolor{red}{$p$} is a formula, then \textcolor{red}{$\lnot p$} is formula.
+\item If \textcolor{red}{$p$} is a formula and \textcolor{red}{$q$} is a formula, then \textcolor{red}{$(p \vee q)$} is a formula.
 \end{enumerate}
 
 >- The \textcolor{red}{closure condition} simply states that nothing else is a formula of sentential logic.
