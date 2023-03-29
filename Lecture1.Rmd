@@ -18,13 +18,11 @@ header-includes:
 
 \item Logic in General
 
-\item Sentential Logic
+\item Sentences
 
 \item Truth-functional connectives
 
-\item Truth tables
-
-\item Deductive Logic 
+\item Sentential logic
 
 \end{itemize}
 
