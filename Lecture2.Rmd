@@ -41,7 +41,7 @@ The \textcolor{red}{transformation rules} (also known as "syntactic rules") are:
 \item If \textcolor{red}{$p$} is a formula and \textcolor{red}{$q$} is a formula, then \textcolor{red}{$(p \vee q)$} is a formula.
 \end{enumerate}
 
-The \textcolor{red}{closure condition} simply states that nothing else is a formula of sentential logic.
+The \textcolor{red}{closure condition} states that a formula is anything that results from 1 or a \textcolor{red}{finite number} applications of rule 2 or rule 3. Nothing else is a formula of sentential logic.
 
 # Sentential Logic: Formulas
 

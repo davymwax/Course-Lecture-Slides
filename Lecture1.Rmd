@@ -47,7 +47,7 @@ header-includes:
 \item The result of deleting $S$ and closing up any resulting space is a formula.
 \end{enumerate}
 
->- Closure condition: Nothing else is a formula.
+>- Closure condition: A formula is anything that results from 1 or a \textcolor{red}{finite number} of applications of rule 2 or rule 3. Nothing else is a formula.
 
 >- Verify that all these are examples of formulas of the logic: $S$, $ab$, $aaSbb$, $aabb$. 
 
@@ -81,10 +81,10 @@ header-includes:
 
 >- The following examples are not sentences (in our sense) because their truth value is either \textcolor{red}{context dependent} or \textcolor{red}{vague}: 
 \begin{enumerate}  
-\item He did it.
+\item He did it yesterday.
 \item This is black.
-\item Tomorrow will be Wednesday.
-\item Having 1001 strands of hair does not make you bald. How about 1000, 999, \dots,?
+\item There will be a sea battle tomorrow.
+\item Having 1001 strands of hair does not make you bald. How about 1000, 999, \dots?
 \end{enumerate}
 
 ***
@@ -133,4 +133,4 @@ header-includes:
 \item If \textcolor{red}{$p$} is a formula and \textcolor{red}{$q$} is a formula, then \textcolor{red}{$(p \vee q)$} is a formula.
 \end{enumerate}
 
->- The \textcolor{red}{closure condition} simply states that nothing else is a formula of sentential logic.
+>- The \textcolor{red}{closure condition} states that a formula of sentential logic is anything that results from 1 or a \textcolor{red}{finite number} applications of rule 2 or rule 3. Nothing else is a formula of sentential logic.
