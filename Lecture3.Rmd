@@ -15,7 +15,7 @@ header-includes:
 # Topics
 
 \begin{itemize}
-\item Inference
+\item Sentential Logic: Inference
 
 \item Deductive Logic
 
@@ -23,3 +23,121 @@ header-includes:
 
 \item Soundness
 \end{itemize}
+
+# Sentential Logic: Inference
+
+
+Remember that the \textcolor{red}{formal symbols} of sentential logic are:
+\begin{enumerate} \item \textcolor{red}{$p$}, \textcolor{red}{$q$}, \textcolor{red}{$r$}, \textcolor{red}{$s$} and \textcolor{red}{$t$} as symbols for sentences. If we need more than 5 symbols (rarely!), then add the following countably many symbols \textcolor{red}{$p_{1}$}, \textcolor{red}{$p_{2}$}, \textcolor{red}{$p_{3}$}, \dots.
+\item \textcolor{red}{$\vee$} for "or", \textcolor{red}{$\lnot$} for "not" since the other symbols for "and" and "if..., then..." can be defined from these. (More of this later)
+\item \textcolor{red}{$($} for left bracket and \textcolor{red}{$)$} for right bracket.
+\end{enumerate}
+
+The \textcolor{red}{transformation rules} (also known as "syntactic rules") are:
+\begin{enumerate}
+\item Any sentence \textcolor{red}{$p$} is a formula.
+\item If \textcolor{red}{$p$} is a formula, then \textcolor{red}{$\lnot p$} is formula.
+\item If \textcolor{red}{$p$} is a formula and \textcolor{red}{$q$} is a formula, then \textcolor{red}{$(p \vee q)$} is a formula.
+\end{enumerate}
+
+The \textcolor{red}{closure condition} states that a formula is anything that results from 1 or from a \textcolor{red}{finite number} of applications of rule 2 or rule 3. Nothing else is a formula of sentential logic.
+
+
+# Sentential Logic: Inference
+
+>- One feature of a natural language like English is that we use it to communicate with others; and especially to offer them reasons why they can or should accept whatever we are saying. 
+
+>- The reasons we give, hoping to convince or persuade someone to accept a claim are called \textcolor{red}{premises}. We hope! that if someone believes the premises then they will \textcolor{red}{infer} or draw \textcolor{red}{the conclusion}, which we claim. 
+
+>- This set of sentences consisting of (1) premises and (2) a conclusion which are connected by (3) inference is called an \textcolor{red}{argument}.
+
+>- We wish to use sentential logic to represent the structure of \textcolor{red}{good} arguments in natural language.
+
+# From Sentential Logic to Deductive Logic
+
+>- The process of drawing a conclusion or inferring a claim is called \textcolor{red}{deduction} if the premises \textcolor{red}{entail} the conclusion. To understand what the word "entail" means, we need the truth table for the truth function $(p \to q)$, which is read as "If $p$, then $q$". See \textcolor{red}{Homework 1} for why $(p \to q)$ is truth-functionally equivalent to $(\lnot p \vee q)$.
+\begin{center}
+\begin{tabular}{c | c || c}\hline
+$p$ & $q$ & $(p \to q)$ \\
+\hline
+1 & 1 &   \textcolor{red}{1} \\
+1 & 0 &   0 \\
+0 & 1 &   \textcolor{red}{1} \\
+0 & 0 &   \textcolor{red}{1} \\
+\hline 
+\end{tabular}
+\end{center}
+
+>- Then we say that a formula $F$ \textcolor{red}{entails} another formula $G$ in sentential logic just in case $F \to G$ is a \textcolor{red}{tautology}.
+
+>- From the truth table for $(p \to q)$, we see that $(F \to G)$ is a tautology just in case either the formula $F$ is false or the formula $G$ is true because $(p \to q)$ is false just in case $p$ is true and $q$ is false.
+
+# From Sentential Logic to Deductive Logic
+
+>- We define a \textcolor{red}{deductive logic} as a logic where \textcolor{red}{the relation of inference} between the premises and the conclusion is \textcolor{red}{entailment}, i.e., the premises entail the conclusion.
+
+>- Another way to think of a deductive logic is that a deductive logic is a logic of \textcolor{red}{truth-preserving reasoning}. With a deductive logic it is \textcolor{red}{impossible} to begin with true premises then reason to, or infer, false conclusions!
+
+>- Deductive logic is great for mathematics (where almost every sentence is either a theorem or refutable) but it has its limited use in science. (More of this later!)
+
+>- Sentential Logic can be turned into a deductive logic by adding \textcolor{red}{rules of inference} that preserve truth.
+
+>- The rules of inference that preserve truth are those rules of inference for which the relation between the premises and conclusion in an argument is entailment.
+
+# From Sentential Logic to Deductive Logic
+
+>- \textcolor{red}{Some} rules of inference, which preserve truth, are:\begin{enumerate}
+\item From a formula $F$, infer $F \vee G$ for any formula $G$.
+\item From a formula $F$ and $\lnot F \vee G$, infer $G$.
+\end{enumerate}
+>- Verify that $(F \to (F \vee G))$ and $((F \to (\lnot F \vee G)) \to G)$ are tautologies.
+
+>- Intuitively, these rules of inference make sense when we think about them using sentences in English. Consider the first rule of inference. \begin{itemize} \item[1.] I will have bacon for breakfast. \item[$\therefore$2.] Either I will have bacon for breakfast or I will have toast for breakfast. \end{itemize}
+
+>- Now consider the second rule of inference. \begin{itemize} \item[1.] Either I will have bacon for breakfast or I will have toast for breakfast. \item[2.] I will not have bacon for breakfast. \item[$\therefore$3.] I will have toast for breakfast.\end{itemize}
+
+# Validity and Soundness
+
+>- The goal of using deductive logic is to give "good" arguments.
+
+>- We will use two criteria to evaluate arguments for their "goodness". One of these is called \textcolor{red}{validity}, the other is called \textcolor{red}{soundness}.
+
+>- An argument is \textcolor{red}{valid} if the conclusion is inferred from the premises using a truth-preserving rule of inference. The following are equivalent ways of saying that an argument is valid:
+\begin{enumerate}
+\item Any truth value assignment that makes the premises true must make the conclusion true.
+\item No truth value assignment makes the premises true and the conclusion false.
+\item It is impossible to assign truth values to the premises in such a way that all the premises are true and the conclusion is false.
+\item If the conclusion is false, at least one of the premises is false.
+\end{enumerate}
+
+
+# Validity and Soundness
+
+>- Let me stress that validity is a \textcolor{red}{formal} notion. This means that whether an argument is valid depends on (1) the \textcolor{red}{formulas} in question and (2) whether \textcolor{red}{the formulas} in the premises entail the \textcolor{red}{the formula} in the conclusion. 
+
+>- We say that an argument in English is valid just in case it is an instance of an \textcolor{red}{argument form} in deductive logic in which the rule of inference is truth-preserving.
+
+>- Consider the argument form which says that from a formula $F$ and $\lnot F \vee G$, infer $G$. An instance of this argument is:\begin{itemize} \item[1.] Either I will have bacon for breakfast or I will have toast. \item[2.] I will not have bacon. \item[$\therefore$3.] I will have toast for breakfast.\end{itemize}
+
+>- Another instance of this argument is:\begin{itemize}\item[1.] Either the moon is made of green cheese or $2 + 2 = 5$ \item[2.] $2 + 2 \neq 5$ \item[$\therefore$3.] The moon is made of green cheese. \end{itemize}
+
+# Validity and Soundness
+
+>- Wait. What? 
+
+>- That is the right reaction here.
+
+>- Although the second instance of the argument form is valid, the premises are \textcolor{red}{false}.
+
+>- An argument that is (1) valid and (2) has true premises is a \textcolor{red}{sound argument}.
+
+>- I hope you see that deductive logic cannot help you to determine whether an argument in English is sound. Bummer! Whether the premises are true relies on domain knowledge, i.e., knowledge of a specific, specialized discipline or field.
+
+
+
+
+
+
+
+
+

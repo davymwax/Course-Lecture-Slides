@@ -21,9 +21,9 @@ header-includes:
 
 \item Sentential Logic: Paraphrasing English
 
-\item Truth tables
+\item Truth functions and Truth tables
 
-\item Truth functional equivalence
+\item Uses of Truth Tables
 \end{itemize}
 
 # Sentential Logic: Formulas
@@ -41,7 +41,7 @@ The \textcolor{red}{transformation rules} (also known as "syntactic rules") are:
 \item If \textcolor{red}{$p$} is a formula and \textcolor{red}{$q$} is a formula, then \textcolor{red}{$(p \vee q)$} is a formula.
 \end{enumerate}
 
-The \textcolor{red}{closure condition} states that a formula is anything that results from 1 or a \textcolor{red}{finite number} applications of rule 2 or rule 3. Nothing else is a formula of sentential logic.
+The \textcolor{red}{closure condition} states that a formula is anything that results from 1 or from a \textcolor{red}{finite number} of applications of rule 2 or rule 3. Nothing else is a formula of sentential logic.
 
 # Sentential Logic: Formulas
 
@@ -67,7 +67,7 @@ Are the following formulas in sentential logic? \begin{enumerate} \item $a$ \ite
 
 >- We identified the main connective in (1) by thinking about how the formula was built up from simpler formulas. 
 
->- The main connective is the connective that is added last when forming complex formulas from simple ones and closing everything up with brackets.
+>- The main connective is the connective that is added last when forming complex formulas from simple ones and closing everything up with brackets, where applicable.
 
 >- Identify the main connective in these formulas: \begin{enumerate}
 \item $\lnot q$ 
@@ -79,8 +79,111 @@ Are the following formulas in sentential logic? \begin{enumerate} \item $a$ \ite
 
 # Sentential Logic: Paraphrasing English
 
+>- We use sentential logic to represent the truth-functional sentential structure of a natural language such as English. This process of representing is called \textcolor{red}{paraphrasing} (also sometimes called \textcolor{red}{translating}) natural language into sentential logic.
 
+>- Here are the steps for paraphrasing: \begin{enumerate}
+\item Identify the English sentence truth-functional connectives.
+\item Replace them with symbolic connectives.
+\item Identify the simplest (atomic) sentential components of the English sentences.
+\item Replace each distinct component with a distinct sentence symbol.
+\item Use the structure of the English sentence to determine where the parentheses are to be placed.
+\end{enumerate}
 
+>- Since the focus of this class is not sentential logic, we will not spend a lot of time doing these paraphrases in class. But! See \textcolor{red}{Homework 1}.
+
+# Truth Functions and Truth Tables
+
+>- Once we have paraphrased the sentences of natural language, the next step is to specify an \textcolor{red}{interpretation} of each paraphrase.
+
+>- Specifying an interpretation takes us from the \textcolor{red}{syntax} of sentential logic to its \textcolor{red}{semantics}, i.e., the content of the symbols or what the symbols mean.
+
+>- Since we are interested in the truth-functional structure of the sentences in natural language, specifying an interpretation of our symbols will involve \textcolor{red}{truth functions} (also called "truth value assignments").
+
+>- To understand what truth functions are, remember that we agreed that sentences in sentential logic will be \textcolor{red}{unambiguously true or false} (not both). 
+
+>- So truth functions will take as input \textcolor{red}{the truth value} (true or false) of the paraphrased sentences in sentential logic and return as output a unique \textcolor{red}{a truth value} (true or false).
+
+# Truth Functions and Truth Tables
+
+>- Let us use the symbol \textcolor{red}{1} to represent the truth value "True" and the symbol \textcolor{red}{0} to represent the truth value "False".
+
+>- Other authors use $T$ and $F$ for these truth values. But remember that these are just formal symbols, which we can use to mean anything we want. There is no difference between using $T$ for "True" as opposed to $1$ for "True".
+
+>- But! We shall see that using $0$ and $1$ will help us see the difference between deductive logic and inductive logic more clearly.
+
+# Truth Functions and Truth Tables
+
+>- Truth tables are a useful way to visualize how truth functions work.
+
+>- From a truth table, one can see \textcolor{red}{the unique output} of a truth function for all of the possible inputs. 
+
+>- Here is the truth table for the simplest truth function. This is the truth function takes the truth value of $p$ and returns its truth value.\begin{center}
+\begin{tabular}{|c || c|}\hline
+p &  \\ \hline
+1 & \textcolor{red}{1} \\
+0 & \textcolor{red}{0} \\
+\hline
+\end{tabular}
+\end{center}
+
+# Truth Functions and Truth Tables
+
+>-  Here is the truth table for the truth function that takes the truth value of $p$ and returns the truth value of \textcolor{red}{$\lnot p$}.\begin{center}
+\begin{tabular}{|c || c|}\hline
+$p$ & $\lnot p$ \\ \hline
+1 & \textcolor{red}{0} \\
+0 & \textcolor{red}{1} \\
+\hline
+\end{tabular}
+\end{center}
+
+>- Here is the truth table for the truth function that takes the truth value of $p$ and $q$ and returns the truth value of \textcolor{red}{$(p \vee q)$}.\begin{center}
+\begin{tabular}{|c | c || c|}\hline
+$p$ & $q$ & $(p \vee q)$ \\ \hline
+1 & 1 & \textcolor{red}{1} \\ 
+1 & 0 & \textcolor{red}{1} \\ 
+0 & 1 & \textcolor{red}{1} \\ 
+0 & 0 & \textcolor{red}{0} \\ 
+\hline
+\end{tabular}
+\end{center}
+
+>- The simplicity of the idea of truth tables, understates just how very very powerful truth tables are!
+
+# Truth Functions and Truth Tables
+
+>- Here are the steps for constructing a truth table.\begin{enumerate}
+\item Identify all the simple sentences in the paraphrase.
+\item Assign all the possible truth values to these sentences.
+\item Use \textbf{known} truth functions to write down the truth value of the other \textbf{unknown} truth functions.
+\item The truth value of the entire formula will be assigned under the \textbf{main connective} using the truth values from step 3.
+\end{enumerate}
+
+>- Use truth tables to determine the truth value of the following formulas:\begin{enumerate} \item $(\lnot p \vee q)$ \item $\lnot(\lnot p \vee \lnot q)$ \end{enumerate}
+
+>- The focus of this class will not be on truth tables. But! See \textcolor{red}{Homework 1}.
+
+# Uses of Truth Tables
+
+>- Truth tables can be useful because they provide a quick way for checking certain \textcolor{red}{properties} of the formulas of sentential logic. 
+
+>- The properties that we will be interested in are: the property of being a \textcolor{red}{tautology}, the property of being \textcolor{red}{contradictory}, and the property of two formulas being \textcolor{red}{truth-functionally equivalent}.
+
+>- A formula is a \textcolor{red}{tautology} if its truth function \textcolor{red}{always} returns the value 1. If a complex formula is a tautology, then it always has the value 1 under every truth-value assignment to its component sentences.
+
+>- A formula is \textcolor{red}{contradictory} if its truth function \textcolor{red}{always} returns the value 0. If a complex formula is a tautology, then it always has the value 0 under every truth-value assignment to its component sentences.
+
+>- Two formulas are \textcolor{red}{truth-functionally equivalent} if their truth functions are identical.
+
+# Use of Truth Tables
+
+>- Use truth tables to verify that (1) $(\lnot p \vee p)$ is a tautology and (2) $(\lnot \lnot p \vee \lnot p)$ is a tautology.
+
+>- Use truth tables to verify that (1) $\lnot (\lnot p \vee p)$ is contradictory and (2) $\lnot( \lnot \lnot p \vee \lnot p)$ is contradictory.
+
+>- Use truth tables to verify that $(\lnot p \vee p)$ is truth-functionally equivalent to $(\lnot \lnot p \vee \lnot p)$.
+
+>- See \textcolor{red}{Homework 1} for more exercises.
 
 
 
