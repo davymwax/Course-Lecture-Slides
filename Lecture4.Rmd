@@ -153,7 +153,7 @@ Now consider all four of our original sentences:\begin{itemize}
 <subject> + <one place relation> ?
 \end{center}
 
->- We introduce the relational symbol \textcolor{red}{$W$} for the relation "is wise" and paraphrase write (1) and (2) as:\begin{itemize} \item[(14)] $Wx$ \,\,\, Read as "$x$ is $W$" \item[(15)] $Wy$ \,\,\,  Read as "$y$ is $W$" \end{itemize} 
+>- We introduce the relational symbol \textcolor{red}{$W$} for the relation "is wise" and paraphrase (1) and (2) as:\begin{itemize} \item[(14)] $Wx$ \,\,\, Read as "$x$ is $W$" \item[(15)] $Wy$ \,\,\,  Read as "$y$ is $W$" \end{itemize} 
 
 # Quantified Relational Logic: Predicates and Relations.
 
@@ -273,9 +273,9 @@ Using the symbol $M$ for the relation $<x$ met $y>$ paraphrase (19) with full ge
 
 # Quantified Relational Logic: The Logic Itself
 
->- The \textcolor{red}{Closure Condition} says that a formula of quantified relational logic is either an atomic formula or a molecular formula built from atomic formulas by \textcolor{red}{finite applications} of rule 5 and 6. Nothing else is a molecular formula.
+>- The \textcolor{red}{Closure Condition} says that a formula of quantified relational logic is either an atomic formula or a molecular formula built from atomic formulas by \textcolor{red}{finite applications} of rule 5 and 6. Nothing else is a formula.
 
->- We have now characterized the syntax of quantified relational logic. Next time we will introduce some inference rules for doing deduction in quantified relational logic, and talk about the interpretation or semantics of quantified relational logic briefly.
+>- We have now characterized the syntax of quantified relational logic. Next time we will introduce some inference rules for doing deduction in quantified relational logic, and talk about the interpretation or semantics of quantified relational logic very briefly.
 
 
 
