@@ -38,8 +38,8 @@ Remember that the \textcolor{red}{formal symbols} of sentential logic are:
 The \textcolor{red}{transformation rules} (also known as "syntactic rules") are:
 \begin{enumerate}
 \item Any sentence \textcolor{red}{$p$} is a formula.
-\item If \textcolor{red}{$p$} is a formula, then \textcolor{red}{$\lnot p$} is formula.
-\item If \textcolor{red}{$p$} is a formula and \textcolor{red}{$q$} is a formula, then \textcolor{red}{$(p \vee q)$} is a formula.
+\item If \textcolor{red}{$F$} is a formula, then \textcolor{red}{$\lnot F$} is formula.
+\item If \textcolor{red}{$F$} is a formula and \textcolor{red}{$G$} is a formula, then \textcolor{red}{$(F \vee G)$} is a formula.
 \end{enumerate}
 
 The \textcolor{red}{closure condition} states that a formula is anything that results from 1 or from a \textcolor{red}{finite number} of applications of rule 2 or rule 3. Nothing else is a formula of sentential logic.
