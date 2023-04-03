@@ -62,8 +62,7 @@ header-includes:
 
 >- A sentence is a \textcolor{red}{linguistic} expression (a declarative statement in some language), which expresses a proposition. 
 
->- Different sentences can express the \textcolor{red}{same} proposition, e.g., if they are in different languages.
-\begin{itemize} \item Theluji ni nyeupe. (Swahili) \item Snow is white. (English) \end{itemize}
+>- Different sentences can express the \textcolor{red}{same} proposition, e.g., if they are in different languages.\begin{itemize} \item Theluji ni nyeupe. (Swahili) \item Snow is white. (English) \end{itemize}
 
 >- It turns out that saying what "propositions" are is a \textcolor{red}{hard} philosophical problem. So we'll stick to sentences!
 
