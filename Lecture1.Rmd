@@ -63,7 +63,7 @@ header-includes:
 >- A sentence is a \textcolor{red}{linguistic} expression (a declarative statement in some language), which expresses a proposition. 
 
 >- Different sentences can express the \textcolor{red}{same} proposition, e.g., if they are in different languages.
-\begin{itemize} \item Schnee ist weiß (German) \item Snow is white (English) \end{itemize}
+\begin{itemize} \item Theluji ni nyeupe. (Swahili) \item Snow is white. (English) \end{itemize}
 
 >- It turns out that saying what "propositions" are is a \textcolor{red}{hard} philosophical problem. So we'll stick to sentences!
 
@@ -111,11 +111,11 @@ header-includes:
 
 >- In \textcolor{red}{Case 1}, the truth-value of the compound sentence is \textcolor{red}{uniquely and fully determined} by the truth-values of the simpler sentences it is composed of.
 
->- The connectives (\textcolor{red}{and}, \textcolor{red}{not}, \textcolor{red}{or}, \textcolor{red}{if..., then...}) in \textcolor{red}{Case 1} are said to be \textcolor{red}{truth-functional}.
+>- The connectives (\textcolor{red}{and}, \textcolor{red}{not}, \textcolor{red}{or}, \textcolor{red}{if..., then...}) in \textcolor{red}{Case 1} are said to be \textcolor{red}{truth-functional}. \textcolor{red}{See Homework 1} for more examples.
 
->- In contrast, the connectives (\textcolor{red}{until}, \textcolor{red}{because}) in \textcolor{red}{Case 2} are not \textcolor{red}{truth-functional}. In order to determine the truth-value of the compound sentences which involve them, we need \textcolor{red}{extra information} beyond the truth-value of the simpler sentences. 
+>- In contrast, the connectives (\textcolor{red}{until}, \textcolor{red}{because}) in \textcolor{red}{Case 2} are not \textcolor{red}{truth-functional}. In order to determine the truth-value of the compound sentences which involve them, we need \textcolor{red}{extra information} beyond the truth-value of the simpler sentences. \textcolor{red}{See Homework 1} for more examples.
 
->- Sentential logic is the logic for representing the sentence structure of a fragment of natural language using truth-functional connectives.
+>- Sentential logic is the logic for representing the sentence structure of a fragment of natural language \textcolor{red}{using} truth-functional connectives.
 
 # Sentential Logic: The Logic Itself
 
@@ -127,11 +127,13 @@ header-includes:
 \item \textcolor{red}{$($} for left bracket and \textcolor{red}{$)$} for right bracket.
 \end{enumerate}
 
->- The \textcolor{red}{transformation rules} (also known as "syntactic rules") are:
+>- In order to state the \textcolor{red}{transformation rules} (also known as "syntactic rules") of sentential logic we shall introduce the symbols $F$, $G$ and $H$ to \textcolor{red}{talk about} formulas in sentential logic at a \textcolor{red}{meta-level}:
 \begin{enumerate}
 \item Any sentence \textcolor{red}{$p$} is a formula.
-\item If \textcolor{red}{$p$} is a formula, then \textcolor{red}{$\lnot p$} is formula.
-\item If \textcolor{red}{$p$} is a formula and \textcolor{red}{$q$} is a formula, then \textcolor{red}{$(p \vee q)$} is a formula.
+\item If \textcolor{red}{$F$} is a formula, then \textcolor{red}{$\lnot F$} is formula.
+\item If \textcolor{red}{$F$} is a formula and \textcolor{red}{$G$} is a formula, then \textcolor{red}{$(F \vee G)$} is a formula.
 \end{enumerate}
 
->- The \textcolor{red}{closure condition} states that a formula of sentential logic is anything that results from 1 or a \textcolor{red}{finite number} applications of rule 2 or rule 3. Nothing else is a formula of sentential logic.
+# Sentential Logic: The Logic Itself
+
+>- The \textcolor{red}{closure condition} states that a formula of sentential logic is anything that results from 1 or from a \textcolor{red}{finite number} applications of rule 2 or rule 3. Nothing else is a formula of sentential logic.
