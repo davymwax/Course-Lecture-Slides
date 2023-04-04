@@ -31,7 +31,7 @@ header-includes:
 
 >- A logic is a \textcolor{red}{formal system} for representing something whose \textcolor{red}{structure}, as opposed to \textcolor{red}{content}, we wish to describe.
 
->- The word "formal" here means that in logic we are concerned with the \textcolor{red}{form}, i.e., \textcolor{red}{uninterpreted symbols or formulas}, not their \textcolor{red}{material content}. Inevitably, this will involve both \textcolor{red}{abstraction} and \textcolor{red}{idealization}.
+>- The word "formal" here means that in logic we are concerned with \textcolor{red}{form}, i.e., \textcolor{red}{uninterpreted symbols or formulas}, not \textcolor{red}{material content}. Inevitably, this will involve both \textcolor{red}{abstraction} and \textcolor{red}{idealization}.
 
 >- This distinction between "form" and "content" is crucial to understand a logic in general because logicians distinguish between the formal aspect of a language (\textcolor{red}{syntax}) and its content, meaning or interpretation (\textcolor{red}{semantics}). 
 
