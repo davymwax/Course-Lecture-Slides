@@ -68,7 +68,7 @@ Are the following formulas in sentential logic? \begin{enumerate} \item $a$ \ite
 
 >- We identified the main connective in (1) by thinking about how the formula was built up from simpler formulas. 
 
->- The main connective is the connective that is added last when forming complex formulas from simple ones and closing everything up with brackets, where applicable.
+>- The main connective is the connective that is added last when forming complex formulas from simple ones and closing everything up with brackets, \textcolor{red}{where applicable}.
 
 >- Identify the main connective in these formulas: \begin{enumerate}
 \item $\lnot q$ 
@@ -96,13 +96,13 @@ Are the following formulas in sentential logic? \begin{enumerate} \item $a$ \ite
 
 >- Once we have paraphrased the sentences of natural language, the next step is to specify an \textcolor{red}{interpretation} of each paraphrase.
 
->- Specifying an interpretation takes us from the \textcolor{red}{syntax} of sentential logic to its \textcolor{red}{semantics}, i.e., the content of the symbols or what the symbols mean.
+>- Specifying an interpretation takes us from the \textcolor{red}{syntax} of sentential logic to its \textcolor{red}{semantics}, i.e., the content of the symbols or \textcolor{red}{what the symbols mean}.
 
 >- Since we are interested in the truth-functional structure of the sentences in natural language, specifying an interpretation of our symbols will involve \textcolor{red}{truth functions} (also called "truth value assignments").
 
 >- To understand what truth functions are, remember that we agreed that sentences in sentential logic will be \textcolor{red}{unambiguously true or false} (not both). 
 
->- So truth functions will take as input \textcolor{red}{the truth value} (true or false) of the paraphrased sentences in sentential logic and return as output a unique \textcolor{red}{a truth value} (true or false).
+>- So truth functions will take as input \textcolor{red}{the truth value} (true or false) of the paraphrased sentences in sentential logic and return as output \textcolor{red}{a unique truth value} (true or false).
 
 # Truth Functions and Truth Tables
 
@@ -116,7 +116,7 @@ Are the following formulas in sentential logic? \begin{enumerate} \item $a$ \ite
 
 >- Truth tables are a useful way to visualize how truth functions work.
 
->- From a truth table, one can see \textcolor{red}{the unique output} of a truth function for all of the possible inputs. 
+>- From a truth table, one can see \textcolor{red}{the unique output} of a truth function for \textcolor{red}{all} of the possible inputs. 
 
 >- Here is the truth table for the simplest truth function. This is the truth function takes the truth value of $p$ and returns its truth value.\begin{center}
 \begin{tabular}{|c || c|}\hline
@@ -168,7 +168,7 @@ $p$ & $q$ & $(p \vee q)$ \\ \hline
 
 >- Truth tables can be useful because they provide a quick way for checking certain \textcolor{red}{properties} of the formulas of sentential logic. 
 
->- The properties that we will be interested in are: the property of being a \textcolor{red}{tautology}, the property of being \textcolor{red}{contradictory}, and the property of two formulas being \textcolor{red}{truth-functionally equivalent}.
+>- The properties that we will be interested in are: the property of being a \textcolor{red}{tautology}, the property of being \textcolor{red}{contradictory}, and the property of two formulas being \textcolor{red}{truth-functionally equivalent} .
 
 >- A formula is a \textcolor{red}{tautology} if its truth function \textcolor{red}{always} returns the value 1. If a complex formula is a tautology, then it always has the value 1 under every truth-value assignment to its component sentences.
 
@@ -184,7 +184,7 @@ $p$ & $q$ & $(p \vee q)$ \\ \hline
 
 >- Use truth tables to verify that $(\lnot p \vee p)$ is truth-functionally equivalent to $(\lnot \lnot p \vee \lnot p)$.
 
->- See \textcolor{red}{Homework 1} for more exercises.
+>- See \textcolor{red}{Homework 2} for more exercises.
 
 
 
