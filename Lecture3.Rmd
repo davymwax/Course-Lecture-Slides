@@ -37,9 +37,9 @@ header-includes:
 
 # From Sentential Logic to Deductive Logic
 
->- The process of drawing a conclusion or inferring a claim is called \textcolor{red}{deduction} if the premises \textcolor{red}{entail} the conclusion. 
+>- The process of drawing or inferring a conclusion is called \textcolor{red}{deduction} if the premises \textcolor{red}{entail} the conclusion. 
 
->- To understand what the word "entail" means, we need the truth table for the truth function $(p \to q)$, which is read as "If $p$, then $q$". See \textcolor{red}{Homework 1} for why $(p \to q)$ is truth-functionally equivalent to $(\lnot p \vee q)$.
+>- To understand what the word "entail" means, we need the truth table for the truth function $(p \to q)$, which is read as "If $p$, then $q$". See \textcolor{red}{Homework 2} for why $(p \to q)$ is truth-functionally equivalent to $(\lnot p \vee q)$.
 \begin{center}
 \begin{tabular}{c | c || c}\hline
 $p$ & $q$ & $(p \to q)$ \\
