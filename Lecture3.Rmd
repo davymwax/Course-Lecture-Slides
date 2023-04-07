@@ -40,32 +40,33 @@ header-includes:
 >- The process of drawing or inferring a conclusion is called \textcolor{red}{deduction} if the premises \textcolor{red}{entail} the conclusion. 
 
 >- To understand what the word "entail" means, we need the truth table for the truth function $(p \to q)$, which is read as "If $p$, then $q$". See \textcolor{red}{Homework 2} for why $(p \to q)$ is truth-functionally equivalent to $(\lnot p \vee q)$.
+
 \begin{center}
 \begin{tabular}{c | c || c}\hline
 $p$ & $q$ & $(p \to q)$ \\
 \hline
-1 & 1 &   \textcolor{red}{1} \\
-1 & 0 &   0 \\
-0 & 1 &   \textcolor{red}{1} \\
-0 & 0 &   \textcolor{red}{1} \\
+\textcolor{blue}{1} & \textcolor{blue}{1} &   \textcolor{blue}{1} \\
+\textcolor{red}{1} & \textcolor{red}{0} &   \textcolor{red}{0} \\
+\textcolor{blue}{0} & \textcolor{blue}{1} &   \textcolor{blue}{1} \\
+\textcolor{blue}{0} & \textcolor{blue}{0} &   \textcolor{blue}{1} \\
 \hline 
 \end{tabular}
 \end{center}
 
 # From Sentential Logic to Deductive Logic
 
->- We say that a formula $F$ \textcolor{red}{entails} another formula $G$ in sentential logic just in case $F \to G$ is a \textcolor{red}{tautology}.
+>- We say that a formula $F$ \textcolor{red}{entails} another formula $G$ in sentential logic just in case $(F \to G)$ is a \textcolor{red}{tautology}.
 
->- From the truth table for $(p \to q)$, we see that $(F \to G)$ is a tautology just in case either the formula $F$ is false or the formula $G$ is true because $(p \to q)$ is false just in case $p$ is true and $q$ is false.
+>- From the truth table for $(p \to q)$, we see that $(F \to G)$ is false just in case $F$ is true \textcolor{red}{and} the formula $G$ is false. This is the \textcolor{red}{powerful idea} behind deductive logic.
 
 \begin{center}
 \begin{tabular}{c | c || c}\hline
 $p$ & $q$ & $(p \to q)$ \\
 \hline
-1 & 1 &   \textcolor{red}{1} \\
-1 & 0 &   0 \\
-0 & 1 &   \textcolor{red}{1} \\
-0 & 0 &   \textcolor{red}{1} \\
+\textcolor{blue}{1} & \textcolor{blue}{1} &   \textcolor{blue}{1} \\
+\textcolor{red}{1} & \textcolor{red}{0} &   \textcolor{red}{0} \\
+\textcolor{blue}{0} & \textcolor{blue}{1} &   \textcolor{blue}{1} \\
+\textcolor{blue}{0} & \textcolor{blue}{0} &   \textcolor{blue}{1} \\
 \hline 
 \end{tabular}
 \end{center}
@@ -77,23 +78,27 @@ $p$ & $q$ & $(p \to q)$ \\
 
 >- Another way to think of a deductive logic is that a deductive logic is a logic of \textcolor{red}{truth-preserving reasoning}. With a deductive logic it is \textcolor{red}{impossible} to begin with true premises then reason to, or infer, false conclusions!
 
->- Deductive logic is great for mathematics (where almost every sentence is either a theorem or refutable) but deductive logic has limited use in experimental science, even real life! (More of this later)
+>- Deductive logic is great for mathematics (where almost every sentence is either a theorem or refutable) but deductive logic has limited use in experimental science, even real life! (More of this later.)
 
 >- Sentential Logic can be turned into a deductive logic by adding \textcolor{red}{rules of inference} that preserve truth.
 
+# From Sentential Logic to Deductive Logic
+
 >- The rules of inference that preserve truth are those rules of inference for which the relation between the premises and conclusion in an argument is entailment.
+
+>- \textcolor{red}{Some} rules of inference, which preserve truth, are:\begin{enumerate}
+\item From a formula $F$, infer $(F \vee G)$ for any formula $G$.
+\item From a formula $\lnot F$ and $(F \vee G)$, infer $G$.
+\end{enumerate}
+>- Verify that $(F \to (F \vee G))$ and $((\lnot F \to (F \vee G)) \to G)$ are tautologies.
 
 # From Sentential Logic to Deductive Logic
 
->- \textcolor{red}{Some} rules of inference, which preserve truth, are:\begin{enumerate}
-\item From a formula $F$, infer $F \vee G$ for any formula $G$.
-\item From a formula $F$ and $\lnot F \vee G$, infer $G$.
-\end{enumerate}
->- Verify that $(F \to (F \vee G))$ and $((F \to (\lnot F \vee G)) \to G)$ are tautologies.
+>- Intuitively, these rules of inference make sense when we think about them using sentences in English. 
 
->- Intuitively, these rules of inference make sense when we think about them using sentences in English. Consider the first rule of inference. \begin{itemize} \item[1.] I will have bacon for breakfast. \item[$\therefore$2.] Either I will have bacon for breakfast or I will have toast for breakfast. \end{itemize}
+>- Consider the first rule of inference, which says from a formula $F$, infer $(F \vee G)$ for any formula $G$. Here is an \textcolor{red}{instance} of this argument form: \begin{itemize} \item[1.] I will have bacon for breakfast. \item[$\therefore$2.] Either I will have bacon for breakfast or I will have toast for breakfast. \end{itemize}
 
->- Now consider the second rule of inference. \begin{itemize} \item[1.] Either I will have bacon for breakfast or I will have toast for breakfast. \item[2.] I will not have bacon for breakfast. \item[$\therefore$3.] I will have toast for breakfast.\end{itemize}
+>- Now consider the second rule of inference, which says from a formula $\lnot F$ and $(F \vee G)$, infer $G$. Here is an \textcolor{red}{instance} of this argument form: \begin{itemize} \item[1.] Either I will have bacon for breakfast or I will have toast for breakfast. \item[2.] I will not have bacon for breakfast. \item[$\therefore$3.] I will have toast for breakfast.\end{itemize}
 
 # Validity and Soundness
 
@@ -116,9 +121,9 @@ $p$ & $q$ & $(p \to q)$ \\
 
 >- Because validity is a formal notion, we say that \textcolor{red}{an argument in English} is valid just in case it is an \textcolor{red}{instance} of a \textcolor{red}{argument form} in deductive logic in which the rule of inference is truth-preserving.
 
->- Consider the argument form which says that from a formula $F$ and $\lnot F \vee G$, infer $G$. An \textcolor{red}{instance} of this argument is:\begin{itemize} \item[1.] Either I will have bacon for breakfast or I will have toast. \item[2.] I will not have bacon. \item[$\therefore$3.] I will have toast for breakfast.\end{itemize}
+>- Consider the argument form which says that from a formula $\lnot F$ and $(F \vee G)$, infer $G$. An \textcolor{red}{instance} of this argument form is:\begin{itemize} \item[1.] Either I will have bacon for breakfast or I will have toast. \item[2.] I will not have bacon. \item[$\therefore$3.] I will have toast for breakfast.\end{itemize}
 
->- Another \textcolor{red}{instance} of this argument is:\begin{itemize}\item[1.] Either the moon is made of green cheese or $2 + 2 = 5$ \item[2.] $2 + 2 \neq 5$ \item[$\therefore$3.] The moon is made of green cheese. \end{itemize}
+>- Another \textcolor{red}{instance} of this argument form is:\begin{itemize}\item[1.] Either $2 + 2 = 5$ or the moon is made of green cheese. \item[2.] $2 + 2 \neq 5$ \item[$\therefore$3.] The moon is made of green cheese. \end{itemize}
 
 # Validity and Soundness
 
@@ -126,11 +131,11 @@ $p$ & $q$ & $(p \to q)$ \\
 
 >- That is the right reaction here.
 
->- Although the second instance of the argument form is valid, the premises are \textcolor{red}{false}.
+>- Although both instances of the argument form are valid, one of the premises in the second instance is \textcolor{red}{false}. This is the premise that says "Either $2 + 2 = 5$ or the moon is made of green cheese."
 
->- An argument that is (1) valid and (2) has true premises is a \textcolor{red}{sound argument}.
+>- An argument that is (1) valid and (2) all the premises are true is a \textcolor{red}{sound argument}.
 
->- I hope you see that deductive logic cannot help you to determine whether an argument in English is sound. Bummer! Whether the premises are true relies on domain knowledge, i.e., knowledge of a specific, specialized discipline or field.
+>- Convince yourself that deductive logic cannot help you to determine whether an argument in English is sound. Bummer! Whether the premises are true relies on domain knowledge, i.e., knowledge of a specific, specialized discipline or field; it does not depend on logic.
 
 
 
