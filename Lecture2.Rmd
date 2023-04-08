@@ -172,7 +172,7 @@ $p$ & $q$ & $(p \vee q)$ \\ \hline
 
 >- A formula is a \textcolor{red}{tautology} if its truth function \textcolor{red}{always} returns the value 1. If a complex formula is a tautology, then it always has the value 1 under every truth-value assignment to its component sentences.
 
->- A formula is \textcolor{red}{contradictory} if its truth function \textcolor{red}{always} returns the value 0. If a complex formula is a tautology, then it always has the value 0 under every truth-value assignment to its component sentences.
+>- A formula is \textcolor{red}{contradictory} if its truth function \textcolor{red}{always} returns the value 0. If a complex formula is a contradictory, then it always has the value 0 under every truth-value assignment to its component sentences.
 
 >- Two formulas are \textcolor{red}{truth-functionally equivalent} if their truth functions are identical.
 
