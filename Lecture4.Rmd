@@ -29,11 +29,22 @@ header-includes:
 
 >- So far, in sentential logic, we have taken \textcolor{red}{the basic unit of the analysis} of the structure of a natural language like English to be \textcolor{red}{sentences} and \textcolor{red}{truth-functional connectives} for combining simple sentences to make more complex sentences.
 
->- This was useful. But it was also too simple. It was too simple because we abstracted away the internal composition of sentences except the truth-functional connectives (\textcolor{red}{and, either...or..., if..., then...})
+>- This was useful. But it was also too simple. It was too simple because we abstracted away the internal composition of sentences except the truth-functional connectives (\textcolor{red}{not, and, either...or..., if..., then...}) 
+
+>- Now consider the following argument:\begin{itemize}\item[1] All logicians are wise.\item[2] Ruth Barcan Marcus is a logician.\item[$\therefore$3] Ruth Barcan Marcus is wise.
+\end{itemize}
+
+>- This argument is valid, (and sound!) but sentential logic cannot explain why.
+
+# Quantified Relational Logic: Motivation
+
+>- Now consider: \begin{itemize} \item[1a.] Hypatia is wise. \item[1b.] Hypatia possesses wisdom.\end{itemize} Sentential logic will paraphrase both 1a. and 1b. in the same way. 
 
 >- But full \textcolor{red}{grammatical} sentences in English also have \textcolor{red}{proper names} for \textcolor{red}{individuals}, who stand in certain \textcolor{red}{relations} to other individuals, themselves, or concrete and abstract objects.
 
 >- So we need a logic with more \textcolor{red}{expressive power} to represent not only the truth-functional structure of sentences in a natural language like English, but also their internal or grammatical structure. This logic is called \textcolor{red}{quantified relational logic} or \textcolor{red}{first order logic}.
+
+>- This logic will allow us to say why the argument we started with earlier is deductively valid.
 
 # Quantified Relational Logic: Variables and Quantifiers
 
@@ -73,7 +84,7 @@ Consider the following sentences:
 \item[(9)] $\forall x$ ($x$ is wise)\,\,\,Read as "For all $x$, $x$ is wise." or "Every $x$ is wise."
 \end{itemize}
 
->- In your \textcolor{red}{Homework 2} you will practice with these sorts of paraphrases. But this is not the main focus of the class. I just want to cover this because we will need it to understand things we will talk about later in week 2 or early week 3.
+>- In your \textcolor{red}{Homework 3} you will practice with these sorts of paraphrases. But this is not the main focus of the class. I just want to cover this because we will need it to understand things we will talk about later in week 2 or early week 3.
 
 # Quantified Relational Logic: Variables and Quantifiers
 
@@ -248,13 +259,14 @@ Using the symbol $M$ for the relation $<x$ met $y>$ paraphrase (19) with full ge
 
 # Quantified Relational Logic: The Logic Itself
 
->- We are now in a position do describe quantified relational logic for \textcolor{red}{one} or \textcolor{red}{two} place relations. Remember that to specify a logic I need to tell you (1) the formal symbols, (2) the transformation rules, and (3) closure condition.
+>- We are now in a position do describe quantified relational logic for \textcolor{red}{one} or \textcolor{red}{two} place relations \textcolor{red}{only}. Remember that to specify a logic I need to tell you (1) the formal symbols, (2) the transformation rules, and (3) closure condition.
 
 >- The \textcolor{red}{formal symbols} are:
 \begin{itemize}
-\item \textcolor{red}{x, y, z} as symbols for \textcolor{red}{variables}, which range over individuals or objects.
-\item Upper case letters \textcolor{red}{$(P, Q, R, S, T, \dots, A, B, C, D,\dots)$} of the English alphabet as symbols for \textcolor{red}{relations} (one or two place only).
-\item Truth-functional connectives: \textcolor{red}{$\vee$, $\wedge$, $\lnot$, $\to$}
+\item \textcolor{red}{a, b, c, \dots, m, n, \dots} as symbols for \textcolor{red}{terms}. A term is anything in a theory or language that can be given a proper name or an object that can be identified uniquely.
+\item \textcolor{red}{x, y, z} as symbols for \textcolor{red}{variables}, which range over terms.
+\item Upper case letters \textcolor{red}{$P, Q, R, S, T, \dots, A, B, C, D,\dots, M, \dots$} of the English alphabet as symbols for \textcolor{red}{relations} (one or two place only).
+\item Truth-functional connectives: \textcolor{red}{$\vee$, $\wedge$, $\lnot$, $\to$, $\leftrightarrow$}
 \item Quantifiers: \textcolor{red}{$\forall$, $\exists$}
 \item Brackets: \textcolor{red}{(} for left bracket and \textcolor{red}{)} for right bracket.
 \end{itemize}
@@ -262,14 +274,23 @@ Using the symbol $M$ for the relation $<x$ met $y>$ paraphrase (19) with full ge
 # Quantified Relational Logic: The Logic Itself
 
 >- The \textcolor{red}{transformation rules} are:
-\begin{enumerate}
-\item For any predicate symbol $P$ and for any two place relation symbol $R$ and variables $x$ or $y$, $Px$ and $Rxy$ is a formula. In these formulas, $x$ and $y$ are said to \textcolor{red}{"free"} variables because there are no quantifiers to which they are \textcolor{red}{bound}.
-\item If $Px$ is a formula, then $\exists x Px$ is a formula and $\forall x Px$ is a formula. Rule 2 is known as \textcolor{red}{binding} any free variable in $Px$ by a quantifier.
-\item If $Rxy$ is a formula, then $\exists x Rxy$ is a formula and $\forall x Rxy$ is a formula. Here $y$ is a free variable but $x$ is bound.
-\item If $\mathcal{F}$ is a formula by rule 3, then the result of \textcolor{red}{binding} any free variable in $\mathcal{F}$ is a formula.
-\item A formula $\mathcal{F}$ formed by either rule 1, 2, 3 or 4 is called an \textcolor{red}{atomic formula}. If $\mathcal{F}$ and $\mathcal{G}$ are atomic formulas, then $(\mathcal{F} \vee \mathcal{G})$, $(\mathcal{F} \wedge \mathcal{G})$, $\lnot \mathcal{F}$, $(\mathcal{F} \to \mathcal{G})$ are \textcolor{red}{molecular formulas}.
-\item If $\mathcal{H}$ is a molecular formula, then the result of \textcolor{red}{binding} any free variable in $\mathcal{H}$ is a molecular formula. 
-\end{enumerate}
+\begin{itemize}
+\item[1] For any predicate symbol $P$ and for any two place relation symbol $R$, given any constants $a$ or $b$ or any variables $x$ or $y$, $Pa$, $Px$, $Rab$, $Rxy$ are formulas. In $Px$ and $Rxy$ formulas, $x$ and $y$ are said to \textcolor{red}{"free"} variables because there are no quantifiers to which they are \textcolor{red}{bound}.
+\item[2] If $Px$ is a formula, then $(\exists x Px)$ is a formula and $(\forall x Px)$ is a formula. Rule 2 is known as \textcolor{red}{binding} any free variable in $Px$ by a quantifier.
+\item[3] If $Rxy$ is a formula, then $(\exists x Rxy)$ is a formula and $(\forall x Rxy)$ is a formula. Here $y$ is a free variable but $x$ is bound.
+\end{itemize}
+
+# Quantified Relational Logic: The Logic Itself
+
+In order to talk about formulas at a meta-level we use the symbols $\mathcal{F}, \mathcal{G}$ and $\mathcal{H}$ and say:
+\begin{itemize}
+\item[4] If $\mathcal{F}$ is a formula by rule 3, then the result of \textcolor{red}{binding} any free variable in $\mathcal{F}$ is and closing everything up with one left and one right parenthesis is a formula.
+
+\item[5] A formula $\mathcal{F}$ formed by either rule 1, 2, 3 or 4 is called an \textcolor{red}{atomic formula}.
+
+\item[6] If $\mathcal{F}$ and $\mathcal{G}$ are atomic formulas then $(\mathcal{F} \vee \mathcal{G})$, $(\mathcal{F} \wedge \mathcal{G})$, $\lnot \mathcal{F}$, $(\mathcal{F} \to \mathcal{G})$ and $(\mathcal{F} \leftrightarrow \mathcal{G})$ are \textcolor{red}{molecular formulas}.
+\item[7] If $\mathcal{H}$ is a molecular formula, then the result of \textcolor{red}{binding} any free variable in $\mathcal{H}$ is formula and closing everything up with one left and one right parenthesis is a formula. 
+\end{itemize}
 
 # Quantified Relational Logic: The Logic Itself
 
