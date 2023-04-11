@@ -48,7 +48,7 @@ header-includes:
 >- Inference rules continued from previous slide:
 
 \begin{itemize}
-\item[3.] From $\exists x \mathcal{F}$, you may suppose that $\mathcal{F}(a)$ and use $\mathcal{F}(a)$ together with other premises to show a sentence $G$. Here $\mathcal{F}(a)$ is the result of uniformly replacing every free occurrence of $x$ in $\mathcal{F}$ with an arbitrary constant $a$, \textcolor{red}{which has not occurred before}. This rule is known as \textcolor{red}{Existential Supposition}.
+\item[3.] From $\exists x \mathcal{F}$, you may suppose that $\mathcal{F}(a)$ and use $\mathcal{F}(a)$ together with other premises to infer a \textcolor{red}{sentence} $G$ using other truth preserving rules of inference. Here $\mathcal{F}(a)$ is the result of uniformly replacing every free occurrence of $x$ in $\mathcal{F}$ with an arbitrary constant $a$, \textcolor{red}{which has not occurred before}. This rule is known as \textcolor{red}{Existential Supposition}.
 \end{itemize}
 
 >- Here is an instance of this truth-preserving rule of inference:
