@@ -275,30 +275,33 @@ Using the symbol $M$ for the relation $<x$ met $y>$ paraphrase (19) with full ge
 
 # Quantified Relational Logic: The Logic Itself
 
->- The \textcolor{red}{transformation rules} are:
-\begin{itemize}
-\item[1] For any predicate symbol $P$ and for any two place relation symbol $R$, given any constants $a$ or $b$ or any variables $x$ or $y$, $(Pa)$, $(Px)$, $(Rab)$, $(Rxy)$ are formulas. In $(Px)$ and $(Rxy)$ formulas, $x$ and $y$ are said to \textcolor{red}{"free"} variables because there are no quantifiers to which they are \textcolor{red}{bound}.
-\item[2] If $(Px)$ is a formula, then $(\exists x (Px))$ is a formula and $(\forall x (Px))$ is a formula. Rule 2 is known as \textcolor{red}{binding} any free variable in $(Px)$ by a quantifier.
-\item[3] If $Rxy$ is a formula, then $(\exists x (Rxy))$ is a formula and $(\forall x (Rxy))$ is a formula. Here $y$ is a free variable but $x$ is bound.
+>- In order to talk about formulas at a meta-level we use the symbols $\mathcal{F}, \mathcal{G}$ and $\mathcal{H}$. 
+
+>- The \textcolor{red}{transformation rules} for quantified relational logic are: \begin{itemize}
+\item[1.] For any predicate symbol $P$ and for any two place relation symbol $R$, given any constants $a$ or $b$ or any variables $x$ or $y$, $(Pa)$, $(Px)$, $(Rab)$, $(Rxy)$ are formulas. In $(Px)$ and $(Rxy)$ formulas, $x$ and $y$ are said to \textcolor{red}{"free"} variables because there are no quantifiers to which they are \textcolor{red}{bound}.
+\item[2.] If $\mathcal{F}$ is a formula by Rule 1 and if $x$ is a free variable in $\mathcal{F}$, then $(\exists x \mathcal{F})$ is a formula and $(\forall x \mathcal{F})$ is a formula. Rule 2 is known as \textcolor{red}{binding} any free variable $x$ in $\mathcal{F}$ by a quantifier.
+\end{itemize}
+
+>- A formula $\mathcal{F}$ formed by either rule 1 and 2 is called an \textcolor{red}{atomic formula}.
+
+# Quantified Relational Logic: The Logic Itself
+
+>- The \textcolor{red}{transformation rules} for quantified relational logic are (Continued from previous slide):\begin{itemize}
+\item[3.] If $\mathcal{F}$ and $\mathcal{G}$ are atomic formulas, then $(\lnot \mathcal{F})$, $(\mathcal{F} \vee \mathcal{G})$, $(\mathcal{F} \wedge \mathcal{G})$, $(\mathcal{F} \to \mathcal{G})$ and $(\mathcal{F} \leftrightarrow \mathcal{G})$ are \textcolor{red}{complex formulas}.
+\item[4.] If $\mathcal{H}$ is a complex formula, then the result of \textcolor{red}{binding} any free variable in $\mathcal{H}$ and closing everything up with one left and one right parenthesis is a formula. 
 \end{itemize}
 
 # Quantified Relational Logic: The Logic Itself
 
-In order to talk about formulas at a meta-level we use the symbols $\mathcal{F}, \mathcal{G}$ and $\mathcal{H}$ and say:
-\begin{itemize}
-\item[4] If $\mathcal{F}$ is a formula by rule 3, then the result of \textcolor{red}{binding} any free variable in $\mathcal{F}$ and closing everything up with one left and one right parenthesis is a formula.
+>- The \textcolor{red}{Closure Condition} says that a formula of quantified relational logic is either an atomic formula or a complex formula built from atomic formulas by \textcolor{red}{finite applications} of rule 3 and 4. Nothing else is a formula.
 
-\item[5] A formula $\mathcal{F}$ formed by either rule 1, 2, 3 or 4 is called an \textcolor{red}{atomic formula}.
-
-\item[6] If $\mathcal{F}$ and $\mathcal{G}$ are atomic formulas then $(\lnot \mathcal{F})$, $(\mathcal{F} \vee \mathcal{G})$, $(\mathcal{F} \wedge \mathcal{G})$, $(\mathcal{F} \to \mathcal{G})$ and $(\mathcal{F} \leftrightarrow \mathcal{G})$ are \textcolor{red}{complex formulas}.
-\item[7] If $\mathcal{H}$ is a complex formula, then the result of \textcolor{red}{binding} any free variable in $\mathcal{H}$ and closing everything up with one left and one right parenthesis is a formula. 
-\end{itemize}
+>- Verify that the following are all formulas of quantified relational logic:\begin{itemize} \item[1.] $(Fa)$ \item[2.] $(Gab)$ \item[3.] $(Fy)$ \item[4.] $(Gyz)$ \item[5.] $(\exists y (Fy))$ \item[6.] $(\forall z (Gyz))$ \item[7.] $(\exists y \forall z (Gyz))$ \item[8.] $(\lnot(Fa))$ \item[9.] $((\exists y (Fy)) \to (\forall z (Gyz)))$ \item [10.] $(\forall z((\exists y (Fy)) \to (\exists y (Gyz))))$ \end{itemize}
 
 # Quantified Relational Logic: The Logic Itself
 
->- The \textcolor{red}{Closure Condition} says that a formula of quantified relational logic is either an atomic formula or a complex formula built from atomic formulas by \textcolor{red}{finite applications} of rule 5, 6 and 7. Nothing else is a formula.
+>- The focus of this class is not quantified relational logic. But see \textcolor{red}{Homework 3} for more exercises.
 
->- We have now characterized the syntax of quantified relational logic. Next time we will introduce some inference rules for doing deduction in quantified relational logic, and talk about the interpretation or semantics of quantified relational logic very briefly.
+>- We have now characterized the formal system of quantified relational logic. Next time we will introduce some inference rules for doing deduction in quantified relational logic, and talk about the interpretation or semantics of quantified relational logic very briefly.
 
 
 
