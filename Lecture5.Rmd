@@ -28,7 +28,7 @@ header-includes:
 
 >- An \textcolor{red}{instance} of a formula in quantified relational logic is a formula that is obtained by freeing a bound variable within the scope of a quantifier and \textcolor{red}{uniformly replacing} every occurrence of this free variable by a constant.
 
->- For each of these formulas: what is the scope of each quantifier? Provide an instance of each formula.\begin{itemize} \item[1] $(\exists x Gx)$ \item[2] $(\forall x \lnot Gx)$ \item[3] $\forall x (\lnot Qx \to (\exists y Sxy))$  \item[4] $\forall x \forall y(Lxy \to \exists z(Lxz \wedge Lzy))$ \end{itemize}
+>- For each of these formulas: what is the scope of each quantifier? Provide an instance of each formula.\begin{itemize} \item[1] $(\exists x (Gx))$ \item[2] $(\forall x (\lnot Gx))$ \item[3] $\forall x ((\lnot Qx) \to (\exists y (Sxy)))$  \item[4] $(\forall x \forall y((Lxy) \to \exists z((Lxz) \wedge (Lzy))))$ \end{itemize}
 
 # Inference in Quantified Relational Logic
 
