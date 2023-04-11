@@ -38,7 +38,9 @@ header-includes:
 
 # Quantified Relational Logic: Motivation
 
->- Now consider: \begin{itemize} \item[1a.] Hypatia is wise. \item[1b.] Hypatia possesses wisdom.\end{itemize} Sentential logic will paraphrase both 1a. and 1b. in the same way. 
+>- Now consider: \begin{itemize} \item[1a.] Hypatia is wise. \item[1b.] Hypatia possesses wisdom.\end{itemize} 
+
+>- Sentential logic will paraphrase both 1a. and 1b. in the same way. 
 
 >- But full \textcolor{red}{grammatical} sentences in English also have \textcolor{red}{proper names} for \textcolor{red}{individuals}, who stand in certain \textcolor{red}{relations} to other individuals, themselves, or concrete and abstract objects.
 
@@ -80,8 +82,8 @@ Consider the following sentences:
 
 >- In quantified relational logic, we paraphrase (6) and (7) as:
 \begin{itemize}
-\item[(8)] $\exists x$ ($x$ is wise)\,\,\,Read as "There exists an $x$ such that $x$ is wise."
-\item[(9)] $\forall x$ ($x$ is wise)\,\,\,Read as "For all $x$, $x$ is wise." or "Every $x$ is wise."
+\item[(8)] $(\exists x$ ($x$ is wise))\,\,\,Read as "There exists an $x$ such that $x$ is wise."
+\item[(9)] $(\forall x$ ($x$ is wise))\,\,\,Read as "For all $x$, $x$ is wise." or "Every $x$ is wise."
 \end{itemize}
 
 >- In your \textcolor{red}{Homework 3} you will practice with these sorts of paraphrases. But this is not the main focus of the class. I just want to cover this because we will need it to understand things we will talk about later in week 2 or early week 3.
@@ -97,12 +99,12 @@ Consider the following sentences:
 
 >- Since (10) is true for some numbers, namely 4 and 2, we can generalize and say:
 \begin{itemize}
-\item[(11)] $\exists x \exists y (x^2 - y^2 = (x - y)(x + y))$
+\item[(11)] $(\exists x \exists y (x^2 - y^2 = (x - y)(x + y)))$
 \end{itemize}
 
 >- In fact, (10) is true not just for some two numbers but \textcolor{red}{any} two numbers. So we can generalize even further and say:
 \begin{itemize}
-\item[(12)] $\forall x \forall y (x^2 - y^2 = (x - y)(x + y))$
+\item[(12)] $(\forall x \forall y (x^2 - y^2 = (x - y)(x + y)))$
 \end{itemize}
 
 >- We will not have to represent anything crazy like (11) and (12) for this class, but you will need to have an idea similar to what happens in high school algebra to understand what is going on.
@@ -121,8 +123,8 @@ We said we can represent (1) and (2) as either as:\begin{itemize}
 \end{itemize}
 
 Or symbolically as: \begin{itemize}
-\item[(8)] $\exists x$ ($x$ is wise) 
-\item[(9)] $\forall x$ ($x$ is wise)
+\item[(8)] $(\exists x$ ($x$ is wise))
+\item[(9)] $(\forall x$ ($x$ is wise))
 \end{itemize}
 
 >- The symbols $\exists$ and $\forall$ are called \textcolor{red}{quantifiers}. $x$ is a called a \textcolor{red}{variable} that is \textcolor{red}{bound} by that quantifier.
@@ -164,7 +166,7 @@ Now consider all four of our original sentences:\begin{itemize}
 <subject> + <one place relation> ?
 \end{center}
 
->- We introduce the relational symbol \textcolor{red}{$W$} for the relation "is wise" and paraphrase (1) and (2) as:\begin{itemize} \item[(14)] $Wx$ \,\,\, Read as "$x$ is $W$" \item[(15)] $Wy$ \,\,\,  Read as "$y$ is $W$" \end{itemize} 
+>- We introduce the relational symbol \textcolor{red}{$W$} for the relation "is wise" and paraphrase (1) and (2) as:\begin{itemize} \item[(14)] $(Wx)$ \,\,\, Read as "$x$ is $W$" \item[(15)] $(Wy)$ \,\,\,  Read as "$y$ is $W$" \end{itemize} 
 
 # Quantified Relational Logic: Predicates and Relations.
 
@@ -189,8 +191,8 @@ Now consider all four of our original sentences:\begin{itemize}
 
 >- So the structure of (1), (2) can be represented most generally using quantified relational logic as either: 
 \begin{itemize}
-\item[(16)] $\exists x Wx$ \,\,\, Read as "There exists an $x$ and $x$ is $W$", or
-\item[(17)] $\forall x Wx$ \,\,\, Read as "Every $x$ is $W$".
+\item[(16)] $(\exists x (Wx))$ \,\,\, Read as "There exists an $x$ and $x$ is $W$", or
+\item[(17)] $(\forall x (Wx))$ \,\,\, Read as "Every $x$ is $W$".
 \end{itemize}
 
 # Quantified Relational Logic: Predicates and Relations
@@ -232,9 +234,9 @@ To paraphrase sentences like:\begin{itemize}\item[(18)] Hypatia possesses wisdom
 \item[(19)] Ottoline met Russell.
 \end{itemize} we introduce symbols for 2-place or \textcolor{red}{binary} relations and use \textcolor{red}{different variables} for all the \textcolor{red}{distinct} subjects or objects that stand in the relation.
 
->- So (18) can be paraphrased as:\begin{center} \textcolor{red}{$Pxy$}\,\,\, Read as "x possesses y" \end{center} Here we chose the variable \textcolor{red}{$x$} to stand for Hypatia and the variable \textcolor{red}{$y$} to stand for wisdom and the relational symbol \textcolor{red}{$P$} to stand for the two place relation $<x$ possesses $y>$.
+>- So (18) can be paraphrased as:\begin{center} \textcolor{red}{$(Pxy)$}\,\,\, Read as "x possesses y" \end{center} Here we chose the variable \textcolor{red}{$x$} to stand for Hypatia and the variable \textcolor{red}{$y$} to stand for wisdom and the relational symbol \textcolor{red}{$P$} to stand for the two place relation $<x$ possesses $y>$.
 
->- Once we made this choice, the correct paraphrase was $Pxy$ not $Pyx$! So with relations \textcolor{red}{order matters!}
+>- Once we made this choice, the correct paraphrase was $(Pxy)$ not $(Pyx)$! So with relations \textcolor{red}{order matters!}
 
 # Quantified Relational Logic: Predicates and Relations
 
@@ -243,9 +245,9 @@ To paraphrase sentences like:\begin{itemize}\item[(18)] Hypatia possesses wisdom
 \item[(19)] Ottoline met Russell.
 \end{itemize}
 
->- Once we have paraphrased $(18)$ as $Pxy$ we can use quantifiers and variables to generalize $(18)$ as:
+>- Once we have paraphrased $(18)$ as $(Pxy)$ we can use quantifiers and variables to generalize $(18)$ as:
 \begin{center}
-$\exists x \exists y Pxy$
+$(\exists x \exists y (Pxy))$
 \end{center}
 
 # Quantified Relational Logic: Predicates and Relations
@@ -275,30 +277,28 @@ Using the symbol $M$ for the relation $<x$ met $y>$ paraphrase (19) with full ge
 
 >- The \textcolor{red}{transformation rules} are:
 \begin{itemize}
-\item[1] For any predicate symbol $P$ and for any two place relation symbol $R$, given any constants $a$ or $b$ or any variables $x$ or $y$, $Pa$, $Px$, $Rab$, $Rxy$ are formulas. In $Px$ and $Rxy$ formulas, $x$ and $y$ are said to \textcolor{red}{"free"} variables because there are no quantifiers to which they are \textcolor{red}{bound}.
-\item[2] If $Px$ is a formula, then $(\exists x Px)$ is a formula and $(\forall x Px)$ is a formula. Rule 2 is known as \textcolor{red}{binding} any free variable in $Px$ by a quantifier.
-\item[3] If $Rxy$ is a formula, then $(\exists x Rxy)$ is a formula and $(\forall x Rxy)$ is a formula. Here $y$ is a free variable but $x$ is bound.
+\item[1] For any predicate symbol $P$ and for any two place relation symbol $R$, given any constants $a$ or $b$ or any variables $x$ or $y$, $(Pa)$, $(Px)$, $(Rab)$, $(Rxy)$ are formulas. In $(Px)$ and $(Rxy)$ formulas, $x$ and $y$ are said to \textcolor{red}{"free"} variables because there are no quantifiers to which they are \textcolor{red}{bound}.
+\item[2] If $(Px)$ is a formula, then $(\exists x (Px))$ is a formula and $(\forall x (Px))$ is a formula. Rule 2 is known as \textcolor{red}{binding} any free variable in $(Px)$ by a quantifier.
+\item[3] If $Rxy$ is a formula, then $(\exists x (Rxy))$ is a formula and $(\forall x (Rxy))$ is a formula. Here $y$ is a free variable but $x$ is bound.
 \end{itemize}
 
 # Quantified Relational Logic: The Logic Itself
 
 In order to talk about formulas at a meta-level we use the symbols $\mathcal{F}, \mathcal{G}$ and $\mathcal{H}$ and say:
 \begin{itemize}
-\item[4] If $\mathcal{F}$ is a formula by rule 3, then the result of \textcolor{red}{binding} any free variable in $\mathcal{F}$ is and closing everything up with one left and one right parenthesis is a formula.
+\item[4] If $\mathcal{F}$ is a formula by rule 3, then the result of \textcolor{red}{binding} any free variable in $\mathcal{F}$ and closing everything up with one left and one right parenthesis is a formula.
 
 \item[5] A formula $\mathcal{F}$ formed by either rule 1, 2, 3 or 4 is called an \textcolor{red}{atomic formula}.
 
-\item[6] If $\mathcal{F}$ and $\mathcal{G}$ are atomic formulas then $(\mathcal{F} \vee \mathcal{G})$, $(\mathcal{F} \wedge \mathcal{G})$, $\lnot \mathcal{F}$, $(\mathcal{F} \to \mathcal{G})$ and $(\mathcal{F} \leftrightarrow \mathcal{G})$ are \textcolor{red}{molecular formulas}.
-\item[7] If $\mathcal{H}$ is a molecular formula, then the result of \textcolor{red}{binding} any free variable in $\mathcal{H}$ is formula and closing everything up with one left and one right parenthesis is a formula. 
+\item[6] If $\mathcal{F}$ and $\mathcal{G}$ are atomic formulas then $(\lnot \mathcal{F})$, $(\mathcal{F} \vee \mathcal{G})$, $(\mathcal{F} \wedge \mathcal{G})$, $(\mathcal{F} \to \mathcal{G})$ and $(\mathcal{F} \leftrightarrow \mathcal{G})$ are \textcolor{red}{complex formulas}.
+\item[7] If $\mathcal{H}$ is a complex formula, then the result of \textcolor{red}{binding} any free variable in $\mathcal{H}$ and closing everything up with one left and one right parenthesis is a formula. 
 \end{itemize}
 
 # Quantified Relational Logic: The Logic Itself
 
->- The \textcolor{red}{Closure Condition} says that a formula of quantified relational logic is either an atomic formula or a molecular formula built from atomic formulas by \textcolor{red}{finite applications} of rule 5 and 6. Nothing else is a formula.
+>- The \textcolor{red}{Closure Condition} says that a formula of quantified relational logic is either an atomic formula or a complex formula built from atomic formulas by \textcolor{red}{finite applications} of rule 5, 6 and 7. Nothing else is a formula.
 
 >- We have now characterized the syntax of quantified relational logic. Next time we will introduce some inference rules for doing deduction in quantified relational logic, and talk about the interpretation or semantics of quantified relational logic very briefly.
-
-
 
 
 

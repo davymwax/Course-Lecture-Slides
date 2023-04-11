@@ -90,7 +90,7 @@ $p$ & $q$ & $(p \to q)$ \\
 \item From a formula $F$, infer $(F \vee G)$ for any formula $G$.
 \item From a formula $\lnot F$ and $(F \vee G)$, infer $G$.
 \end{enumerate}
->- Verify that $(F \to (F \vee G))$ and $((\lnot F \to (F \vee G)) \to G)$ are tautologies.
+>- Verify that $(F \to (F \vee G))$ and $((\lnot F \wedge (F \vee G)) \to G)$ are tautologies.
 
 # From Sentential Logic to Deductive Logic
 
