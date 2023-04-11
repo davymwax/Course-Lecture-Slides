@@ -28,23 +28,44 @@ header-includes:
 
 >- An \textcolor{red}{instance} of a formula in quantified relational logic is a formula that is obtained by freeing a bound variable within the scope of a quantifier and \textcolor{red}{uniformly replacing} every occurrence of this free variable by a constant.
 
->- For each of these formulas: what is the scope of each quantifier? Provide an instance of each formula.\begin{itemize} \item[1] $(\exists x (Gx))$ \item[2] $(\forall x (\lnot Gx))$ \item[3] $\forall x ((\lnot Qx) \to (\exists y (Sxy)))$  \item[4] $(\forall x \forall y((Lxy) \to \exists z((Lxz) \wedge (Lzy))))$ \end{itemize}
+>- For each of these formulas: what is the scope of each quantifier? Provide an instance of each formula.\begin{itemize} \item[1] $(\exists x (Gx))$ \item[2] $(\forall x (\lnot Gx))$ \item[3] $(\forall x ((\lnot Qx) \to (\exists y (Sxy))))$  \item[4] $(\forall x \forall y((Lxy) \to (\exists z((Lxz) \wedge (Lzy)))))$ \end{itemize}
 
 # Inference in Quantified Relational Logic
 
 >- Finally we can state the inference rules of quantified relational logic which turn it into a deductive logic.\begin{itemize}
-\item All the truth-preserving rules of inference covered in sentential logic are truth-preserving rules of inference in quantified relational logic.
-\item From an instance of a formula $\mathcal{F}$ infer $(\exists x \mathcal{F})$ where the formula $\mathcal{F}$ is the result of uniformly replacing with variable $x$ any constant in $\mathcal{F}$. This rule is known as \textcolor{red}{Existential Introduction}.
-\item From $\exists x \mathcal{F}$, infer $\mathcal{F}(a)$, where $\mathcal{F}(a)$ is the result of uniformly replacing every free occurrence of $x$ in $\mathcal{F}$ with a constant $a$. This rule is known as \textcolor{red}{Existential Exploitation}.
+\item[1.] All the truth-preserving rules of inference covered in sentential logic are truth-preserving rules of inference in quantified relational logic.
+\item[2.] From an instance of a formula $\mathcal{F}$ infer $(\exists x \mathcal{F})$ where the formula $\mathcal{F}$ is the result of uniformly replacing with variable $x$ any constant in $\mathcal{F}$. This rule is known as \textcolor{red}{Existential Generalization}.
 \end{itemize}
 
->- These are the only truth-preserving rules of inference that we will avail for ourselves in quantified relational logic.
+>- Here is an instance of the second truth-preserving rule of inference:
+\begin{itemize}
+\item[1.] Hypatia is wise. $(Wh)$
+\item[$\therefore$2.] Someone is wise. $(\exists x (Wx))$ (From 1 and By Existential Generalization)
+\end{itemize}
+
+# Inference in Quantified Relational Logic
+
+>- Inference rules continued from previous slide:
+
+\begin{itemize}
+\item[3.] From $\exists x \mathcal{F}$, you may suppose that $\mathcal{F}(a)$ and use $\mathcal{F}(a)$ together with other premises to show a sentence $G$. Here $\mathcal{F}(a)$ is the result of uniformly replacing every free occurrence of $x$ in $\mathcal{F}$ with an arbitrary constant $a$, \textcolor{red}{which has not occurred before}. This rule is known as \textcolor{red}{Existential Supposition}.
+\end{itemize}
+
+>- Here is an instance of this truth-preserving rule of inference:
+\begin{itemize}
+\item[1.] Someone is wise. $(\exists x (Wx))$
+\item[2.] Suppose Cavendish is wise. $(Wc)$ (From 1. and Existential Supposition)
+\item[3.] Wise people use logic. (Additional Premise)
+\item[$\therefore$ 4.] Cavendish uses logic. (G)
+\end{itemize}
+
+>- These are the only truth-preserving rules of inference that we will avail for ourselves in quantified relational logic but other rules of inference can be derived from these.
 
 # Models and Counterexamples
 
 >- We know why the truth-preserving rules of sentential logic are truth-preserving. 
 
->- Since the operator $\exists$ is not truth-functional, in order to say why the rule \textcolor{red}{Existential Introduction} and the rule \textcolor{red}{Existential Exploitation} are a truth-preserving rules of inference, we need to discuss the semantics, interpretation or meaning of \textcolor{red}{sentences} in quantified relational logic.
+>- Since the operator $\exists$ is \textcolor{red}{not truth-functional}, in order to say why the rule \textcolor{red}{Existential Generalization} and the rule \textcolor{red}{Existential Supposition} are a truth-preserving rules of inference, we need to discuss the semantics, interpretation or meaning of \textcolor{red}{sentences} in quantified relational logic.
 
 >- This will require a tool which we will call a \textcolor{red}{model} or \textcolor{red}{intended interpretation} of some sentences in quantified relational logic.
 
