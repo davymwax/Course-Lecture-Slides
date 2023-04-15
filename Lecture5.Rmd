@@ -5,6 +5,7 @@ title: |
 author: |
     | David Mwakima
     | dmwakima@uci.edu
+    | Department of Logic and Philosophy of Science
     | University of California, Irvine
 date: "April 12th 2023"
 output: beamer_presentation
@@ -37,7 +38,7 @@ header-includes:
 \item[2.] From an instance of a formula $\mathcal{F}$ infer $(\exists x \mathcal{F})$ where the formula $\mathcal{F}$ is the result of uniformly replacing with variable $x$ any constant in $\mathcal{F}$. This rule is known as \textcolor{red}{Existential Generalization}.
 \end{itemize}
 
->- Here is an instance of the second truth-preserving rule of inference:
+>- Here is an instance of an inference that uses Existential Generalization:
 \begin{itemize}
 \item[1.] Hypatia is wise. $(Wh)$
 \item[$\therefore$2.] Someone is wise. $(\exists x (Wx))$ (From 1 and By Existential Generalization)
@@ -45,13 +46,23 @@ header-includes:
 
 # Inference in Quantified Relational Logic
 
->- Inference rules continued from previous slide:
-
-\begin{itemize}
-\item[3.] From $\exists x \mathcal{F}$, you may suppose that $\mathcal{F}(a)$ and use $\mathcal{F}(a)$ together with other premises to infer a \textcolor{red}{sentence} $G$ using other truth preserving rules of inference. Here $\mathcal{F}(a)$ is the result of uniformly replacing every free occurrence of $x$ in $\mathcal{F}$ with an arbitrary constant $a$, \textcolor{red}{which has not occurred before}. This rule is known as \textcolor{red}{Existential Supposition}.
+>- Inference rules continued from previous slide:\begin{itemize}
+\item[3.] From $\forall x \mathcal{F}$ you may infer any of its instances. This rule is known as \textcolor{red}{Universal Instantiation}
 \end{itemize}
 
->- Here is an instance of this truth-preserving rule of inference:
+>- Here is an instance of an inference that uses Universal Instantiation.\begin{itemize}
+\item[1.] All logicians are wise. $(\forall x( Lx \to Wx))$
+\item[$\therefore$2.] If Ruth Barcan Marcus is a logician, then she is wise. $(La \to Wa)$ (From 1 and By Universal Instantiation)
+\end{itemize}
+
+# Inference in Quantified Relational Logic
+
+\begin{itemize}
+
+\item[4.] From $\exists x \mathcal{F}$, you may suppose that $\mathcal{F}(a)$ and use $\mathcal{F}(a)$ together with other premises to infer a \textcolor{red}{sentence} $G$ using other truth preserving rules of inference. Here $\mathcal{F}(a)$ is the result of uniformly replacing every free occurrence of $x$ in $\mathcal{F}$ with an arbitrary constant $a$, \textcolor{red}{which has not occurred before}. This rule is known as \textcolor{red}{Existential Supposition}.
+\end{itemize}
+
+>- Here is an instance of \textcolor{red}{Existential Supposition}:
 \begin{itemize}
 \item[1.] Someone is wise. $(\exists x (Wx))$
 \item[2.] Suppose Cavendish is wise. $(Wc)$ (From 1. and Existential Supposition)
@@ -65,7 +76,7 @@ header-includes:
 
 >- We know why the truth-preserving rules of sentential logic are truth-preserving. 
 
->- Since the operator $\exists$ is \textcolor{red}{not truth-functional}, in order to say why the rule \textcolor{red}{Existential Generalization} and the rule \textcolor{red}{Existential Supposition} are a truth-preserving rules of inference, we need to discuss the semantics, interpretation or meaning of \textcolor{red}{sentences} in quantified relational logic.
+>- Since $\exists$ and $\forall$ are \textcolor{red}{not truth-functional}, in order to say why the rule \textcolor{red}{Existential Generalization}, the rule \textcolor{red}{Universal Instantiation} and the rule \textcolor{red}{Existential Supposition} are truth-preserving rules of inference, we need to discuss the semantics, interpretation or meaning of \textcolor{red}{sentences} in quantified relational logic.
 
 >- This will require a tool which we will call a \textcolor{red}{model} or \textcolor{red}{intended interpretation} of some sentences in quantified relational logic.
 
