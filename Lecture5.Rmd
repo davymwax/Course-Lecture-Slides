@@ -16,12 +16,33 @@ header-includes:
 # Topics
 
 \begin{itemize}
+
 \item Inference in Quantified Relational Logic
 
-\item Models and Counterexamples
+\item Models
+
+\item Witnesses and Counterexamples
+
+\item The Rules of Quantified Relational Logic are truth-preserving
+
+\item Tying things up
+
 \end{itemize}
 
 # Inference in Quantified Relational Logic
+
+>- The goal is to say why this argument in quantified relational logic is valid.
+
+\begin{itemize}
+\item[1.] All logicians are wise.
+\item[2.] Ruth Barcan Marcus is a logician. 
+\item[$\therefore$ 3.] Ruth Barcan Marcus is wise. 
+\end{itemize}
+
+>- So we need to discuss the mechanics of inference in quantified relational logic.
+
+
+# Inferece in Quantified Relation Logic
 
 >- In order to do inference in quantified relational logic we need the notions of (1) the \textcolor{red}{scope of a quantifier} and (2) an \textcolor{red}{instance} of a formula in quantified relational logic.
 
@@ -29,43 +50,42 @@ header-includes:
 
 >- An \textcolor{red}{instance} of a formula in quantified relational logic is a formula that is obtained by freeing a bound variable within the scope of a quantifier and \textcolor{red}{uniformly replacing} every occurrence of this free variable by a constant.
 
->- For each of these formulas: what is the scope of each quantifier? Provide an instance of each formula.\begin{itemize} \item[1] $(\exists x (Gx))$ \item[2] $(\forall x (\lnot Gx))$ \item[3] $(\forall x ((\lnot Qx) \to (\exists y (Sxy))))$  \item[4] $(\forall x \forall y((Lxy) \to (\exists z((Lxz) \wedge (Lzy)))))$ \end{itemize}
+>- For each of these formulas: what is the scope of each quantifier? Provide an instance of each formula.\begin{itemize} \item[1] $\exists x Gx$ \item[2] $\forall x \lnot Gx$ \item[3] $(\forall x \lnot Qx \to \exists y Sxy)$  \item[4] $(\forall x \forall y Lxy \to \exists z(Lxz \wedge Lzy))$ \end{itemize}
 
 # Inference in Quantified Relational Logic
 
 >- Finally we can state the inference rules of quantified relational logic which turn it into a deductive logic.\begin{itemize}
-\item[1.] All the truth-preserving rules of inference covered in sentential logic are truth-preserving rules of inference in quantified relational logic.
-\item[2.] From an instance $\mathcal{F}$, infer $(\exists x \mathcal{F})$. This rule is known as \textcolor{red}{Existential Generalization}.
+\item[Rule 1.] All the truth-preserving rules of inference covered in sentential logic are truth-preserving rules of inference in quantified relational logic.
+\item[Rule 2.] From an instance $\mathcal{F}$, infer $(\exists x \mathcal{F})$. This rule is known as \textcolor{red}{Existential Generalization}.
 \end{itemize}
 
 >- Here is an example of an inference that uses Existential Generalization:
 \begin{itemize}
-\item[1.] Hypatia is wise. $(Wh)$
-\item[$\therefore$2.] Someone is wise. $(\exists x (Wx))$ (From 1 and By Existential Generalization)
+\item[1.] Hypatia is wise. $Wh$
+\item[$\therefore$2.] Someone is wise. $\exists x Wx$ (From 1 and By Existential Generalization)
 \end{itemize}
 
 # Inference in Quantified Relational Logic
 
 >- Inference rules continued from previous slide:\begin{itemize}
-\item[3.] From $\forall x \mathcal{F}$ you may infer any of its instances. This rule is known as \textcolor{red}{Universal Instantiation}
+\item[Rule 3.] From $\forall x \mathcal{F}$ you may infer \textcolor{red}{any} of its instances. This rule is known as \textcolor{red}{Universal Instantiation}
 \end{itemize}
 
 >- Here is an example of an inference that uses Universal Instantiation.\begin{itemize}
-\item[1.] All logicians are wise. $(\forall x( Lx \to Wx))$
+\item[1.] All logicians are wise. $\forall x( Lx \to Wx)$
 \item[$\therefore$2.] If Ruth Barcan Marcus is a logician, then she is wise. $(La \to Wa)$ (From 1 and By Universal Instantiation)
 \end{itemize}
 
 # Inference in Quantified Relational Logic
 
-\begin{itemize}
-
-\item[4.] From $\exists x \mathcal{F}$, you may suppose that $\mathcal{F}(a)$ and use $\mathcal{F}(a)$ together with other premises to infer a \textcolor{red}{sentence} $G$ using other truth preserving rules of inference. Here $\mathcal{F}(a)$ is the result of uniformly replacing every free occurrence of $x$ in $\mathcal{F}$ with an arbitrary constant $a$, \textcolor{red}{which has not occurred before}. This rule is known as \textcolor{red}{Existential Supposition}.
+>- Inference rules continued from previous slide:\begin{itemize}
+\item[Rule 4.] From $\exists x \mathcal{F}$, you may suppose that $\mathcal{F}(a)$ and use $\mathcal{F}(a)$ together with other premises to infer a \textcolor{red}{sentence} $G$ using other truth preserving rules of inference. Here $\mathcal{F}(a)$ is the result of uniformly replacing every free occurrence of $x$ in $\mathcal{F}$ with an arbitrary constant $a$, \textcolor{red}{which has not occurred before}. This rule is known as \textcolor{red}{Existential Supposition}.
 \end{itemize}
 
 >- Here is an example of \textcolor{red}{Existential Supposition}:
 \begin{itemize}
-\item[1.] Someone is wise. $(\exists x (Wx))$
-\item[2.] Suppose Cavendish is wise. $(Wc)$ (From 1. and Existential Supposition)
+\item[1.] Someone is wise. $\exists x Wx$
+\item[2.] Suppose Cavendish is wise. $Wc$ (From 1. and Existential Supposition)
 \item[3.] Wise people use logic. (Additional Premise)
 \item[$\therefore$ 4.] Cavendish uses logic. (G)
 \end{itemize}
@@ -74,56 +94,56 @@ header-includes:
 
 # Inference in Quantified Relational Logic
 
->- For example, although many authors include a rule for Universal Generalization corresponding to the rule for Existential Generalization, we shall not do so here.
+>- For example, although many authors include a rule for \textcolor{red}{Universal Generalization} corresponding to the rule for \textcolor{red}{Existential Generalization}, we shall not do so here.
 
->- Here's the brief answer why. It can be shown that for any formula $\mathcal{F}$ in which $x$ is free, \textcolor{red}{$(\exists x (\lnot\mathcal{F}))$ is logically equivalent to $(\lnot (\forall x (\mathcal{F})))$}.
+>- Here's the brief answer why. It can be shown that for any formula $\mathcal{F}$ in which $x$ is free, \textcolor{red}{$\exists x \lnot\mathcal{F}$ is logically equivalent to $\lnot \forall x \mathcal{F}$} in classical logic.
 
->- To see why, think about this logical equivalence with actual English sentences. \begin{itemize} \item[1.] Someone is not wise. $(\exists x (\lnot(Wx)))$ \item[$\therefore$ 2.] Not everyone is wise. $(\lnot\forall x (Wx))$\end{itemize} 
+>- To see why, think about this logical equivalence with actual English sentences. \begin{itemize} \item[1.] Someone is not wise. $\exists x \lnot Wx$ \item[$\therefore$ 2.] Not everyone is wise. $\lnot\forall x Wx$\end{itemize} 
 
->- And \begin{itemize} \item[1.] Not everyone is wise. $(\lnot\forall x (Wx))$ \item[$\therefore$ 2.] Someone is not wise. $(\exists x (\lnot(Wx)))$ \end{itemize} 
+>- And \begin{itemize} \item[1.] Not everyone is wise. $\lnot\forall x Wx$ \item[$\therefore$ 2.] Someone is not wise. $\exists x \lnot Wx$ \end{itemize} 
 
->- So combining the first and second arguments we can conclude that something is not wise if and only if not everything is wise, i.e, $((\exists x (\lnot(Wx))) \leftrightarrow (\lnot\forall x (Wx)))$ 
+>- So combining the first and second arguments we can conclude that something is not wise if and only if not everything is wise, i.e, $(\exists x \lnot Wx \leftrightarrow \lnot\forall x Wx)$ 
 
 # Inference in Quantified Relational Logic
 
->- \textcolor{red}{Useful Equivalence}:
+>- \textcolor{red}{Useful Equivalence}: For any formula $\mathcal{F}$ in which $x$ is free: 
 \[
-\boxed{((\lnot (\exists x (\lnot (\mathcal{F}))) \leftrightarrow (\forall x (\mathcal{F})))}
+\boxed{(\lnot \exists x \lnot \mathcal{F} \leftrightarrow \forall x \mathcal{F})}
 \] is a theorem of quantified relational logic.
 
->- So, to show the Universal Generalization of some formula, $(\forall x (\mathcal{F}))$, here are the the steps.\begin{itemize} \item[1.] Use Existential Supposition with $(\exists x (\lnot (\mathcal{F})))$. \item[2.] If you can show that $((\mathcal{F}(a)) \wedge \lnot (\mathcal{F}(a)))$, \textcolor{red}{which is contradictory}, then you can conclude $(\lnot(\exists x (\lnot (\mathcal{F}))))$. \item[3.] Infer $(\forall x (\mathcal{F}))$ using the Useful equivalence. \end{itemize}
+>- So, to infer the Universal Generalization, $\forall x \mathcal{F}$, here are the the steps.\begin{itemize} \item[1.] Use Existential Supposition with $\exists x \lnot \mathcal{F}$. \item[2.] If you can show that $(\mathcal{F}(a) \wedge \lnot \mathcal{F}(a))$, \textcolor{red}{which is contradictory}, then you can conclude $\lnot \exists x \lnot \mathcal{F}$. \item[3.] Infer $\forall x \mathcal{F}$ using the Useful equivalence. \end{itemize}
 
 # Inference in Quantified Relational Logic
 
->- An example of Universal Generalization. We want to show that every tautology is satisfiable, i.e., $(\forall x (Tx \to Sx))$. 
+>- An example of Universal Generalization. We want to show that every tautology is satisfiable, i.e., $\forall x (Tx \to Sx)$. Here $Tx$ paraphrases $x$ is a tautology and $Sx$ paraphrases $x$ is satisfiable.
 
 >- Here's how we show it.\begin{itemize}
-\item[1.] Suppose $\lnot (\forall x (Tx \to Sx))$ for the sake of contradiction. 
-\item[2.] $\lnot (\forall x (Tx \to Sx))$ is equivalent to $\exists x (Tx \wedge \lnot Sx)$ by Useful Equivalence and $(\mathcal{F} \to \mathcal {G}) \leftrightarrow \lnot (\mathcal{F} \wedge \lnot \mathcal{G})$
-\item[3.] From 2. and $(Ta \wedge \lnot Sa)$ by Existential Supposition. \item[4.] From 3. we can infer $Ta$. But $Ta$ implies $Sa$. (By definition of tautology and satisfiable)
-\item[5.] But this means we have $(Sa \wedge \lnot Sa)$, which is a contradiction, from line 3 and 4. 
-\item[6.] So $\lnot \lnot (\forall x (Tx \to Sx))$, which is logically equivalent to $(\forall x (Tx \to Sx))$.
+\item[1.] Suppose $\lnot \forall x (Tx \to Sx)$. 
+\item[2.] $\lnot \forall x (Tx \to Sx)$ is equivalent to $\exists x (Tx \wedge \lnot Sx)$ by \textcolor{red}{Useful Equivalence} and $((\mathcal{F} \to \mathcal {G}) \leftrightarrow \lnot (\mathcal{F} \wedge \lnot \mathcal{G}))$
+\item[3.] From 2., suppose $(Ta \wedge \lnot Sa)$ by Existential Supposition. \item[4.] From 3. we can infer $Ta$. But $Ta$ implies $Sa$. (By definition of tautology and satisfiable)
+\item[5.] But from line 3 and 4 this means we have $(Sa \wedge \lnot Sa)$, which is a contradiction.
+\item[6.] So $\lnot \lnot \forall x (Tx \to Sx)$, which is logically equivalent to $\forall x (Tx \to Sx)$.
 \end{itemize}
 
-# Models and Counterexamples: Sentential Logic
+# Models: Sentential Logic
 
->- We know why the truth-preserving rules of sentential logic are truth-preserving. 
+>- We know why the truth-preserving rules of sentential logic are truth-preserving. But since $\exists$ and $\forall$ are \textcolor{red}{not truth-functional} we cannot use truth tables to check whether the rules of inference given above are truth-preserving.
 
->- Since $\exists$ and $\forall$ are \textcolor{red}{not truth-functional}, in order to say why the rule \textcolor{red}{Existential Generalization}, the rule \textcolor{red}{Universal Instantiation} and the rule \textcolor{red}{Existential Supposition} are truth-preserving rules of inference, we need to discuss the semantics, interpretation or meaning of \textcolor{red}{sentences} in quantified relational logic.
+>- So, in order to say why the rule \textcolor{red}{Existential Generalization}, the rule \textcolor{red}{Universal Instantiation} and the rule \textcolor{red}{Existential Supposition} are truth-preserving rules of inference, we need to discuss the semantics, interpretation or meaning of \textcolor{red}{sentences} in quantified relational logic.
 
->- This will require a tool which we will call a \textcolor{red}{model} or \textcolor{red}{intended interpretation} of some sentences in quantified relational logic.
+>- This will require a tool which we will call a \textcolor{red}{model} or \textcolor{red}{intended interpretation} of some \textcolor{red}{sentences} in quantified relational logic.
 
->- I emphasize the word sentence because truth and falsity are properties of sentences, not formulas. A sentence in quantified relational logic is a formula with \textcolor{red}{no free variables}.
+>- I emphasize the word \textcolor{red}{sentence} because truth and falsity are properties of sentences, not formulas. A sentence in quantified relational logic is a formula with \textcolor{red}{no free variables} (Definition).
 
-# Models and Counterexamples: Sentential Logic
+# Models: Sentential Logic
 
 >- In sentential logic, the model for the formulas was a truth function which took as input the truth value of the simple sentences in the formulas and returned a truth value 1 or 0.
 
->- In the model, the truth value of $p$ is 1 if p is true and 0 if p false. Similarly in the model, the truth value of $(\lnot p)$ is 0 if p is true and 1 if p is false. And so on for the other formulas built from the truth functional connectives.
+>- In the model, the truth value of $p$ is 1 if $p$ is true and 0 if $p$ false. Similarly in the model, the truth value of $\lnot p$ is 0 if $p$ is true and $1$ if p is false. And so on for the other formulas formed using the rest of the truth functional connectives.
 
->- Thus, the model for sentential logic can be visualized as a table, which specifies the truth value conditions of the sentences in sentential logic.
+>- Thus, the model for sentential logic can be visualized as a table, which specifies \textcolor{red}{the truth value conditions} of the sentences in sentential logic. This is the powerful idea behind what is known as \textcolor{red}{truth conditional semantics} in philosophy, where we think of \textcolor{red}{the actual world} as a model for a natural language like English.
 
-# Models and Counterexamples: Sentential Logic
+# Models: Sentential Logic
 
 \begin{tabular}{|c || l|} \hline
 Formula & Truth value conditions \\
@@ -137,7 +157,8 @@ $(F \leftrightarrow G)$ & 1 if truth value of F = truth value of G; 0 otherwise.
 \hline
 \end{tabular}
 
-# Models and Counterexamples: Quantified Relational Logic
+
+# Models: Quantified Relational Logic
 
 >- Since quantified relational logic formalizes natural language to reveal more grammatical or internal structure, namely, proper names for individuals or terms and relations between these terms (in the right order); a model for quantified relational logic will necessarily be more complex.
 
@@ -151,31 +172,27 @@ $(F \leftrightarrow G)$ & 1 if truth value of F = truth value of G; 0 otherwise.
 
 >- To account for relations we introduce the notion of an \textcolor{red}{extension}. 
 
->- If $P$ is a predicate symbol in quantified relational logic, the extension of $P$ is a \textcolor{red}{set} of those terms to which the predicate applies. We write this set $[P] = \{a \,| \,  Pa \}$
+>- If $P$ is a predicate symbol in quantified relational logic, the extension of $P$ is a \textcolor{red}{set} of those terms to which the predicate applies. We write this set $[P] = \{a \in \mathcal{U} \,| \,  Pa \}$ "The set of those $a$'s in $\mathcal{U}$ that are $P$"
 
->- If $R$ is a relation, the extension of $R$ is a set of \textcolor{red}{ordered pairs} of terms with that property. We write this set $[R] = \{ <a, b> \,| \, Rab\}$
+>- If $R$ is a relation, the extension of $R$ is a set of \textcolor{red}{ordered pairs} of terms with that property. We write this set $[R] = \{ <a, b> \,\,\text{for}\,\, a, b \in \mathcal{U}\,| \, Rab\}$ "The set those $a$'s and $b$'s in $\mathcal{U}$ such that $Rab$"
 
->- To account for $\forall x \mathcal{F}$ we consider \textcolor{red}{every} $x$-variant $\mathcal{F'}$ of $\mathcal{F}$ and to account for $\exists x \mathcal{F}$ we consider \textcolor{red}{some} $x$-variant $\mathcal{F'}$ of $\mathcal{F}$, soon to be made precise.
+>- To account for $\forall x \mathcal{F}$ we consider \textcolor{red}{every} $x$-variant $\mathcal{F'}$ of $\mathcal{F}$ and to account for $\exists x \mathcal{F}$ we consider \textcolor{red}{some} $x$-variant $\mathcal{F'}$ of $\mathcal{F}$ (Soon to be made precise).
 
-# Models and Counterexamples: Quantified Relational Logic
+# Models: Quantified Relational Logic
 
-Finally we can specify \textcolor{red}{the form of an interpretation or model} of quantified relational logic. 
-\bigskip
+Finally we can specify \textcolor{red}{the form of an interpretation or model} of quantified relational logic. The form of every model of some sentences in quantified relational logic will have two things: (1) the \textcolor{red}{interpretation of symbols} and (2) the \textcolor{red}{truth conditions} of sentences in the model.
 
 \begin{center}
 \begin{tabular}{|c || l|} \hline
 Symbols & Interpretation \\
 \hline 
 Constant &  Term in the universe of discourse  \\
-Predicate, P & $[P] = \{a \,| \,  Pa \}$ where $a$ is a term \\
-Relation, R & $[R] = \{ <a, b> \,| \, Rab\}$ $a$ and $b$ terms \\
+Predicate, P & $[P] = \{a \in \mathcal{U} \,| \,  Pa \}$ \\
+Relation, R & $[R] = \{ <a, b> \,\,\text{for}\,\, a, b \in \mathcal{U}\, \,| \, Rab\}$ \\
 \hline
 \end{tabular}
 \end{center}
 
-\vspace{1cm}
-
-\begin{center}
 \begin{tabular}{|c || l|} \hline
 Sentence & Truth value conditions in the model \\
 \hline 
@@ -185,11 +202,156 @@ $\exists x \mathcal{F}$ & 1 if for some $x$-variant $\mathcal{F'}$ of $\mathcal{
 $\forall x \mathcal{F}$ & 1 if for every $x$-variant $\mathcal{F'}$ of $\mathcal{F}$, the truth value of $\mathcal{F'}$ is 1. \\
 \hline
 \end{tabular}
-\end{center}
 
-# Models and Counterexamples: Quantified Relational Logic
+# Models: Quantified Relational Logic
 
->- Here is an example of how we use models to check whether sentences in quantified relational logic are true \textcolor{red}{in model}. It is important to emphasize that a sentence in quantified relational logic is true relative to a model. 
+>- Here is an example of how we use models to check whether sentences in quantified relational logic are true \textcolor{red}{in a model}. The model is: \begin{itemize}
+\item[1.] $\mathcal{U}$ = $\{$ New York, Los Angeles, Chicago $\}$
+\item[2.] $a$ = New York, $b$ = Los Angeles, $c$ = Chicago
+\item[3.] $[L]$ = $\{$ <New York, Los Angeles>, <New York, Chicago>, <Los Angeles, Chicago> $\}$
+\item[4.] $[W]$ = $\{$ <Los Angeles, Chicago>, <Los Angeles, New York>, <Chicago, New York> $\}$
+\end{itemize}
+
+>- Determine whether the following sentences are true in the model:
+\begin{itemize}
+\item[1.] $Lab$ "$a$ is larger than $b$."
+\item[2.] $Lbc$ "$b$ is larger than $c$."
+\item[3.] $Wca$ "$c$ is west of $a$."
+\item[4.] $\exists x Lbx$ "There exists an $x$ such that $b$ is larger than $x$."
+\item[5.] $\exists y Wyc$ "Some $y$ is west of $c$."
+\end{itemize}
+
+# Models: Quantified Relational Logic
+
+The model is:\begin{itemize}
+\item[1.] $\mathcal{U}$ = $\{$ New York, Los Angeles, Chicago $\}$
+\item[2.] $a$ = New York, $b$ = Los Angeles, $c$ = Chicago
+\item[3.] $[L]$ = $\{$ <New York, Los Angeles>, <New York, Chicago>, <Los Angeles, Chicago> $\}$
+\item[4.] $[W]$ = $\{$ <Los Angeles, Chicago>, <Los Angeles, New York>, <Chicago, New York> $\}$
+\end{itemize}
+
+>- Determine whether the following sentences are true in the model (Continued from previous slide):
+\begin{itemize}
+\item[6.] $\forall x Lax$ "$a$ is larger than every $x$"
+\item[7.] $\exists y Wyb$ "Some $y$ is west of $b$"
+\item[8.] $\forall x \exists y (Lxy \wedge  Wyx)$ "For every $x$ some $y$ is larger than $x$ and $y$ is west of $x$."
+\item[9.] $\exists x \forall y (Lxy \wedge  Wyx)$ "There is an $x$ such that $x$ is larger than every $y$ and $y$ is west of $x$."
+\end{itemize}
+
+# Models: Witnesses and Counterexamples
+
+The model is:\begin{itemize}
+\item[1.] $\mathcal{U}$ = $\{$ New York, Los Angeles, Chicago $\}$
+\item[2.] $a$ = New York, $b$ = Los Angeles, $c$ = Chicago
+\item[3.] $[L]$ = $\{$ <New York, Los Angeles>, <New York, Chicago>, <Los Angeles, Chicago> $\}$
+\item[4.] $[W]$ = $\{$ <Los Angeles, Chicago>, <Los Angeles, New York>, <Chicago, New York> $\}$
+\end{itemize}
+
+>- Consider (4) $\exists x Lbx$. We said that (4) is true because for some $x$-variant of $Lbx$, $<b, c> \in [L]$, i.e., "Los Angeles is larger than Chicago". The term $c = \text{Chicago}$ here is called a \textcolor{red}{witness} of the \textcolor{red}{existentially quantified} sentence $(\exists x (Lbx))$. 
+
+# Models: Witnesses and Counterexamples
+
+The model is:\begin{itemize}
+\item[1.] $\mathcal{U}$ = $\{$ New York, Los Angeles, Chicago $\}$
+\item[2.] $a$ = New York, $b$ = Los Angeles, $c$ = Chicago
+\item[3.] $[L]$ = $\{$ <New York, Los Angeles>, <New York, Chicago>, <Los Angeles, Chicago> $\}$
+\item[4.] $[W]$ = $\{$ <Los Angeles, Chicago>, <Los Angeles, New York>, <Chicago, New York> $\}$
+\end{itemize}
+
+>- Find a witness for (5) $(\exists y (Wyc))$.
+>- Is there a witness for (7) $\exists y (Wyb)$?
+>- Is there a witness for (9) $(\exists x (\forall y ((Lxy) \wedge  (Wyx)))$?
+
+
+# Models: Witnesses and Counterexamples
+
+The model is:\begin{itemize}
+\item[1.] $\mathcal{U}$ = $\{$ New York, Los Angeles, Chicago $\}$
+\item[2.] $a$ = New York, $b$ = Los Angeles, $c$ = Chicago
+\item[3.] $[L]$ = $\{$ <New York, Los Angeles>, <New York, Chicago>, <Los Angeles, Chicago> $\}$
+\item[4.] $[W]$ = $\{$ <Los Angeles, Chicago>, <Los Angeles, New York>, <Chicago, New York> $\}$
+\end{itemize}
+
+>- Consider (5) $\forall x (Lax)$. We said this sentence is false because for some $x$-variant of $(Lax)$, $<a, a> \notin [L]$, i.e., "New York is not larger than New York". The term $a = \text{New York}$ here is called a \textcolor{red}{counterexample} of the \textcolor{red}{universally quantified} sentence $\forall x (Lax)$. 
+
+
+# Models: Witnesses and Counterexamples
+
+The model is:\begin{itemize}
+\item[1.] $\mathcal{U}$ = $\{$ New York, Los Angeles, Chicago $\}$
+\item[2.] $a$ = New York, $b$ = Los Angeles, $c$ = Chicago
+\item[3.] $[L]$ = $\{$ <New York, Los Angeles>, <New York, Chicago>, <Los Angeles, Chicago> $\}$
+\item[4.] $[W]$ = $\{$ <Los Angeles, Chicago>, <Los Angeles, New York>, <Chicago, New York> $\}$
+\end{itemize}
+
+>- Find a counterexample for $\forall x Wxa$
+>- Is there a counterexample for (8) $\forall x \exists y (Lxy \wedge  Wyx)$ "For every $x$ there is some $y$ that is larger than $x$ and $y$ is west of $x$."?
+
+# Models: Witnesses and Counterexamples
+
+>- In general a \textcolor{red}{witness} to an \textcolor{red}{existentially} quantified sentence is a term in the domain that makes the sentence \textcolor{red}{true}. 
+
+>- In general, for a \textcolor{red}{non-empty} domain $\mathcal{U}$, a counterexample to an \textcolor{red}{universally} quantified sentence is a term in $\mathcal{U}$ that makes the sentence \textcolor{red}{false}. 
+
+>- Note that in the case of counterexamples, the domain has to be non-empty. Think about it. If the domain is is empty, then there is no counterexample!
+
+# Models: The Rules of Quantified Relational Logic are Truth-preserving.
+
+>- Finally, we can say why the rules of quantified relational logic are truth-preserving. We will not give a formal proof here. But we will reason in terms of \textcolor{red}{witnesses} and \textcolor{red}{counterexamples}.
+
+>- Consider Rule 2. From an instance $\mathcal{F}$, infer $(\exists x \mathcal{F})$. This rule is known as \textcolor{red}{Existential Generalization}. 
+
+>- This rule is truth-preserving because the instance $\mathcal{F}$ automatically acts as a witness to the existentially quantified sentence $(\exists x \mathcal{F})$. So the sentence $(\mathcal{F} \to \exists x \mathcal{F})$ is a tautology in the model.
+
+
+# Models: The Rules of Quantified Relational Logic are Truth-preserving.
+
+>- Now consider Rule 3. From $\forall x \mathcal{F}$ you may infer \textcolor{red}{any} of its instances. This rule is known an \textcolor{red}{Universal Instantiation}. 
+
+>- This rule is truth-preserving because if $\mathcal{U}$ is not empty and if $\forall x \mathcal{F}$ is true, then there is no counterexample. So the sentence $\forall x \mathcal{F} \to \mathcal{F}$, where $\mathcal{F}$ is any instance of $(\forall x \mathcal{F})$, is a tautology in the model.
+
+
+# Models: The Rules of Quantified Relational Logic are Truth-preserving.
+
+>- Finally consider Rule 4. From $\exists x \mathcal{F}$, you may suppose that $\mathcal{F}(a)$ and use $\mathcal{F}(a)$ together with other premises to infer a \textcolor{red}{sentence} $G$ using other truth preserving rules of inference. Here $\mathcal{F}(a)$ is the result of uniformly replacing every free occurrence of $x$ in $\mathcal{F}$ with an arbitrary constant $a$, \textcolor{red}{which has not occurred before}.
+
+>- This rule is truth-preserving for the following reason. Suppose $\mathcal{U}$ is not empty. Either there is a witness for $\exists x \mathcal{F}$ or there is no witness for $\exists x \mathcal{F}$. If there is a witness, then $(\exists x \mathcal{F} \to G)$ is tautology in the model because the inference to $G$ is arrived at using other truth preserving rules of inference. If there is no witness, then $(\exists x \mathcal{F} \to G)$ is a tautology in the model because the antecedent is never satisfied. 
+
+>- In either case the inference to $G$ is truth preserving. So, $(\exists x \mathcal{F} \to G)$ is tautology in the model.
+
+# Models: Tying Everything Up.
+
+>- We can now say why the argument we started the discussion of quantified relational logic with is valid.\begin{itemize}
+\item[1.] All logicians are wise.
+\item[2.] Ruth Barcan Marcus is a logician. 
+\item[$\therefore$ 3.] Ruth Barcan Marcus is wise. \end{itemize}
+
+>- This argument has the following form. \begin{itemize}
+\item[1.] $(\forall x ((Lx) \to (Wx))$
+\item[2.] $(La)$
+\item[$\therefore$ 3.] $(Wa)$ \end{itemize} 
+
+>- But it is not immediately obvious why it is valid.
+
+# Models: Tying Everything Up
+
+>- We can now say that his argument is valid because we can infer $(Wa)$ using truth-preserving rules of inference as follows: 
+
+\vspace{0.5cm}
+
+\begin{tabular}{l l l}\hline
+1. & $(\forall x ((Lx) \to (Wx))$ & Premise \\
+2. & $(La)$ & Premise \\
+3. & $((La) \to (Wa))$ & From 1. and Universal Instantiation \\
+4. & $(Wa)$ & From 2. and 3. and Modus Ponens. \\
+\hline
+\end{tabular}
+
+>- See \textcolor{red}{Homework 3} and \textcolor{red}{Homework 4} for more exercises.
+
+>- We have now covered enough of deductive logic to understand its strengths. Next time we will begin discussing its limitations using Hume's Problem of Induction and Goodmans's Riddle of Induction in order to motivate inductive logic.
+
+
 
 
 
