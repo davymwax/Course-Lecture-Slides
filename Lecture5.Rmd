@@ -50,7 +50,7 @@ header-includes:
 
 >- An \textcolor{red}{instance} of a formula in quantified relational logic is a formula that is obtained by freeing a bound variable within the scope of a quantifier and \textcolor{red}{uniformly replacing} every occurrence of this free variable by a constant.
 
->- For each of these formulas: what is the scope of each quantifier? Provide an instance of each formula.\begin{itemize} \item[1] $\exists x Gx$ \item[2] $\forall x \lnot Gx$ \item[3] $(\forall x \lnot Qx \to \exists y Sxy)$  \item[4] $(\forall x \forall y Lxy \to \exists z(Lxz \wedge Lzy))$ \end{itemize}
+>- For each of these formulas: what is the scope of each quantifier? Provide an instance of each formula.\begin{itemize} \item[1] $\exists x Gx$ \item[2] $\forall x \lnot Gx$ \item[3] $\forall x (\lnot Qx \to \exists y Sxy)$  \item[4] $\forall x \forall y(Lxy \to \exists z(Lxz \wedge Lzy))$ \end{itemize}
 
 # Inference in Quantified Relational Logic
 
@@ -111,11 +111,11 @@ header-includes:
 \boxed{(\lnot \exists x \lnot \mathcal{F} \leftrightarrow \forall x \mathcal{F})}
 \] is a theorem of quantified relational logic.
 
->- So, to infer the Universal Generalization, $\forall x \mathcal{F}$, here are the the steps.\begin{itemize} \item[1.] Use Existential Supposition with $\exists x \lnot \mathcal{F}$. \item[2.] If you can show that $(\mathcal{F}(a) \wedge \lnot \mathcal{F}(a))$, \textcolor{red}{which is contradictory}, then you can conclude $\lnot \exists x \lnot \mathcal{F}$. \item[3.] Infer $\forall x \mathcal{F}$ using the Useful equivalence. \end{itemize}
+>- So, to infer the Universal Generalization, $\forall x \mathcal{F}$, here are the steps.\begin{itemize} \item[1.] Use Existential Supposition with $\exists x \lnot \mathcal{F}$. \item[2.] If you can show that $(\mathcal{F}(a) \wedge \lnot \mathcal{F}(a))$, \textcolor{red}{which is contradictory}, then you can conclude $\lnot \exists x \lnot \mathcal{F}$, i.e., that your supposition is false. \item[3.] Infer $\forall x \mathcal{F}$ using the Useful Equivalence. \end{itemize}
 
 # Inference in Quantified Relational Logic
 
->- An example of Universal Generalization. We want to show that every tautology is satisfiable, i.e., $\forall x (Tx \to Sx)$. Here $Tx$ paraphrases $x$ is a tautology and $Sx$ paraphrases $x$ is satisfiable.
+>- An example of Universal Generalization. We want to show that every tautology is satisfiable, i.e., $\forall x (Tx \to Sx)$. Here $Tx$ paraphrases "$x$ is a tautology" and $Sx$ paraphrases "$x$ is satisfiable."
 
 >- Here's how we show it.\begin{itemize}
 \item[1.] Suppose $\lnot \forall x (Tx \to Sx)$. 
@@ -162,9 +162,9 @@ $(F \leftrightarrow G)$ & 1 if truth value of F = truth value of G; 0 otherwise.
 
 >- Since quantified relational logic formalizes natural language to reveal more grammatical or internal structure, namely, proper names for individuals or terms and relations between these terms (in the right order); a model for quantified relational logic will necessarily be more complex.
 
->- But the idea is the same as the model for sentential logic. We will specify the truth value conditions for sentences in quantified relational logic. Importantly, the truth conditions \textcolor{red}{for truth functional connectives} in sentential logic carry over.
+>- But the idea is the same as the model for sentential logic. We will specify the truth value conditions for sentences in quantified relational logic. Importantly, the truth conditions \textcolor{red}{for truth functional connectives} in sentential logic \textcolor{red}{carry over}.
 
->- The \textcolor{red}{crucial difference} now is that we add more structure to the model in order to account for (1) terms, (2) predicates and relations, (3) the order in which the terms stand in various relations and (4) quantifiers. 
+>- But! The \textcolor{red}{crucial difference} now is that we add more structure to the model in order to account for (1) terms, (2) predicates and relations, (3) the order in which the terms stand in various relations and (4) quantifiers. 
 
 # Models and Counterexamples: Quantified Relational Logic
 
@@ -172,9 +172,9 @@ $(F \leftrightarrow G)$ & 1 if truth value of F = truth value of G; 0 otherwise.
 
 >- To account for relations we introduce the notion of an \textcolor{red}{extension}. 
 
->- If $P$ is a predicate symbol in quantified relational logic, the extension of $P$ is a \textcolor{red}{set} of those terms to which the predicate applies. We write this set $[P] = \{a \in \mathcal{U} \,| \,  Pa \}$ "The set of those $a$'s in $\mathcal{U}$ that are $P$"
+>- If $P$ is a predicate symbol in quantified relational logic, the extension of $P$ is a \textcolor{red}{set} of those terms to which the predicate applies. We write this set as $[P] = \{a \in \mathcal{U} \,| \,  Pa \}$ "The set of those $a$'s in $\mathcal{U}$ that are $P$"
 
->- If $R$ is a relation, the extension of $R$ is a set of \textcolor{red}{ordered pairs} of terms with that property. We write this set $[R] = \{ <a, b> \,\,\text{for}\,\, a, b \in \mathcal{U}\,| \, Rab\}$ "The set those $a$'s and $b$'s in $\mathcal{U}$ such that $Rab$"
+>- If $R$ is a relation, the extension of $R$ is a set of \textcolor{red}{ordered pairs} of terms that stand in that relation to each other or themselves. We write this set $[R] = \{ <a, b> \,\,\text{for}\,\, a, b \in \mathcal{U}\,| \, Rab\}$ "The set of those $a$'s and $b$'s in $\mathcal{U}$ such that $Rab$"
 
 >- To account for $\forall x \mathcal{F}$ we consider \textcolor{red}{every} $x$-variant $\mathcal{F'}$ of $\mathcal{F}$ and to account for $\exists x \mathcal{F}$ we consider \textcolor{red}{some} $x$-variant $\mathcal{F'}$ of $\mathcal{F}$ (Soon to be made precise).
 
@@ -247,7 +247,7 @@ The model is:\begin{itemize}
 \item[4.] $[W]$ = $\{$ <Los Angeles, Chicago>, <Los Angeles, New York>, <Chicago, New York> $\}$
 \end{itemize}
 
->- Consider (4) $\exists x Lbx$. We said that (4) is true because for some $x$-variant of $Lbx$, $<b, c> \in [L]$, i.e., "Los Angeles is larger than Chicago". The term $c = \text{Chicago}$ here is called a \textcolor{red}{witness} of the \textcolor{red}{existentially quantified} sentence $(\exists x (Lbx))$. 
+>- Consider (4) $\exists x Lbx$. We said that (4) is true because for some $x$-variant of $Lbx$, $<b, c> \in [L]$, i.e., "Los Angeles is larger than Chicago". The term $c = \text{Chicago}$ here is called a \textcolor{red}{witness} of the \textcolor{red}{existentially quantified} sentence $\exists x Lbx$. 
 
 # Models: Witnesses and Counterexamples
 
@@ -258,9 +258,9 @@ The model is:\begin{itemize}
 \item[4.] $[W]$ = $\{$ <Los Angeles, Chicago>, <Los Angeles, New York>, <Chicago, New York> $\}$
 \end{itemize}
 
->- Find a witness for (5) $(\exists y (Wyc))$.
->- Is there a witness for (7) $\exists y (Wyb)$?
->- Is there a witness for (9) $(\exists x (\forall y ((Lxy) \wedge  (Wyx)))$?
+>- Find a witness for (5) $\exists y Wyc$.
+>- Is there a witness for (7) $\exists y Wyb$?
+>- Is there a witness for (9) $\exists x \forall y (Lxy \wedge  Wyx)$?
 
 
 # Models: Witnesses and Counterexamples
@@ -272,7 +272,7 @@ The model is:\begin{itemize}
 \item[4.] $[W]$ = $\{$ <Los Angeles, Chicago>, <Los Angeles, New York>, <Chicago, New York> $\}$
 \end{itemize}
 
->- Consider (5) $\forall x (Lax)$. We said this sentence is false because for some $x$-variant of $(Lax)$, $<a, a> \notin [L]$, i.e., "New York is not larger than New York". The term $a = \text{New York}$ here is called a \textcolor{red}{counterexample} of the \textcolor{red}{universally quantified} sentence $\forall x (Lax)$. 
+>- Consider (5) $\forall x (Lax)$. We said this sentence is false because for some $x$-variant of $Lax$, $<a, a> \notin [L]$, i.e., "New York is not larger than New York". The term $a = \text{New York}$ here is called a \textcolor{red}{counterexample} of the \textcolor{red}{universally quantified} sentence $\forall x Lax$. 
 
 
 # Models: Witnesses and Counterexamples
@@ -289,11 +289,13 @@ The model is:\begin{itemize}
 
 # Models: Witnesses and Counterexamples
 
+>- The case of (8) $\forall x \exists y (Lxy \wedge  Wyx)$ and (9) $\exists x \forall y (Lxy \wedge  Wyx)$ illustrate something very important. (8) is true, but (9) is false in the model. So, be careful. The \textcolor{red}{order of quantifiers matters}! (See LPS 30!)
+
 >- In general a \textcolor{red}{witness} to an \textcolor{red}{existentially} quantified sentence is a term in the domain that makes the sentence \textcolor{red}{true}. 
 
 >- In general, for a \textcolor{red}{non-empty} domain $\mathcal{U}$, a counterexample to an \textcolor{red}{universally} quantified sentence is a term in $\mathcal{U}$ that makes the sentence \textcolor{red}{false}. 
 
->- Note that in the case of counterexamples, the domain has to be non-empty. Think about it. If the domain is is empty, then there is no counterexample!
+>- Note that in the case of counterexamples, the domain has to be non-empty. Think about it. If the domain is empty, then there is no counterexample!
 
 # Models: The Rules of Quantified Relational Logic are Truth-preserving.
 
@@ -315,9 +317,9 @@ The model is:\begin{itemize}
 
 >- Finally consider Rule 4. From $\exists x \mathcal{F}$, you may suppose that $\mathcal{F}(a)$ and use $\mathcal{F}(a)$ together with other premises to infer a \textcolor{red}{sentence} $G$ using other truth preserving rules of inference. Here $\mathcal{F}(a)$ is the result of uniformly replacing every free occurrence of $x$ in $\mathcal{F}$ with an arbitrary constant $a$, \textcolor{red}{which has not occurred before}.
 
->- This rule is truth-preserving for the following reason. Suppose $\mathcal{U}$ is not empty. Either there is a witness for $\exists x \mathcal{F}$ or there is no witness for $\exists x \mathcal{F}$. If there is a witness, then $(\exists x \mathcal{F} \to G)$ is tautology in the model because the inference to $G$ is arrived at using other truth preserving rules of inference. If there is no witness, then $(\exists x \mathcal{F} \to G)$ is a tautology in the model because the antecedent is never satisfied. 
+>- This rule is truth-preserving for the following reason. Suppose $\mathcal{U}$ is not empty. Either there is a witness for $\exists x \mathcal{F}$ or there is no witness for $\exists x \mathcal{F}$. If there is a witness, then $(\exists x \mathcal{F} \to G)$ is a tautology in the model because the inference to $G$ is arrived at using other truth preserving rules of inference. If there is no witness, then $(\exists x \mathcal{F} \to G)$ is a tautology in the model because the antecedent is never satisfied. 
 
->- In either case the inference to $G$ is truth preserving. So, $(\exists x \mathcal{F} \to G)$ is tautology in the model.
+>- In either case the inference from $\exists x \mathcal{F}$ to $G$ is truth preserving. So, $(\exists x \mathcal{F} \to G)$ is a tautology in the model.
 
 # Models: Tying Everything Up.
 
