@@ -329,9 +329,9 @@ The model is:\begin{itemize}
 \item[$\therefore$ 3.] Ruth Barcan Marcus is wise. \end{itemize}
 
 >- This argument has the following form. \begin{itemize}
-\item[1.] $(\forall x ((Lx) \to (Wx))$
-\item[2.] $(La)$
-\item[$\therefore$ 3.] $(Wa)$ \end{itemize} 
+\item[1.] $\forall x (Lx \to Wx)$
+\item[2.] $La$
+\item[$\therefore$ 3.] $Wa$ \end{itemize} 
 
 >- But it is not immediately obvious why it is valid.
 
@@ -342,10 +342,10 @@ The model is:\begin{itemize}
 \vspace{0.5cm}
 
 \begin{tabular}{l l l}\hline
-1. & $(\forall x ((Lx) \to (Wx))$ & Premise \\
-2. & $(La)$ & Premise \\
-3. & $((La) \to (Wa))$ & From 1. and Universal Instantiation \\
-4. & $(Wa)$ & From 2. and 3. and Modus Ponens. \\
+1. & $\forall x (Lx \to Wx)$ & Premise \\
+2. & $La$ & Premise \\
+3. & $(La \to Wa)$ & From 1. and Universal Instantiation \\
+4. & $Wa$ & From 2. and 3. and Modus Ponens. \\
 \hline
 \end{tabular}
 
