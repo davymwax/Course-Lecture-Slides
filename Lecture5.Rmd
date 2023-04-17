@@ -35,10 +35,10 @@ header-includes:
 
 >- Finally we can state the inference rules of quantified relational logic which turn it into a deductive logic.\begin{itemize}
 \item[1.] All the truth-preserving rules of inference covered in sentential logic are truth-preserving rules of inference in quantified relational logic.
-\item[2.] From an instance of a formula $\mathcal{F}$ infer $(\exists x \mathcal{F})$ where the formula $\mathcal{F}$ is the result of uniformly replacing with variable $x$ any constant in $\mathcal{F}$. This rule is known as \textcolor{red}{Existential Generalization}.
+\item[2.] From an instance $\mathcal{F}$, infer $(\exists x \mathcal{F})$. This rule is known as \textcolor{red}{Existential Generalization}.
 \end{itemize}
 
->- Here is an instance of an inference that uses Existential Generalization:
+>- Here is an example of an inference that uses Existential Generalization:
 \begin{itemize}
 \item[1.] Hypatia is wise. $(Wh)$
 \item[$\therefore$2.] Someone is wise. $(\exists x (Wx))$ (From 1 and By Existential Generalization)
@@ -50,7 +50,7 @@ header-includes:
 \item[3.] From $\forall x \mathcal{F}$ you may infer any of its instances. This rule is known as \textcolor{red}{Universal Instantiation}
 \end{itemize}
 
->- Here is an instance of an inference that uses Universal Instantiation.\begin{itemize}
+>- Here is an example of an inference that uses Universal Instantiation.\begin{itemize}
 \item[1.] All logicians are wise. $(\forall x( Lx \to Wx))$
 \item[$\therefore$2.] If Ruth Barcan Marcus is a logician, then she is wise. $(La \to Wa)$ (From 1 and By Universal Instantiation)
 \end{itemize}
@@ -62,7 +62,7 @@ header-includes:
 \item[4.] From $\exists x \mathcal{F}$, you may suppose that $\mathcal{F}(a)$ and use $\mathcal{F}(a)$ together with other premises to infer a \textcolor{red}{sentence} $G$ using other truth preserving rules of inference. Here $\mathcal{F}(a)$ is the result of uniformly replacing every free occurrence of $x$ in $\mathcal{F}$ with an arbitrary constant $a$, \textcolor{red}{which has not occurred before}. This rule is known as \textcolor{red}{Existential Supposition}.
 \end{itemize}
 
->- Here is an instance of \textcolor{red}{Existential Supposition}:
+>- Here is an example of \textcolor{red}{Existential Supposition}:
 \begin{itemize}
 \item[1.] Someone is wise. $(\exists x (Wx))$
 \item[2.] Suppose Cavendish is wise. $(Wc)$ (From 1. and Existential Supposition)
@@ -72,7 +72,40 @@ header-includes:
 
 >- These are the only truth-preserving rules of inference that we will avail for ourselves in quantified relational logic but other rules of inference can be derived from these.
 
-# Models and Counterexamples
+# Inference in Quantified Relational Logic
+
+>- For example, although many authors include a rule for Universal Generalization corresponding to the rule for Existential Generalization, we shall not do so here.
+
+>- Here's the brief answer why. It can be shown that for any formula $\mathcal{F}$ in which $x$ is free, \textcolor{red}{$(\exists x (\lnot\mathcal{F}))$ is logically equivalent to $(\lnot (\forall x (\mathcal{F})))$}.
+
+>- To see why, think about this logical equivalence with actual English sentences. \begin{itemize} \item[1.] Someone is not wise. $(\exists x (\lnot(Wx)))$ \item[$\therefore$ 2.] Not everyone is wise. $(\lnot\forall x (Wx))$\end{itemize} 
+
+>- And \begin{itemize} \item[1.] Not everyone is wise. $(\lnot\forall x (Wx))$ \item[$\therefore$ 2.] Someone is not wise. $(\exists x (\lnot(Wx)))$ \end{itemize} 
+
+>- So combining the first and second arguments we can conclude that something is not wise if and only if not everything is wise, i.e, $((\exists x (\lnot(Wx))) \leftrightarrow (\lnot\forall x (Wx)))$ 
+
+# Inference in Quantified Relational Logic
+
+>- \textcolor{red}{Useful Equivalence}:
+\[
+\boxed{((\lnot (\exists x (\lnot (\mathcal{F}))) \leftrightarrow (\forall x (\mathcal{F})))}
+\] is a theorem of quantified relational logic.
+
+>- So, to show the Universal Generalization of some formula, $(\forall x (\mathcal{F}))$, here are the the steps.\begin{itemize} \item[1.] Use Existential Supposition with $(\exists x (\lnot (\mathcal{F})))$. \item[2.] If you can show that $((\mathcal{F}(a)) \wedge \lnot (\mathcal{F}(a)))$, \textcolor{red}{which is contradictory}, then you can conclude $(\lnot(\exists x (\lnot (\mathcal{F}))))$. \item[3.] Infer $(\forall x (\mathcal{F}))$ using the Useful equivalence. \end{itemize}
+
+# Inference in Quantified Relational Logic
+
+>- An example of Universal Generalization. We want to show that every tautology is satisfiable, i.e., $(\forall x (Tx \to Sx))$. 
+
+>- Here's how we show it.\begin{itemize}
+\item[1.] Suppose $\lnot (\forall x (Tx \to Sx))$ for the sake of contradiction. 
+\item[2.] $\lnot (\forall x (Tx \to Sx))$ is equivalent to $\exists x (Tx \wedge \lnot Sx)$ by Useful Equivalence and $(\mathcal{F} \to \mathcal {G}) \leftrightarrow \lnot (\mathcal{F} \wedge \lnot \mathcal{G})$
+\item[3.] From 2. and $(Ta \wedge \lnot Sa)$ by Existential Supposition. \item[4.] From 3. we can infer $Ta$. But $Ta$ implies $Sa$. (By definition of tautology and satisfiable)
+\item[5.] But this means we have $(Sa \wedge \lnot Sa)$, which is a contradiction, from line 3 and 4. 
+\item[6.] So $\lnot \lnot (\forall x (Tx \to Sx))$, which is logically equivalent to $(\forall x (Tx \to Sx))$.
+\end{itemize}
+
+# Models and Counterexamples: Sentential Logic
 
 >- We know why the truth-preserving rules of sentential logic are truth-preserving. 
 
@@ -80,17 +113,83 @@ header-includes:
 
 >- This will require a tool which we will call a \textcolor{red}{model} or \textcolor{red}{intended interpretation} of some sentences in quantified relational logic.
 
-# Models and Counterexamples
+>- I emphasize the word sentence because truth and falsity are properties of sentences, not formulas. A sentence in quantified relational logic is a formula with \textcolor{red}{no free variables}.
 
+# Models and Counterexamples: Sentential Logic
 
+>- In sentential logic, the model for the formulas was a truth function which took as input the truth value of the simple sentences in the formulas and returned a truth value 1 or 0.
 
+>- In the model, the truth value of $p$ is 1 if p is true and 0 if p false. Similarly in the model, the truth value of $(\lnot p)$ is 0 if p is true and 1 if p is false. And so on for the other formulas built from the truth functional connectives.
 
+>- Thus, the model for sentential logic can be visualized as a table, which specifies the truth value conditions of the sentences in sentential logic.
 
+# Models and Counterexamples: Sentential Logic
 
+\begin{tabular}{|c || l|} \hline
+Formula & Truth value conditions \\
+\hline 
+$(F)$ & 1 if $F$ is true; 0 otherwise.  \\
+$(\lnot F)$ & 1 if $F$ is false, 0 otherwise. \\
+$(F \wedge G)$ & 1 if both $F$ and $G$ are true, 0 otherwise.\\
+$(F \vee G)$ & 0 if both $F$ and $G$ are false, 1 otherwise. \\
+$(F \to G)$ & 1 if either $F$ is false or $G$ is true; 0 otherwise. \\
+$(F \leftrightarrow G)$ & 1 if truth value of F = truth value of G; 0 otherwise. \\
+\hline
+\end{tabular}
 
+# Models and Counterexamples: Quantified Relational Logic
 
+>- Since quantified relational logic formalizes natural language to reveal more grammatical or internal structure, namely, proper names for individuals or terms and relations between these terms (in the right order); a model for quantified relational logic will necessarily be more complex.
 
+>- But the idea is the same as the model for sentential logic. We will specify the truth value conditions for sentences in quantified relational logic. Importantly, the truth conditions \textcolor{red}{for truth functional connectives} in sentential logic carry over.
 
+>- The \textcolor{red}{crucial difference} now is that we add more structure to the model in order to account for (1) terms, (2) predicates and relations, (3) the order in which the terms stand in various relations and (4) quantifiers. 
+
+# Models and Counterexamples: Quantified Relational Logic
+
+>- To account for terms we introduce the notion of a \textcolor{red}{domain} or \textcolor{red}{universe of discourse}, $\mathcal{U}$.
+
+>- To account for relations we introduce the notion of an \textcolor{red}{extension}. 
+
+>- If $P$ is a predicate symbol in quantified relational logic, the extension of $P$ is a \textcolor{red}{set} of those terms to which the predicate applies. We write this set $[P] = \{a \,| \,  Pa \}$
+
+>- If $R$ is a relation, the extension of $R$ is a set of \textcolor{red}{ordered pairs} of terms with that property. We write this set $[R] = \{ <a, b> \,| \, Rab\}$
+
+>- To account for $\forall x \mathcal{F}$ we consider \textcolor{red}{every} $x$-variant $\mathcal{F'}$ of $\mathcal{F}$ and to account for $\exists x \mathcal{F}$ we consider \textcolor{red}{some} $x$-variant $\mathcal{F'}$ of $\mathcal{F}$, soon to be made precise.
+
+# Models and Counterexamples: Quantified Relational Logic
+
+Finally we can specify \textcolor{red}{the form of an interpretation or model} of quantified relational logic. 
+\bigskip
+
+\begin{center}
+\begin{tabular}{|c || l|} \hline
+Symbols & Interpretation \\
+\hline 
+Constant &  Term in the universe of discourse  \\
+Predicate, P & $[P] = \{a \,| \,  Pa \}$ where $a$ is a term \\
+Relation, R & $[R] = \{ <a, b> \,| \, Rab\}$ $a$ and $b$ terms \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{1cm}
+
+\begin{center}
+\begin{tabular}{|c || l|} \hline
+Sentence & Truth value conditions in the model \\
+\hline 
+$Pa$ & 1 if $a \in [P]$, 0 otherwise.  \\
+$Rab$ & 1 if $<a, b> \in [R]$, 0 otherwise. \\
+$\exists x \mathcal{F}$ & 1 if for some $x$-variant $\mathcal{F'}$ of $\mathcal{F}$, the truth value of $\mathcal{F'}$ is 1.\\
+$\forall x \mathcal{F}$ & 1 if for every $x$-variant $\mathcal{F'}$ of $\mathcal{F}$, the truth value of $\mathcal{F'}$ is 1. \\
+\hline
+\end{tabular}
+\end{center}
+
+# Models and Counterexamples: Quantified Relational Logic
+
+>- Here is an example of how we use models to check whether sentences in quantified relational logic are true \textcolor{red}{in model}. It is important to emphasize that a sentence in quantified relational logic is true relative to a model. 
 
 
 

@@ -265,7 +265,7 @@ Using the symbol $M$ for the relation $<x$ met $y>$ paraphrase (19) with full ge
 
 >- The \textcolor{red}{formal symbols} are:
 \begin{itemize}
-\item \textcolor{red}{a, b, c, \dots, m, n, \dots} as symbols for \textcolor{red}{terms}. A term is anything in a theory or language that can be given a proper name or an object that can be identified uniquely.
+\item \textcolor{red}{a, b, c, \dots, m, n, \dots} as \textcolor{red}{constant} symbols for \textcolor{red}{terms}. A term is anything in a theory or language that can be given a proper name or an object that can be identified uniquely.
 \item \textcolor{red}{x, y, z} as symbols for \textcolor{red}{variables}, which range over terms.
 \item Upper case letters \textcolor{red}{$P, Q, R, S, T, \dots, A, B, C, D,\dots, M, \dots$} of the English alphabet as symbols for \textcolor{red}{relations} (one or two place only).
 \item Truth-functional connectives: \textcolor{red}{$\vee$, $\wedge$, $\lnot$, $\to$, $\leftrightarrow$}
