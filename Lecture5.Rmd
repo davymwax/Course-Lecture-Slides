@@ -141,7 +141,7 @@ header-includes:
 
 >- In the model, the truth value of $p$ is 1 if $p$ is true and 0 if $p$ false. Similarly in the model, the truth value of $\lnot p$ is 0 if $p$ is true and $1$ if p is false. And so on for the other formulas formed using the rest of the truth functional connectives.
 
->- Thus, the model for sentential logic can be visualized as a table, which specifies \textcolor{red}{the truth value conditions} of the sentences in sentential logic. This is the powerful idea behind what is known as \textcolor{red}{truth conditional semantics} in philosophy, where we think of \textcolor{red}{the actual world} as a model for a natural language like English.
+>- Thus, the model for sentential logic can be visualized as a table, which specifies \textcolor{red}{the truth value conditions} of the sentences in sentential logic. This is the powerful idea behind \textcolor{red}{Tarski's definition of truth for formalized languages}, which influenced \textcolor{red}{truth conditional semantics} in philosophy, where we think of \textcolor{red}{the actual world} as a model for a natural language like English.
 
 # Models: Sentential Logic
 
