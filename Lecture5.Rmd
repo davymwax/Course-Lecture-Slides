@@ -289,13 +289,13 @@ The model is:\begin{itemize}
 
 # Models: Witnesses and Counterexamples
 
->- The case of (8) $\forall x \exists y (Lxy \wedge  Wyx)$ and (9) $\exists x \forall y (Lxy \wedge  Wyx)$ illustrate something very important. (8) is true, but (9) is false in the model. So, be careful. The \textcolor{red}{order of quantifiers matters}! (See LPS 30!)
+>- The case of (9) $\exists x \forall y (Lxy \wedge  Wyx)$ and (10) $\exists x \exists y (Lxy \wedge Wyx)$ illustrate something important. (10) is true because we just need to find \textcolor{red}{at least one} witness; $(Lab \wedge Wba)$ is a witness. But (9) is false because we have to verify that there are \textcolor{red}{no counterexamples}. So we had to check \textcolor{red}{every} $y$-variant of $(Lay \wedge  Wya)$ including $(Laa \wedge Waa)$, which is a counterexample.
 
 >- In general a \textcolor{red}{witness} to an \textcolor{red}{existentially} quantified sentence is a term in the domain that makes the sentence \textcolor{red}{true}. 
 
 >- In general, for a \textcolor{red}{non-empty} domain $\mathcal{U}$, a counterexample to an \textcolor{red}{universally} quantified sentence is a term in $\mathcal{U}$ that makes the sentence \textcolor{red}{false}. 
 
->- Note that in the case of counterexamples, the domain has to be non-empty. Think about it. If the domain is empty, then there is no counterexample!
+>- Note that in the case of counterexamples, the domain has to be non-empty. Think about it. If the domain is empty, then there is nothing to check. So there is trivially no counterexample!
 
 # Models: The Rules of Quantified Relational Logic are Truth-preserving.
 
