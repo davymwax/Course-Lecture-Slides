@@ -349,7 +349,7 @@ The model is:\begin{itemize}
 \hline
 \end{tabular}
 
->- See \textcolor{red}{Homework 3} and \textcolor{red}{Homework 4} for more exercises.
+>- See \textcolor{red}{Homework 4} for more exercises.
 
 >- We have now covered enough of deductive logic to understand its strengths. Next time we will begin discussing its limitations using Hume's Problem of Induction and Goodmans's Riddle of Induction in order to motivate inductive logic.
 
