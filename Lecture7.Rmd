@@ -131,7 +131,7 @@ Monotonic & Non-monotonic \\ \hline
 
 >- But unlike the rules of inference in deductive logic, there is no contradiction in supposing that the future will not be like the past because we can \textcolor{red}{consistently} imagine all sorts of other possibilities. \begin{itemize}\item One can consistently imagine that a lead ball, released from the hand, would rise rather than fall. \item There is no contradiction in supposing that the sun will not rise tomorrow morning. \end{itemize}
 
-# The scope of Hume's arguments
+# The scope of Hume's arguments: what are the good rules?
 
 >- Hume is not merely saying that we cannot be \textcolor{red}{certain} about inductive inferences.
 
@@ -141,7 +141,7 @@ Monotonic & Non-monotonic \\ \hline
 
 >- So there is a stronger reading of Hume arguments according to which Hume's problem of induction is that there is no rational justification for inductive inference.
 
-# The scope of Hume's arguments
+# The scope of Hume's arguments: what are the good rules?
 
 >- Another way of understanding the scope of Hume's problem is that it is the problem of providing a justification for \textcolor{red}{good rules} of inductive inference.
 
@@ -152,13 +152,13 @@ Monotonic & Non-monotonic \\ \hline
 >- But we have seen that these rules are truth-preserving because they are non-ampliative.
 
 
-# The scope of Hume's arguments
+# The scope of Hume's arguments: Dilemma
 
 >- We have a dilemma. Science involves ampliative inference in an essential way. If we ask for the warrant or justification of the rules of ampliative inference used in science. Two responses seem possible.
 
 >- We could, on the one hand, attempt to offer a deductive argument to show that past observations entail the predictions of science. But if a deductive argument like this could be given, it would transform inductive inference into deductive inference.
 
->- We could, on the other hand, we could try to offer an inductive justification for inductive reasoning. But any such justification would be circular -- it would involve the use of induction itself to justify induction.
+>- We could, on the other hand, try to offer an inductive justification for inductive reasoning. But any such justification would be circular -- it would involve the use of induction itself to justify induction.
 
 >- The result is that, on either alternative, it is impossible to provide a suitable justification for the kinds of reasoning indispensable to science -- and to common sense as well.
 
