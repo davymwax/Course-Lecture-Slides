@@ -36,11 +36,11 @@ Monotonic & Non-monotonic \\ \hline
 
 # Introducing David Hume
 
->- In his \textit{A Treatise of Human Nature} (1739 - 1849), David Hume used some of the above features of deductive inference to call into serious question the thesis that we have any logical or rational basis for inductive reasoning about \textcolor{red}{causality}, i.e., reasoning of the form $A$ \textcolor{red}{causes} $B$.
+>- In his \textit{A Treatise of Human Nature}, David Hume (1739 - 1849) used some of the above features of deductive inference to call into serious question the thesis that we have any logical or rational basis for inductive reasoning about \textcolor{red}{causality}, i.e., reasoning of the form $A$ \textcolor{red}{causes} $B$.
 
->- Since Hume was what philosophers call an \textcolor{red}{empiricist}, Hume's question was \textcolor{red}{what empirical justification} do we have to validate inferences that extend our empirical knowledge beyond pre-existing empirical knowledge? 
+>- More generally, since Hume was what philosophers call an \textcolor{red}{empiricist}, Hume's question was: \textcolor{red}{what empirical justification} do we have to validate inferences that extend our empirical knowledge beyond pre-existing empirical knowledge? 
 
->- The answer he wanted was that the only empirical justification was \textcolor{red}{custom and habit}. But before he could say that this was \textcolor{red}{the only} empirical justification, he had to show that \textcolor{red}{no other non-empirical justification} was possible! Let's see how he did it.
+>- The answer he wanted was that the only empirical justification was \textcolor{red}{custom and habit}. But before he could say that this was \textcolor{red}{the only} empirical justification, he had to show that \textcolor{red}{no other non-empirical justification} was possible! Let's see how he did it. His strategy shows \textcolor{red}{one limitation of deductive logic} in science and motivates \textcolor{red}{the search for an inductive logic}.
 
 # Relations of Ideas and Matters of Fact (Existence)
 
@@ -48,13 +48,13 @@ Monotonic & Non-monotonic \\ \hline
 
 >- Reasoning concerning relations of ideas corresponds to deductive inference. So it is non-ampliative, necessary, and justified apriori. For Hume, examples of this kind of reasoning was the reasoning in pure mathematics and deductive logic.
 
->- Reasoning concerning matters of fact and existence corresponds to inductive inference. So it is ampliative, contingent and justified aposteriori. For Hume examples of this kind of reasoning are (1) predictions and anticipations of experience and (2) universal generalizations in science.
+>- Reasoning concerning matters of fact and existence corresponds to inductive inference. So it is ampliative, contingent and justified aposteriori. For Hume, examples of this kind of reasoning are (1) predictions and anticipations of experience and (2) universal generalizations in science.
 
 # Cause and Effect
 
 >- So the question is: what is the empirical justification of inductive inference, where we reason from the observed to the unobserved?
 
->- Hume is ready to grant that the empirical justification lies in the relation of cause and effect. 
+>- Hume is ready to grant that the empirical justification arises from observations involving the relation of cause and effect. 
 
 >- For example: \begin{itemize} \item When we see lightning nearby (cause) we infer, anticipate or predict that the sound of thunder (effect) will ensue. \item When we see human footprints in the sand in Laguna Beach (effect) we infer that a person recently walked there (cause). \item When we hear a knock and a familiar voice saying, "Anybody home?" (effect) we infer the presence of a friend (cause) outside the door. 
 \end{itemize}
@@ -63,13 +63,13 @@ Monotonic & Non-monotonic \\ \hline
 
 # No apriori knowledge of causal relations.
 
->- Philosophers before Hume would not have been very pleased with this. So Hume considers the possibilities that they would have been happier with. These philosophers would have said that we have \textcolor{red}{a priori knowledge} of causal relations.
+>- Philosophers before Hume would not have been very pleased with this. These philosophers would have said that we have \textcolor{red}{apriori knowledge} of causal relations. So Hume considers this possibility and shows that it doesn't work.
 
 >- Recall that a knowledge claim $K$ is known apriori if its justification is independent of experience.
 
->- Hume's answer is that a person who has \textcolor{red}{had no experience} of diamonds or of ice -- which are very similar in appearance -- has is no way of knowing a priori that intense heat and pressure can produce diamonds but would destroy ice. Likewise, a person who has \textcolor{red}{had no experience} of fire or snow has no way of knowing that the former will feel hot while the latter will feel cold.
+>- Hume's answer is that a person who has \textcolor{red}{had no experience} of diamonds or of ice -- which are very similar in appearance -- has is no way of knowing apriori that intense heat and pressure can produce diamonds but would destroy ice. Likewise, a person who has \textcolor{red}{had no experience} of fire or snow has no way of knowing that the former will feel hot while the latter will feel cold.
 
->- Therefore, claims of the form $A$ causes $B$ cannot be a priori knowledge.
+>- Therefore, claims of the form $A$ causes $B$ cannot be apriori knowledge.
 
 # No apriori knowledge of causal relations
 
@@ -113,13 +113,13 @@ Monotonic & Non-monotonic \\ \hline
 
 >- But what empirical justification do we have for the belief that nature is uniform?
 
->- While considering the possible answers to this question Hume uncovered a logical circle and serious limitation of the use of deductive logic in science.
+>- While considering the possible answers to this question Hume uncovered a logical circle and a serious limitation of the use of deductive logic in science.
 
 # Uniformity of Nature
 
->- There are two possibilities. Either the uniformity of nature is a contingent proposition or it is a necessary proposition.
+>- There are two possibilities of an empirical justification for the belief that nature is uniform. Either the uniformity of nature is a contingent proposition or it is a necessary proposition.
 
->- If you say that nature's uniformity is justified on the basis of past observations (i.e., contingent), then to suppose that it will continue to be uniform is simply to suppose that the future will be like the past. This is \textcolor{red}{circular reasoning} or what philosophers call \textcolor{red}{begging the question}
+>- If you say that nature's uniformity is justified on the basis of past observations (i.e., it is a contingent proposition), then to say that nature will continue to be uniform is simply to suppose that the future will be like the past. This is \textcolor{red}{circular reasoning} or what philosophers call \textcolor{red}{begging the question}
 
 >- It is \textcolor{red}{circular reasoning} because the answer supposes the question itself. Why B? Because B.
 
@@ -135,7 +135,7 @@ Monotonic & Non-monotonic \\ \hline
 
 >- Hume is not merely saying that we cannot be \textcolor{red}{certain} about inductive inferences.
 
->- Hume's point is that we have no non-empirical basis for inductive inference apart from custom and habit.
+>- Hume's point is that we have no empirical basis for inductive inference apart from custom and habit.
 
 >- Custom and habit seem to philosophers to be the sort of things that provide \textcolor{red}{no rational justification} for any sort of inference.
 
