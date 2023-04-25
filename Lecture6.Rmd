@@ -6,7 +6,7 @@ author: |
     | David Mwakima
     | dmwakima@uci.edu
     | University of California, Irvine
-date: "April 14th 2023"
+date: "April 24th 2023"
 output: beamer_presentation
 header-includes:
   - \setbeamertemplate{footline}[page number]
@@ -15,7 +15,126 @@ header-includes:
 # Topics
 
 \begin{itemize}
-\item Hume's Problem of Induction
+\item Ampliative Inference vs. Non-ampliative Inference
 
-\item Goodman's New Riddle of Induction
+\item Necessary Propositions vs. Contingent Propositions
+
+\item Apriori knowledge vs. Aposteriori knowledge
+
+\item Deductive inference vs. Inductive inference
 \end{itemize}
+
+# Recap of Deductive Logic
+
+>- A \textcolor{red}{deductive logic} is a logic where \textcolor{red}{the relation of inference} between the premises and the conclusion is \textcolor{red}{entailment}, i.e., the premises entail the conclusion.
+
+>- An argument is \textcolor{red}{deductively valid} if the conclusion is inferred from the premises using a truth-preserving rule of inference. The following are all equivalent ways of saying that an argument is valid:
+\begin{enumerate}
+\item Any truth value assignment that makes the premises true must make the conclusion true.
+\item No truth value assignment makes the premises true and the conclusion false.
+\item It is impossible to assign truth values to the premises in such a way that all the premises are true and the conclusion is false.
+\item If the conclusion is false, at least one of the premises is false.
+\end{enumerate}
+
+
+# Non-Ampliative vs. Ampliative Inference
+
+>- Deductive logic is great for mathematics (where almost every sentence is either a theorem or refutable given the axioms) but deductive logic has limited use in experimental science, even real life.
+
+>- To see this we appeal to a distinction made by philosophers between \textcolor{red}{non-ampliative} inference and \textcolor{red}{ampliative} inference.
+
+>- An inference is \textcolor{red}{non-ampliative} if: (1) it does not go beyond what can be \textcolor{red}{known solely in virtue of the contents of the concepts} involved in the inference; and (2) follows \textcolor{red}{only} by the application of the logical principles of identity and non-contradiction to these concepts. 
+
+>- Here are examples.\begin{itemize} \item[1.] JoJo Fletcher is a bachelorette. \item[$\therefore$ 2.] JoJo Fletcher is unmarried. \end{itemize} \begin{itemize} \item[1.] Sandy is a pediatrician. \item[$\therefore$ 2.] Sandy is a doctor. \end{itemize}
+
+# Non-Ampliative vs. Ampliative Inference
+
+>- An inference is \textcolor{red}{ampliative} if it: (1) \textcolor{red}{goes beyond} what can be known solely in virtue of the contents of the concepts involved in the inference; or (2) does not only follow by the application of the logical principles of identity and non-contradiction to these concepts.
+\begin{itemize} \item[1.] JoJo Fletcher is a bachelorette. \item[$\therefore$ 2.] JoJo Fletcher is stylish. \end{itemize} \begin{itemize} \item[1.] Sandy is a pediatrician. \item[$\therefore$ 2.] Sandy is rich. \end{itemize}
+
+>- One can \textcolor{red}{plausibly} argue that the rules of inference in deductive logic are truth-preserving \textcolor{red}{because they are non-ampliative}. In fact the English word "tautology" is from the Greek "tautologos", which means "repeating what is said."
+
+>- But in every case of inductive reasoning, as in the second set of examples, the inference is not \textcolor{red}{necessarily} truth preserving because the conclusion "goes beyond" what is in the contents of the concepts involved.
+
+# Necessary vs. Contingent Propositions
+
+>- I introduced this word "necessarily". What does \textcolor{red}{that} mean? 
+
+>- Great question. Philosophers also make a related distinction between propositions that are \textcolor{red}{necessary} and propositions that are \textcolor{red}{contingent}.
+
+>- Remember at the beginning of class we said that it is a difficult problem in philosophy to say what propositions are? That hasn't changed. It still is!
+
+>- Let us say that a proposition $p$ is a description of a \textcolor{red}{possible world}. A possible world is "a way the world is or could have been." 
+
+>- According to \textcolor{red}{possible world semantics}, which we use to characterize the models of modal logic, the truth of a proposition is always \textcolor{red}{relative to some possible world}, which may not be the actual world. 
+
+
+# Necessary vs. Contingent Propositions
+
+>- Within the class of propositions, some philosophers think that there are propositions that are true in \textcolor{red}{every} possible world. These propositions are \textcolor{red}{necessary}, which means that what they describe "could not have been otherwise."
+
+>- A proposition $p$ is \textcolor{red}{contingent} if it is true in \textcolor{red}{some} possible world. What a contingent proposition describes "could have been otherwise."
+
+>- Some philosophers go further and say that if $p$ is necessary, then $\lnot p$ is \textcolor{red}{contradictory}. The thought here is that since a contradictory formula is unsatisfiable (false in every possible world), its negation must be true in every possible world. (Use Truth Tables to check this. A row in a truth table is a possible world.)
+
+>- Corresponding to this characterization of necessity, some philosophers say that if $p$ is contingent, then $\lnot p$ is satisfiable. That is, the denial of $p$ is not contradictory.
+
+# Necessary vs. Contingent Propositions
+
+>- The best examples of propositions that are necessary are the propositions that describe the \textcolor{red}{forms} of truth-preserving rules of inference. For example: \begin{itemize} \item[1.] $(F \to (F \vee G))$ 
+\item[2.] $((F \wedge (F \to G)) \to G)$ \end{itemize}
+
+>- The best examples of propositions that are contingent are \textcolor{red}{all} the propositions that are \textcolor{red}{neither tautologies nor contradictory}. This is a \textcolor{red}{very very} big class of propositions.
+
+>- Can you think of propositions that are contingent? 
+
+# Apriori vs. Aposteriori Knowledge
+
+>- In the past, philosophers thought that one could say which propositions are necessary by looking at how the knowledge of these propositions was \textcolor{red}{justified}.
+
+>- If the \textcolor{red}{justification} for a piece of knowledge $K$ is independent of experience, then $K$ is known \textcolor{red}{apriori}.
+
+>- If the \textcolor{red}{justification} for a piece of knowledge $K$ depends on experience, then $K$ is known \textcolor{red}{aposteriori}.
+
+>- Here "experience" means \textcolor{red}{any interaction between the knower and the world of sense perception, i.e., the empirical world}. 
+
+>- Such interaction includes collecting observational data, gathering factual evidence or testimony, or simply just \textcolor{red}{checking the actual world} to see if a piece of knowledge $K$ is true.
+
+>- Can you think of any knowledge claims $K$ that are known apriori? How about those that are known aposteriori?
+
+# Apriori vs. Aposteriori Knowledge
+
+>- Philosophers in the past thought that necessary propositions were those that were known apriori. 
+
+>- The reason for this thought was that if the knowledge of $K$ depended on how the actual world is, then it would be contingent.
+
+>- Here are some examples of knowledge claims $K$ that some philosophers thought were necessary because they were known apriori:\begin{itemize} \item[1.] The whole is greater than the part. \item[2.] The internal angles of every triangle add up to 180 degrees. \end{itemize}
+
+>- Exercise: are there aposteriori necessary propositions?
+
+# Connecting Everything Up
+
+>- We began by distinguishing between ampliative and non-ampliative inference, then we distinguished between necessary and contingent propositions and finally we distinguished between apriori and aposteriori knowledge.
+
+>- Are these distinctions related? And how do they help us understand the difference between inductive and deductive inference? Here's how.\bigskip 
+\begin{center}
+\begin{tabular}{c | c}\hline
+\textcolor{red}{Deductive Inference} & \textcolor{red}{Inductive Inference} \\ \hline
+Non-ampliative & Ampliative \\
+Necessary propositions & Contingent propositions \\
+Entailment & Conditional Probability \\
+Apriori justification & Aposteriori justification \\
+Monotonic & Non-monotonic \\ \hline
+\end{tabular}
+\end{center}
+
+>- See \textcolor{red}{Homework 5} for the distinction between monotonic and non-monotonic inference. We shall study the relation of conditional probability later.
+
+
+
+
+
+
+
+
+
