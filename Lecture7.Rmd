@@ -1,0 +1,174 @@
+---
+title: | 
+  | Phil/LPS 31 Introduction to Inductive Logic
+  | Lecture 7
+author: |
+    | David Mwakima
+    | dmwakima@uci.edu
+    | University of California, Irvine
+date: "April 28th 2023"
+output: beamer_presentation
+header-includes:
+  - \setbeamertemplate{footline}[page number]
+---
+
+# Topics
+
+\begin{itemize}
+\item Hume's Problem of Induction
+\end{itemize}
+
+
+# Recap
+
+>- Last time we finished by juxtaposing deductive inference and inductive inference as follows: \bigskip \begin{center}
+\begin{tabular}{c | c}\hline
+\textcolor{red}{Deductive Inference} & \textcolor{red}{Inductive Inference} \\ \hline
+Non-ampliative & Ampliative \\
+Necessary propositions & Contingent propositions \\
+Entailment & Conditional Probability \\
+Apriori justification & Aposteriori justification \\
+Monotonic & Non-monotonic \\ \hline
+\end{tabular}
+\end{center}
+
+>- While some of the distinguishing features of each kind of inference have only been known recently, others have been known for a very very long time.
+
+# Introducing David Hume
+
+>- In his \textit{A Treatise of Human Nature} (1739 - 1849), David Hume used some of the above features of deductive inference to call into serious question the thesis that we have any logical or rational basis for inductive reasoning about \textcolor{red}{causality}, i.e., reasoning of the form $A$ \textcolor{red}{causes} $B$.
+
+>- Since Hume was what philosophers call an \textcolor{red}{empiricist}, Hume's question was \textcolor{red}{what empirical justification} do we have to validate inferences that extend our empirical knowledge beyond pre-existing empirical knowledge? 
+
+>- The answer he wanted was that the only empirical justification was \textcolor{red}{custom and habit}. But before he could say that this was \textcolor{red}{the only} empirical justification, he had to show that \textcolor{red}{no other non-empirical justification} was possible! Let's see how he did it.
+
+# Relations of Ideas and Matters of Fact (Existence)
+
+>- Hume divided all reasoning into two types. This division corresponds roughly to the distinguishing features of deductive inference on the one hand and inductive inference on the other hand. \begin{itemize} \item[1.] Reasoning concerning relations of ideas. (roughly, conceptual reasoning) \item[2.] Reasoning concerning matters of fact and existence (roughly, scientific reasoning) \end{itemize}
+
+>- Reasoning concerning relations of ideas corresponds to deductive inference. So it is non-ampliative, necessary, and justified apriori. For Hume, examples of this kind of reasoning was the reasoning in pure mathematics and deductive logic.
+
+>- Reasoning concerning matters of fact and existence corresponds to inductive inference. So it is ampliative, contingent and justified aposteriori. For Hume examples of this kind of reasoning are (1) predictions and anticipations of experience and (2) universal generalizations in science.
+
+# Cause and Effect
+
+>- So the question is: what is the empirical justification of inductive inference, where we reason from the observed to the unobserved?
+
+>- Hume is ready to grant that the empirical justification lies in the relation of cause and effect. 
+
+>- For example: \begin{itemize} \item When we see lightning nearby (cause) we infer, anticipate or predict that the sound of thunder (effect) will ensue. \item When we see human footprints in the sand in Laguna Beach (effect) we infer that a person recently walked there (cause). \item When we hear a knock and a familiar voice saying, "Anybody home?" (effect) we infer the presence of a friend (cause) outside the door. 
+\end{itemize}
+
+>- Hume then argues that even here, the empirical justification for this kind of inductive reasoning is \textcolor{red}{custom and habit}.
+
+# No apriori knowledge of causal relations.
+
+>- Philosophers before Hume would not have been very pleased with this. So Hume considers the possibilities that they would have been happier with. These philosophers would have said that we have \textcolor{red}{a priori knowledge} of causal relations.
+
+>- Recall that a knowledge claim $K$ is known apriori if its justification is independent of experience.
+
+>- Hume's answer is that a person who has \textcolor{red}{had no experience} of diamonds or of ice -- which are very similar in appearance -- has is no way of knowing a priori that intense heat and pressure can produce diamonds but would destroy ice. Likewise, a person who has \textcolor{red}{had no experience} of fire or snow has no way of knowing that the former will feel hot while the latter will feel cold.
+
+>- Therefore, claims of the form $A$ causes $B$ cannot be a priori knowledge.
+
+# No apriori knowledge of causal relations
+
+>- Tough-minded philosophers might respond to Hume by saying that part of what makes $A$ a cause of $B$ is that instances of $A$ are always followed by instances of $B$ effects. 
+
+>- So a proposition $A$ causes $B$ is necessary in the sense of "always true". 
+
+>- But if $A$ causes $B$ is necessary, then it would have to be justified independently of experience (otherwise it would be contingent).
+
+>- Therefore, $A$ causes $B$ is known apriori.
+
+# There is no necessary connection between a cause and an effect.
+
+>- Hume's response here is the following. Suppose that one billiard ball lies at rest on a table while another moves rapidly toward it. They collide. Then the ball that was at rest begins to move.
+
+>- Philosophers who say $A$ causes $B$ is known apriori must be assuming that there is \textcolor{red}{a necessary connection} between the initial motion of the one ball and its collision with the other?
+
+>- One way to think about what "a necessary connection" means is to think of inferences from instances of $A$ (cause) to instances of $B$ (effect) as truth-preserving in the same way that the rules of inference in deductive logic are truth-preserving.
+
+
+# There is no necessary connection between a cause and an effect.
+
+>- But one reason we think that rules of inference in deductive logic are truth-preserving is that the negations of these rules are contradictory. 
+
+>- So if $A$ causes $B$ is necessary, then it "could not have been otherwise." The sense of "it could not have been otherwise" is that $A$ followed by not $B$ would be a contradiction (i.e., unsatisfiable) in the same way that the negation of Modus Ponens is unsatisfiable.
+
+>- Hume's strategy is to show that there is no contradiction in $A$ followed by not $B$.
+
+# There is no necessary connection between a cause and an effect
+
+>- Analyzing the billiard ball case, Hume thinks that we notice just three things about the situation.\begin{itemize} \item The first is \textcolor{red}{temporal priority}: the cause comes before the effect. \item The second is \textcolor{red}{spatiotemporal proximity}: the cause and effect are close together in space and time. \item The third is \textcolor{red}{constant conjunction}: if we repeat the experiment many times we find that the result is just the same as the first time. \end{itemize}
+
+>- But with each of the three things we notice about a causal interaction, we can imagine, without contradiction, many alternative possibilities. Here are some: \begin{itemize} \item When they collide, the two balls might vanish in a puff of smoke. \item The moving ball might jump right over the one at rest. \item The ball that is initially at rest might remain fixed while the moving ball returns in the direction from which it came.\end{itemize}
+
+
+# Uniformity of Nature
+
+>- One might say that the reason we rule out some of these alternative possibilities is that nature is uniform, i.e., that the future will be like the past.
+
+>- The uniformity of nature is the claim that the regularities that have been observed to hold up to now will continue to hold in the future.
+
+>- But what empirical justification do we have for the belief that nature is uniform?
+
+>- While considering the possible answers to this question Hume uncovered a logical circle and serious limitation of the use of deductive logic in science.
+
+# Uniformity of Nature
+
+>- There are two possibilities. Either the uniformity of nature is a contingent proposition or it is a necessary proposition.
+
+>- If you say that nature's uniformity is justified on the basis of past observations (i.e., contingent), then to suppose that it will continue to be uniform is simply to suppose that the future will be like the past. This is \textcolor{red}{circular reasoning} or what philosophers call \textcolor{red}{begging the question}
+
+>- It is \textcolor{red}{circular reasoning} because the answer supposes the question itself. Why B? Because B.
+
+# Uniformity of Nature
+
+>- If you say that it is a necessary truth that regularities that have been observed to hold up to now will continue to hold in the future, then these regularities "could not have been otherwise."
+
+>- In this case, the inference rule to future contingents that nature is uniform would be like a rule of inference in deductive logic.
+
+>- But unlike the rules of inference in deductive logic, there is no contradiction in supposing that the future will not be like the past because we can \textcolor{red}{consistently} imagine all sorts of other possibilities. \begin{itemize}\item One can consistently imagine that a lead ball, released from the hand, would rise rather than fall. \item There is no contradiction in supposing that the sun will not rise tomorrow morning. \end{itemize}
+
+# The scope of Hume's arguments
+
+>- Hume is not merely saying that we cannot be \textcolor{red}{certain} about inductive inferences.
+
+>- Hume's point is that we have no non-empirical basis for inductive inference apart from custom and habit.
+
+>- Custom and habit seem to philosophers to be the sort of things that provide \textcolor{red}{no rational justification} for any sort of inference.
+
+>- So there is a stronger reading of Hume arguments according to which Hume's problem of induction is that there is no rational justification for inductive inference.
+
+# The scope of Hume's arguments
+
+>- Another way of understanding the scope of Hume's problem is that it is the problem of providing a justification for \textcolor{red}{good rules} of inductive inference.
+
+>- We think that is better to use the scientific method to make predictions rather than custom or habit, astrology, crystal gazing, palmistry, even simply guessing. But why are these rules of inductive inference bad? In other words, is inductive logic possible?
+
+>- In the case of deductive logic, the justification of the rules of inference there was that the good rules of inference are precisely those rules of inference that are truth-preserving. 
+
+>- But we have seen that these rules are truth-preserving because they are non-ampliative.
+
+
+# The scope of Hume's arguments
+
+>- We have a dilemma. Science involves ampliative inference in an essential way. If we ask for the warrant or justification of the rules of ampliative inference used in science. Two responses seem possible.
+
+>- We could, on the one hand, attempt to offer a deductive argument to show that past observations entail the predictions of science. But if a deductive argument like this could be given, it would transform inductive inference into deductive inference.
+
+>- We could, on the other hand, we could try to offer an inductive justification for inductive reasoning. But any such justification would be circular -- it would involve the use of induction itself to justify induction.
+
+>- The result is that, on either alternative, it is impossible to provide a suitable justification for the kinds of reasoning indispensable to science -- and to common sense as well.
+
+
+
+
+
+
+
+
+
+
+

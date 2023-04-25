@@ -6,7 +6,7 @@ author: |
     | David Mwakima
     | dmwakima@uci.edu
     | University of California, Irvine
-date: "April 24th 2023"
+date: "April 26th 2023"
 output: beamer_presentation
 header-includes:
   - \setbeamertemplate{footline}[page number]
@@ -58,35 +58,39 @@ header-includes:
 
 # Necessary vs. Contingent Propositions
 
->- I introduced this word "necessarily". What does \textcolor{red}{that} mean? 
+>- In fact, as a part of the theory of knowledge, induction is the way by which we \textcolor{red}{extend} our empirical knowledge \textcolor{red}{beyond pre-existing} empirical knowledge.
 
->- Great question. Philosophers also make a related distinction between propositions that are \textcolor{red}{necessary} and propositions that are \textcolor{red}{contingent}.
+>- In the previous slide, I introduced this word "necessarily". But what does word mean? Great question.
+
+>- Philosophers also make a related distinction between propositions that are \textcolor{red}{necessary} and propositions that are \textcolor{red}{contingent}.
 
 >- Remember at the beginning of class we said that it is a difficult problem in philosophy to say what propositions are? That hasn't changed. It still is!
 
->- Let us say that a proposition $p$ is a description of a \textcolor{red}{possible world}. A possible world is "a way the world is or could have been." 
+>- Let us say that a proposition is a description of a \textcolor{red}{possible world}. A possible world is "a way the world is or could have been." 
 
->- According to \textcolor{red}{possible world semantics}, which we use to characterize the models of modal logic, the truth of a proposition is always \textcolor{red}{relative to some possible world}, which may not be the actual world. 
-
-
+ 
 # Necessary vs. Contingent Propositions
+
+>- According to \textcolor{red}{possible world semantics}, which we use to characterize the models of modal logic, the truth of a proposition is always \textcolor{red}{relative to some possible world}, which may not be the actual world.
 
 >- Within the class of propositions, some philosophers think that there are propositions that are true in \textcolor{red}{every} possible world. These propositions are \textcolor{red}{necessary}, which means that what they describe "could not have been otherwise."
 
 >- A proposition $p$ is \textcolor{red}{contingent} if it is true in \textcolor{red}{some} possible world. What a contingent proposition describes "could have been otherwise."
 
+# Necessary vs. Contingent Propositions
+
 >- Some philosophers go further and say that if $p$ is necessary, then $\lnot p$ is \textcolor{red}{contradictory}. The thought here is that since a contradictory formula is unsatisfiable (false in every possible world), its negation must be true in every possible world. (Use Truth Tables to check this. A row in a truth table is a possible world.)
 
 >- Corresponding to this characterization of necessity, some philosophers say that if $p$ is contingent, then $\lnot p$ is satisfiable. That is, the denial of $p$ is not contradictory.
 
-# Necessary vs. Contingent Propositions
-
 >- The best examples of propositions that are necessary are the propositions that describe the \textcolor{red}{forms} of truth-preserving rules of inference. For example: \begin{itemize} \item[1.] $(F \to (F \vee G))$ 
 \item[2.] $((F \wedge (F \to G)) \to G)$ \end{itemize}
 
+# Necessary vs. Contingent Propositions
+
 >- The best examples of propositions that are contingent are \textcolor{red}{all} the propositions that are \textcolor{red}{neither tautologies nor contradictory}. This is a \textcolor{red}{very very} big class of propositions.
 
->- Can you think of propositions that are contingent? 
+>- Can you think of actual propositions that are contingent? 
 
 # Apriori vs. Aposteriori Knowledge
 

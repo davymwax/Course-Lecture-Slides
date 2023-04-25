@@ -1,0 +1,16 @@
+---
+title: | 
+  | Phil/LPS 31 Introduction to Inductive Logic
+  | Lecture 8
+author: |
+    | David Mwakima
+    | dmwakima@uci.edu
+    | University of California, Irvine
+date: "May 1st 2023"
+output: beamer_presentation
+header-includes:
+  - \setbeamertemplate{footline}[page number]
+---
+
+
+
