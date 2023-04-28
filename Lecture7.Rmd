@@ -145,11 +145,11 @@ Monotonic & Non-monotonic \\ \hline
 
 >- Another way of understanding the scope of Hume's problem is that it is the problem of providing a justification for \textcolor{red}{good rules} of inductive inference.
 
->- We think that is better to use the scientific method to make predictions rather than custom or habit, astrology, crystal gazing, palmistry, even simply guessing. But why are these rules of inductive inference bad? In other words, is inductive logic possible?
+>- We think that is better to use the scientific method to make predictions rather than custom or habit, astrology, crystal gazing, palmistry, even simply guessing. But why are these rules of inductive inference bad?
 
->- In the case of deductive logic, the justification of the rules of inference there was that the good rules of inference are precisely those rules of inference that are truth-preserving. 
+>- In the case of deductive logic, the justification of the rules of inference there was that the good rules of inference are precisely those rules of inference that are truth-preserving. But we have seen that these rules are truth-preserving because they are non-ampliative.
 
->- But we have seen that these rules are truth-preserving because they are non-ampliative.
+>- Do we have a similar criterion for selecting the inductive rules of inference that are good? In other words, \textcolor{red}{is inductive logic possible?}
 
 
 # The scope of Hume's arguments: Dilemma

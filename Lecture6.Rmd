@@ -132,7 +132,7 @@ Monotonic & Non-monotonic \\ \hline
 \end{tabular}
 \end{center}
 
->- See \textcolor{red}{Homework 5} for the distinction between monotonic and non-monotonic inference. We shall study the relation of conditional probability later.
+>- See \textcolor{red}{Homework 4} for the distinction between monotonic and non-monotonic inference. We shall study the relation of conditional probability later.
 
 
 
