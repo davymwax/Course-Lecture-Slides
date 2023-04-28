@@ -36,7 +36,7 @@ Monotonic & Non-monotonic \\ \hline
 
 # Introducing David Hume
 
->- In his \textit{A Treatise of Human Nature}, David Hume (1739 - 1849) used some of the above features of deductive inference to call into serious question the thesis that we have any logical or rational basis for inductive reasoning about \textcolor{red}{causality}, i.e., reasoning of the form $A$ \textcolor{red}{causes} $B$.
+>- In his \textit{A Treatise of Human Nature}, David Hume (1711 - 1776) used some of the above features of deductive inference to call into serious question the thesis that we have any logical or rational basis for inductive reasoning about \textcolor{red}{causality}, i.e., reasoning of the form $A$ \textcolor{red}{causes} $B$.
 
 >- More generally, since Hume was what philosophers call an \textcolor{red}{empiricist}, Hume's question was: \textcolor{red}{what empirical justification} do we have to validate inferences that extend our empirical knowledge beyond pre-existing empirical knowledge? 
 
@@ -127,7 +127,7 @@ Monotonic & Non-monotonic \\ \hline
 
 >- If you say that it is a necessary truth that regularities that have been observed to hold up to now will continue to hold in the future, then these regularities "could not have been otherwise."
 
->- In this case, the inference rule to future contingents that nature is uniform would be like a rule of inference in deductive logic.
+>- In this case, the inference rule to the future contingent that nature is uniform would be like a rule of inference in deductive logic!
 
 >- But unlike the rules of inference in deductive logic, there is no contradiction in supposing that the future will not be like the past because we can \textcolor{red}{consistently} imagine all sorts of other possibilities. \begin{itemize}\item One can consistently imagine that a lead ball, released from the hand, would rise rather than fall. \item There is no contradiction in supposing that the sun will not rise tomorrow morning. \end{itemize}
 
@@ -160,7 +160,7 @@ Monotonic & Non-monotonic \\ \hline
 
 >- We could, on the other hand, try to offer an inductive justification for inductive reasoning. But any such justification would be circular -- it would involve the use of induction itself to justify induction.
 
->- The result is that, on either alternative, it is impossible to provide a suitable justification for the kinds of reasoning indispensable to science -- and to common sense as well.
+>- The result is that, on either alternative, it is impossible to provide a suitable justification for the kinds of reasoning indispensable to science -- and to common sense as well!
 
 
 
