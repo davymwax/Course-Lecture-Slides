@@ -12,5 +12,201 @@ header-includes:
   - \setbeamertemplate{footline}[page number]
 ---
 
+# Topics
+
+\begin{itemize}
+\item Recap of the problem of induction
+
+\item Motivating Problem: Monty Hall Problem
+
+\item Naïve Set Theory
+
+\item Kolmogorov Axioms for Probability
+\end{itemize}
+
+
+# Recap of the problem of induction
+
+>- Another way of understanding the scope of Hume's problem is that it is the problem of providing a justification for \textcolor{red}{good rules} of inductive inference. Here's Hume (1748) \textit{An Enquiry Concerning Human Understanding}: 
+\bigskip
+\begin{quote}
+In vain do you pretend to have learned the nature of bodies from your past experience. Their secret nature, and consequently all their effects and influence, may change without any change in their sensible qualities. This happens sometimes, and with regard to some objects: why may it not happen always, and with regard to all objects? \textcolor{red}{What logic}, what process or argument secures you against this supposition? My practice, you say, refutes my doubts. But you mistake the purport of my question. As an agent, I am quite satisfied in the point; but as a philosopher...I want to learn the foundation of this inference. 
+\end{quote}
+
+
+
+# Recap of the problem of induction
+
+>- We think that is better to use the scientific method to make predictions rather than custom or habit, astrology, crystal gazing, palmistry, even simply guessing. But why are these rules of inductive inference bad?
+
+>- In the case of deductive logic, the justification of the rules of inference there was that the good rules of inference are precisely those rules of inference that are truth-preserving. But we have seen that these rules are truth-preserving because they are non-ampliative.
+
+>- Do we have a similar criterion for selecting the inductive rules of inference that are good? In other words, \textcolor{red}{is inductive logic possible?}
+
+
+# Is inductive logic possible?
+
+>- The answer here depends on what "possible" means and what "good inductive inference" means.
+
+>- Suppose we understand "possible" to mean "not self-contradictory". Then of course an inductive logic is possible. We can base our inductive rules of inference on any of the options available: custom, astrology, the scientific method or guesswork.
+
+>- There is no inherent self-contradiction in any of these approaches.
+
+>- So the real question is deciding, \textcolor{red}{in a non-circular way}, which of these rules of inductive inference are \textcolor{red}{reliable}.
+
+# Is inductive logic possible?
+
+>- I think we will all agree that whether a method is reliable depends \textcolor{red}{on its consequences}. So we will want the good inductive rules of inferences to be those that guarantee favorable consequences \textcolor{red}{most of the time}.
+
+>- In fact, one may argue that the reason why we object against adopting custom or habit as inductive rules of inference, is that they often lead to unfavorable consequences. 
+
+>- So the good rules of inductive inference will be justified by their consequences.
+
+>- There is a parallel here with the justification of deductive logic. We justified a formal system of deductive logic by showing that it had the \textcolor{red}{favorable consequence}, namely, that the good rules of inference were precisely those that were truth preserving.
+
+
+# What are favorable consequences?
+
+>- We know that in the case of inductive inference a favorable consequence \textcolor{red}{can't} be truth-preservation, because that would mean the inference relation in induction would be entailment.
+
+>- Let us agree to call a favorable consequence (\textcolor{red}{a utility}) and an unfavorable consequence (\textcolor{red}{a loss}). These term or elements or elements can be subjective and need not have anything to do with money or happiness.
+
+>- For example, a utility can simply be "getting it right" or as the next example shows, "Winning a car on a game show."; while a loss can simply be "getting it wrong" or as the next example shows, "Winning a goat on a game show."
+
+>- So will want an inductive logic that either maximizes expected utility or minimizes expected loss (i.e., risk). Seen this way, \textcolor{red}{inductive logic is the logic of reliable on-going scientific inquiry or rational deliberation}. See Rudolf Carnap (1971) "Inductive Logic and Rational Decisions"
+
+
+# Motivating Problem: Monty Hall Problem
+
+>- We have three doors that can be labelled 1,2,3. Only of these doors has a car behind it. Monty Hall, asks you to pick a door. Suppose you pick door 1. Monty, who knows what's behind each door, opens door 2 and reveals a goat. He then poses the question "would you like to stick with your choice or switch to door three?". With three doors, you have a 1/3 chance of winning the car straight away. But if Monty has opened door 2 (thereby revealing a goat), does that change your chance of winning the car when you switch?
+
+```{r echo=FALSE, out.width = "30%", fig.align = "center"}
+knitr::include_graphics("/Users/dmwakima/Desktop/8_Spring2023/01_Coursework/04_Teaching_LPS_31/Course-Lecture-Slides/MontyHallProblem.png")
+```
+
+# Poll: Should you Switch?
+
+>- Go to this website: PollEv.com/davidmwakima207 
+>- Let's see your responses!
+
+
+# Motivating Problem: Ask Marilyn
+
+In her September 9th, 1990 column for \textit{Parade Magazine}, Marilyn vos Savant answered a question posed by reader Charles F. Whitaker,
+
+```{r echo=FALSE, out.width = "35%", out.height="65%", fig.align = "center"}
+knitr::include_graphics("/Users/dmwakima/Desktop/8_Spring2023/01_Coursework/04_Teaching_LPS_31/Course-Lecture-Slides/Parade_Magazine.jpeg")
+```
+
+
+# Motivating Problem: Ask Marilyn Reactions
+
+Here were some of the reactions to her answer:
+
+```{r echo=FALSE, out.width = "85%", out.height="80%", fig.align = "center"}
+knitr::include_graphics("/Users/dmwakima/Desktop/8_Spring2023/01_Coursework/04_Teaching_LPS_31/Course-Lecture-Slides/responses.png")
+```
+
+# Motivating Problem: Ask Marilyn Reactions Contd.
+
+Reactions continued from previous slide:
+
+```{r echo=FALSE, out.width = "50%", out.height="80%", fig.align = "center"}
+knitr::include_graphics("/Users/dmwakima/Desktop/8_Spring2023/01_Coursework/04_Teaching_LPS_31/Course-Lecture-Slides/MoreResponses.png")
+```
+
+# Introduction to Probability Theory
+
+>- By the end of this course you should be able to say why the correct answer is to switch. This will require an adequate grasp of the concept of \textcolor{red}{conditional probability} and the \textcolor{red}{theorem of total probability}.
+
+>- Recall the juxtaposition of deductive inference and inductive inference:\begin{center}
+\begin{tabular}{c | c}\hline
+\textcolor{red}{Deductive Inference} & \textcolor{red}{Inductive Inference} \\ \hline
+Non-ampliative & Ampliative \\
+Necessary propositions & Contingent propositions \\
+Entailment & Conditional Probability \\
+Apriori justification & Aposteriori justification \\
+Monotonic & Non-monotonic \\ \hline
+\end{tabular}
+\end{center}
+
+>- For the rest of the quarter we shall spend our time doing probability theory, with the interpretation of probability and how conditional probability can be applied in the context of inductive logic as we have defined it.
+
+# Introduction to Probability Theory: Naïve Set Theory
+
+>- The starting point for the study of probability is theory of sets (or collections) since \textcolor{red}{probability} is real-valued a set function with certain properties. 
+
+>- By a set function I mean that a probability function takes as input a set and returns a real-number.
+
+>- So we shall begin our study of probability theory with the study of special sets which obey certain rules of combination.
+
+>- Remember how started studying deductive logic by saying what the rules of formation for formulas were. Here we're going to begin by saying what ways of putting sets together lead to the sorts of sets which probability can handle.
+
+
+# Introduction to Probability Theory: Naïve Set Theory
+
+>- But what is a set, really?
+
+>- Much like a proposition, it is really hard to say what a set is. Remember when I said "Obviousness is the greatest enemy of correctness" at the beginning of quarter?
+
+>- Nowhere is this truth illustrated than in the study of sets. You might think that any predicate, $Px$, determ or elementines a set $\{ x | Px \}$, i.e., "the set of those $x$'s that a Ps." And you would be wrong!
+
+>- Consider the predicate $Rx$ that says "x is not a member of itself". If $\{x | Rx \}$ is a set, then either it is a member of itself or it is not. If it is, then it is not. If it is not, then it is. 
+
+>- Convince yourself of the force of this paradox!
+
+# Introduction to Probability Theory: Naïve Set Theory
+
+>- Following this and other paradoxes, it became necessary to proceed more carefully in the study of sets. This was done by studying sets axiomatically.
+
+>- So by "naïve" set theory, we mean set theory that is not done "axiomatically". This will be enough for our purposes in this class.
+
+>- The formal system of naïve set theory will include the following symbols: \begin{itemize} \item \textcolor{red}{a, b, c, \dots, m, n, \dots} as \textcolor{red}{constant} symbols for \textcolor{red}{terms}.
+\item \textcolor{red}{x, y, z} as symbols for \textcolor{red}{variables}, which range over terms.
+\item Upper case letters \textcolor{red}{$P, Q, R, S, T, \dots, A, B, C, D,\dots, M, \dots$} of the English alphabet as symbols for \textcolor{red}{sets}.
+\item \textcolor{red}{$\in$} to denote the "<is a member of>" relation that holds of a term $a$ and a set $A$, whenever $a$ is in $A$, written $a \in A$.
+\item \textcolor{red}{(} left bracket and \textcolor{red}{)} right bracket.
+\item Set-forming operators: \textcolor{red}{$\cup$, $\cap$, $\mathcal{P}$} \end{itemize}
+
+# Introduction to Probability Theory: Naïve Set Theory
+
+>- Some sets have special names. In what follows when we speak of "elements of a set", we shall mean either \textcolor{red}{terms} or \textcolor{red}{other sets}, where this is licensed.
+
+>- The \textcolor{red}{empty set} is the set that has no elements. It is denoted by $\{ \}$ or $\emptyset$
+
+>- The \textcolor{red}{union} of \textcolor{red}{two} sets $A$ and $B$ is denoted by $(A \cup B)$ is the set of those elements in either $A$ \textcolor{red}{or} $B$. Think of the disjunction $\vee$.
+
+>- The \textcolor{red}{intersection} of \textcolor{red}{two} sets $A$ and $B$ is denoted by $A \cap B$ is the set of those elements or elements in both $A$ and $B$. Think of the conjunction $\wedge$.
+
+
+# Introduction to Probability Theory: Naïve Set Theory
+
+>- If every term or element of $A$ is also an term or element of $B$, then we write $A \subset B$ and say $A$ is a subset of $B$. Think of the conditional $(p \to q)$
+
+>- We say two sets $A$ and $B$ are equal, written $A = B$, if $A \subset B$ and $B \subset A$. Think of the biconditional $(p \leftrightarrow q)$.
+
+>- To every set $A$, there is a set $A^{c}$ called the complement of $A$ of those elements that do not belong to $A$. Think of the negation $(\lnot p)$
+
+
+# Introduction to Probability Theory: Naïve Set Theory
+
+>- Here's a useful table to help you remember these set operations. In each case, the truth conditions of the formula in sentential logic determine the membership relation of the corresponding set operation.
+
+\begin{center}
+\begin{tabular}{c | c}\hline
+\textcolor{red}{Sentential Logic} & \textcolor{red}{Set Theory} \\ \hline
+$\lnot p$ & $A^c$ \\
+$(p \vee q)$ & $(A \cup B)$ \\
+$(p \wedge q)$ & $(A \cap B)$ \\
+$(p \to q)$ & $(A \subset B)$ \\
+$(p \leftrightarrow q)$ & $A = B$ \\ \hline
+\end{tabular}
+\end{center}
+
+>- Memorize this!
+
+
+
+
 
 
