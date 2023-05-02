@@ -20,8 +20,6 @@ header-includes:
 \item Motivating Problem: Monty Hall Problem
 
 \item Naïve Set Theory
-
-\item Kolmogorov Axioms for Probability
 \end{itemize}
 
 
@@ -69,7 +67,7 @@ In vain do you pretend to have learned the nature of bodies from your past exper
 
 >- We know that in the case of inductive inference a favorable consequence \textcolor{red}{can't} be truth-preservation, because that would mean the inference relation in induction would be entailment.
 
->- Let us agree to call a favorable consequence (\textcolor{red}{a utility}) and an unfavorable consequence (\textcolor{red}{a loss}). These term or elements or elements can be subjective and need not have anything to do with money or happiness.
+>- Let us agree to call a favorable consequence \textcolor{red}{a utility} and an unfavorable consequence \textcolor{red}{a loss}. These terms can be subjective and need not have anything to do with money or happiness.
 
 >- For example, a utility can simply be "getting it right" or as the next example shows, "Winning a car on a game show."; while a loss can simply be "getting it wrong" or as the next example shows, "Winning a goat on a game show."
 
@@ -78,7 +76,7 @@ In vain do you pretend to have learned the nature of bodies from your past exper
 
 # Motivating Problem: Monty Hall Problem
 
->- We have three doors that can be labelled 1,2,3. Only of these doors has a car behind it. Monty Hall, asks you to pick a door. Suppose you pick door 1. Monty, who knows what's behind each door, opens door 2 and reveals a goat. He then poses the question "would you like to stick with your choice or switch to door three?". With three doors, you have a 1/3 chance of winning the car straight away. But if Monty has opened door 2 (thereby revealing a goat), does that change your chance of winning the car when you switch?
+>- We have three doors that can be labelled 1,2,3. Only of these doors has a car behind it. Monty Hall asks you to pick a door. Suppose you pick door 1. Monty, who knows what's behind each door, opens door 2 and reveals a goat. He then poses the question "would you like to stick with your choice or switch to door three?". With three doors, you have a 1/3 chance of winning the car straight away. But if Monty has opened door 2 (thereby revealing a goat), does that change your chance of winning the car when you switch?
 
 ```{r echo=FALSE, out.width = "30%", fig.align = "center"}
 knitr::include_graphics("/Users/dmwakima/Desktop/8_Spring2023/01_Coursework/04_Teaching_LPS_31/Course-Lecture-Slides/MontyHallProblem.png")
@@ -130,18 +128,17 @@ Monotonic & Non-monotonic \\ \hline
 \end{tabular}
 \end{center}
 
->- For the rest of the quarter we shall spend our time doing probability theory, with the interpretation of probability and how conditional probability can be applied in the context of inductive logic as we have defined it.
+>- For the rest of the quarter we shall spend our time doing probability theory, analyzing the different interpretations of probability and seeing how conditional probability can be applied in the context of inductive logic as we have defined it.
 
 # Introduction to Probability Theory: Naïve Set Theory
 
 >- The starting point for the study of probability is theory of sets (or collections) since \textcolor{red}{probability} is real-valued a set function with certain properties. 
 
->- By a set function I mean that a probability function takes as input a set and returns a real-number.
+>- By a set function I mean that a probability function takes as input a set and returns a real number.
 
 >- So we shall begin our study of probability theory with the study of special sets which obey certain rules of combination.
 
->- Remember how started studying deductive logic by saying what the rules of formation for formulas were. Here we're going to begin by saying what ways of putting sets together lead to the sorts of sets which probability can handle.
-
+>- Remember how we started studying deductive logic by saying what the rules of formation for formulas were. Here we're going to begin by saying what ways of putting sets together lead to the sorts of sets which probability can handle.
 
 # Introduction to Probability Theory: Naïve Set Theory
 
@@ -149,7 +146,7 @@ Monotonic & Non-monotonic \\ \hline
 
 >- Much like a proposition, it is really hard to say what a set is. Remember when I said "Obviousness is the greatest enemy of correctness" at the beginning of quarter?
 
->- Nowhere is this truth illustrated than in the study of sets. You might think that any predicate, $Px$, determ or elementines a set $\{ x | Px \}$, i.e., "the set of those $x$'s that a Ps." And you would be wrong!
+>- Nowhere is this truth illustrated than in the study of sets. You might think that any predicate, $Px$, determines a set $\{ x | Px \}$, i.e., "the set of those $x$'s that are Ps." And you would be wrong!
 
 >- Consider the predicate $Rx$ that says "x is not a member of itself". If $\{x | Rx \}$ is a set, then either it is a member of itself or it is not. If it is, then it is not. If it is not, then it is. 
 
