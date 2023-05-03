@@ -162,7 +162,7 @@ header-includes:
 
 >- The last operation we need is called the powerset operation $\mathcal{P}$.
 
->- The powerset of a set $A$, written $\mathcal{P}(A)$ is the set of all subsets of $A$.
+>- The powerset of a set $A$, written $\mathcal{P}(A)$, is the set of all subsets of $A$.
 
 >- In general, $\mathcal{P}(A)$ is very very big. One can show that for a set with $n$ elements, there are $2^n$ subsets of $A$. This is where the name "powerset" comes from. 
 
