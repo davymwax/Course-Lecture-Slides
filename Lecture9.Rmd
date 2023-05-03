@@ -23,9 +23,9 @@ header-includes:
 
 # Recap from last time
 
->- Last time we introduced the formal language of set theory. Set theory is the study of collections. We said that we need to be careful in specifying what sorts of collections count as sets. 
+>- Last time we introduced the formal language of set theory. \textcolor{red}{Set theory is the study of collections}. We said that we need to be careful in specifying what sorts of collections count as sets. 
 
->- The best way to study what sorts of collections count as sets is to proceed "axiomatically". This means that we list down the rules that "an acceptable set" should obey. These rules are called "axioms". Later you will see axioms coming up again in saying what a probability function is.
+>- The best way to study what sorts of collections count as sets is to proceed \textcolor{red}{"axiomatically"}. This means that we list down the rules that "an acceptable set" should obey. These rules are called "axioms". Later you will see axioms coming up again in saying what a probability function is.
 
 >- We shall not cover the axioms of set theory. There are more advanced classes in the Mathematics Department and the Logic and Philosophy of Science (LPS) Department that cover that.
 
@@ -33,20 +33,20 @@ header-includes:
 
 # Operations with Sets: Writing down sets
 
->- With that in mind, let me add that none of the sets we're going to study in this class will be ruled about by the axiomatic approach. So we're good!
+>- With those caveats, let me add that none of the sets we're going to study in this class will be ruled about by the axiomatic approach. So we're good!
 
 >- Let's now see how we work with or operate with sets. This will be like how we studied sentential logic by seeing how to put sentences together to get other sentences using truth functional connectives.
 
 >- Here's a reminder of the formal language of set theory.\begin{itemize} \item \textcolor{red}{a, b, c, $\dots$, m, n, $\dots$} as \textcolor{red}{constant} symbols for \textcolor{red}{terms}.
 \item \textcolor{red}{x, y, z} as symbols for \textcolor{red}{variables}, which range over terms.
 \item Upper case letters \textcolor{red}{$P, Q, R, S, T, \dots, A, B, C, D,\dots, M, \dots$} of the English alphabet as symbols for \textcolor{red}{sets}.
-\item \textcolor{red}{$\in$} to denote the "<is a member of>" relation that holds of a term $a$ and a set $A$, whenever $a$ is in $A$, written $a \in A$.
+\item \textcolor{red}{$\in$} to denote the "<is a member of>" relation that holds of a term $a$ and a set $A$, whenever $a$ is in $A$, written \textcolor{red}{$a \in A$}.
 \item \textcolor{red}{(} left bracket and \textcolor{red}{)} right bracket.
-\item Set-forming operators: \textcolor{red}{$\cup$, $\cap$, $\mathcal{P}$} \end{itemize}
+\item Set-forming operators: \textcolor{red}{$\cup$ (union), $\cap$ (intersection), $\mathcal{P}$ (powerset)} \end{itemize}
 
 # Operations with sets: Writing down sets
 
->- To write what the members or elements of a set are, we can just list them \textcolor{red}{without repetition}. For example, the possible outcomes of the roll of a die can be written down as:
+>- To write what the members or elements of a set are, we can just list them \textcolor{red}{in any order} but \textcolor{red}{without repetition}. For example, the possible outcomes of the roll of a die can be written down as:
 
 \[
 \{1, 2, 3, 4, 5, 6 \}
@@ -54,13 +54,13 @@ header-includes:
 
 >- Sometimes it is impossible to list all of the members or elements of a set. They might be too many! In this case, if there is a predicate that describes what all the members of the set are, we can write:
 \[
-\{ x \, | \, Px\}
-\] which is read as "The set of those $x$'s that are $P$'s" or "The set $x$'s such that $Px$".
+\{ x \in \mathcal{U}\, | \, Px\}
+\] which is read as "The set of those $x$'s in $\mathcal{U}$ that are $P$'s" or "The set $x$'s in $\mathcal{U}$ such that $Px$". Here $\mathcal{U}$ is called the universe of discourse, i.e., the terms that the variables range over in a given context.
 
 
 # Operations with sets: Writing down sets
 
->- Here are examples: \begin{itemize} \item \[\mathbb{N} = \{n \, | \, n \,\text{is a natural number} \} = \{0, 1, 2, 3, 4, 5, 6, \dots \} \] 
+>- Here are examples: \begin{itemize} \item \[\mathbb{N} = \{n \in \mathcal{U} \, | \, n \,\text{is a natural number} \} = \{0, 1, 2, 3, 4, 5, 6, \dots \} \] 
 \item\[\{n \in \mathbb{N} \, | \, n\, \text{is even} \} = \{0, 2, 4, 6, 8, 10, \dots \} \]
 \item \[ \{n \in \mathbb{N}\, | \, n\, \text{is prime} \} = \{ 2, 3, 5, 7, 11, 13,\dots \} \] \item \[ \emptyset = \{n \in \mathbb{N} \, | \, n \,\text{is even}\,\text{and}\, n \, \text{is odd} \} \]
 \end{itemize}
@@ -79,11 +79,11 @@ header-includes:
 
 # Operations with sets: Union
 
->- Recall that the union of two sets $A$ and $B$, $(A \cup B)$, is the set whose members belong to either $A$ or $B$.
+>- Recall that the union of two sets $A$ and $B$, $(A \cup B)$, is the set whose members belong to \textcolor{red}{either $A$ or $B$}.
 
 >- Suppose we're dealing with the set of possible outcomes of the roll of one die. This is the set $\{1, 2, 3, 4, 5, 6 \}$
 
->- Let $A = \{2, 3\}$ and $B = \{4, 5\}$. Then $(A \cup B) = \{ 2, 3, 4, 5\}$. To verify that this is the union of $A$ and $B$, we need to check the members of $(A \cup B)$ are in either $A$ or $B$.
+>- Let $A = \{2, 3\}$ and $B = \{4, 5\}$. Then $(A \cup B) = \{ 2, 3, 4, 5\}$. To verify that this is the union of $A$ and $B$, we need to check the members of $(A \cup B)$ are in \textcolor{red}{either $A$ or $B$}.
 
 >- Exercise. Write down the union of the following two sets: \begin{itemize} \item $A = \{1 \}$, $B = \{ 2 \}$ 
 \item $A = \{2, 4, 6\}$, $B = \{ 1, 3, 5\}$
@@ -99,11 +99,11 @@ header-includes:
 
 # Operations with sets: Intersection
 
->- Recall that the intersection of two sets $A$ and $B$, $(A \cap B)$, is the set whose members belong to both $A$ and $B$.
+>- Recall that the intersection of two sets $A$ and $B$, $(A \cap B)$, is the set whose members belong to \textcolor{red}{both $A$ and $B$}. Another way of saying this is that $(A \cap B)$ is the part of $A$ included in $B$ or the part of $B$ included in $A$.
 
 >- Suppose we're dealing with the set of possible outcomes of the roll of one die. This is the set $\{1, 2, 3, 4, 5, 6 \}$
 
->- Let $A = \{1, 2, 3, 4\}$ and $B = \{2, 3\}$. Then $(A \cap B) = \{ 2, 3\}$. To verify that this is the intersection of $A$ and $B$, we need to check that \textcolor{red}{all} the members of $(A \cap B)$ are in both $A$ and $B$.
+>- Let $A = \{1, 2, 3, 4\}$ and $B = \{2, 3\}$. Then $(A \cap B) = \{ 2, 3\}$. To verify that this is the intersection of $A$ and $B$, we need to check that \textcolor{red}{all} the members of $(A \cap B)$ are in \textcolor{red}{both $A$ and $B$}.
 
 >- Exercise. Write down the intersection of the following two sets: \begin{itemize} \item $A = \{1, 2\}$, $B = \{ 2 \}$ 
 \item $A = \{2, 4, 6\}$, $B = \{1, 2, 4, 5\}$
@@ -132,7 +132,7 @@ header-includes:
 
 >- Let $A = \{1, 2, 3, 4\}$. Then $A^{c}$ in $\mathcal{U}$ is everything that is in $\mathcal{U}$ but \textcolor{red}{not} in $A$. $A^{c} = \{5, 6\}$. To verify that $A^{c}$ is the complement of $A$ in $\mathcal{U}$, we need to check that the members of $A^{c}$ are in $\mathcal{U}$ but not in $A$.
 
->- Exercise. Write down the complement of $A$ for $\mathcal{U}$ given in the problem: \begin{itemize} \item $A = \{1, 2\}$, $\mathcal{U} = \{1, 2, 3, 4, 5, 6 \}$ 
+>- Exercise. Write down $A^c$ in $\mathcal{U}$ in the following examples: \begin{itemize} \item $A = \{1, 2\}$, $\mathcal{U} = \{1, 2, 3, 4, 5, 6 \}$ 
 \item $A = \{2, 4, 6\}$, $\mathcal{U} = \{1, 2, 3, 4, 5, 6 \}$
 \item $A = \{3, 5, 6\}$, $\mathcal{U} = \{1, 2, 3, 4, 5, 6 \}$
 \item $A = \{n \in \mathbb{N} \, | \, n\, \text{is even} \}$, $\mathcal{U} = \mathbb{N}$
@@ -156,6 +156,33 @@ header-includes:
 \item $A = \{n \in \mathbb{N} \, | \, n\, \text{is even} \}$, $B = \mathbb{N}$.
 \item $A = \emptyset$, $B = \{ 1, 2, 3\}$
 \end{itemize}
+
+
+# Operations with sets: Powerset
+
+>- The last operation we need is called the powerset operation $\mathcal{P}$.
+
+>- The powerset of a set $A$, written $\mathcal{P}(A)$ is the set of all subsets of $A$.
+
+>- In general, $\mathcal{P}(A)$ is very very big. One can show that for a set with $n$ elements, there are $2^n$ subsets of $A$. This is where the name "powerset" comes from. 
+
+>- To illustrate this point: \begin{itemize}
+\item $2^2 = 4$
+\item $2^4 = 16$
+\item $2^{16} = 65536$
+\item $2^{65536}$ = TOO BIG
+\item $2^{\mathbb{N}}$ = ?? 
+\end{itemize}
+
+# Operations with sets: Powerset
+
+>- Write down the powerset of the following sets. Hint: Use truth tables.\begin{itemize}
+\item $A = \{1, 2\}$
+\item $B = \{3, 4, 6\}$
+\item $C = \{1, 2, 3, 4\}$
+\end{itemize}
+
+
 
 
 
