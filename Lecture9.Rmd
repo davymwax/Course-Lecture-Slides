@@ -1,0 +1,173 @@
+---
+title: | 
+  | Phil/LPS 31 Introduction to Inductive Logic
+  | Lecture 9
+author: |
+    | David Mwakima
+    | dmwakima@uci.edu
+    | University of California, Irvine
+date: "May 3rd 2023"
+output: beamer_presentation
+header-includes:
+  - \setbeamertemplate{footline}[page number]
+---
+
+# Topics
+
+\begin{itemize}
+\item Operations on Sets
+
+\item Relationships between Sets
+\end{itemize}
+
+
+# Recap from last time
+
+>- Last time we introduced the formal language of set theory. Set theory is the study of collections. We said that we need to be careful in specifying what sorts of collections count as sets. 
+
+>- The best way to study what sorts of collections count as sets is to proceed "axiomatically". This means that we list down the rules that "an acceptable set" should obey. These rules are called "axioms". Later you will see axioms coming up again in saying what a probability function is.
+
+>- We shall not cover the axioms of set theory. There are more advanced classes in the Mathematics Department and the Logic and Philosophy of Science (LPS) Department that cover that.
+
+>- We are going to proceed "naïvely", which means that we will not proceed axiomatically but with the awareness that what sets are is a delicate matter. 
+
+# Operations with Sets: Writing down sets
+
+>- With that in mind, let me add that none of the sets we're going to study in this class will be ruled about by the axiomatic approach. So we're good!
+
+>- Let's now see how we work with or operate with sets. This will be like how we studied sentential logic by seeing how to put sentences together to get other sentences using truth functional connectives.
+
+>- Here's a reminder of the formal language of set theory.\begin{itemize} \item \textcolor{red}{a, b, c, $\dots$, m, n, $\dots$} as \textcolor{red}{constant} symbols for \textcolor{red}{terms}.
+\item \textcolor{red}{x, y, z} as symbols for \textcolor{red}{variables}, which range over terms.
+\item Upper case letters \textcolor{red}{$P, Q, R, S, T, \dots, A, B, C, D,\dots, M, \dots$} of the English alphabet as symbols for \textcolor{red}{sets}.
+\item \textcolor{red}{$\in$} to denote the "<is a member of>" relation that holds of a term $a$ and a set $A$, whenever $a$ is in $A$, written $a \in A$.
+\item \textcolor{red}{(} left bracket and \textcolor{red}{)} right bracket.
+\item Set-forming operators: \textcolor{red}{$\cup$, $\cap$, $\mathcal{P}$} \end{itemize}
+
+# Operations with sets: Writing down sets
+
+>- To write what the members or elements of a set are, we can just list them \textcolor{red}{without repetition}. For example, the possible outcomes of the roll of a die can be written down as:
+
+\[
+\{1, 2, 3, 4, 5, 6 \}
+\]
+
+>- Sometimes it is impossible to list all of the members or elements of a set. They might be too many! In this case, if there is a predicate that describes what all the members of the set are, we can write:
+\[
+\{ x \, | \, Px\}
+\] which is read as "The set of those $x$'s that are $P$'s" or "The set $x$'s such that $Px$".
+
+
+# Operations with sets: Writing down sets
+
+>- Here are examples: \begin{itemize} \item \[\mathbb{N} = \{n \, | \, n \,\text{is a natural number} \} = \{0, 1, 2, 3, 4, 5, 6, \dots \} \] 
+\item\[\{n \in \mathbb{N} \, | \, n\, \text{is even} \} = \{0, 2, 4, 6, 8, 10, \dots \} \]
+\item \[ \{n \in \mathbb{N}\, | \, n\, \text{is prime} \} = \{ 2, 3, 5, 7, 11, 13,\dots \} \] \item \[ \emptyset = \{n \in \mathbb{N} \, | \, n \,\text{is even}\,\text{and}\, n \, \text{is odd} \} \]
+\end{itemize}
+
+>- The point here is that one can write down what a given set is either by: (1) \textcolor{red}{listing its members}; or (2) \textcolor{red}{specifying the condition of membership} to that set.
+
+# Operations with sets: Writing down sets
+
+>- Exercise. Write down the following sets.\begin{itemize}
+\item The set of days of the week.
+\item The set of odd natural numbers.
+\item The set of natural numbers that are multiples of six.
+\item The set of all possible outcomes of tossing a fair coin \textcolor{red}{once}.
+\item The set of all possible outcomes of tossing a fair coin \textcolor{red}{twice}.
+\end{itemize}
+
+# Operations with sets: Union
+
+>- Recall that the union of two sets $A$ and $B$, $(A \cup B)$, is the set whose members belong to either $A$ or $B$.
+
+>- Suppose we're dealing with the set of possible outcomes of the roll of one die. This is the set $\{1, 2, 3, 4, 5, 6 \}$
+
+>- Let $A = \{2, 3\}$ and $B = \{4, 5\}$. Then $(A \cup B) = \{ 2, 3, 4, 5\}$. To verify that this is the union of $A$ and $B$, we need to check the members of $(A \cup B)$ are in either $A$ or $B$.
+
+>- Exercise. Write down the union of the following two sets: \begin{itemize} \item $A = \{1 \}$, $B = \{ 2 \}$ 
+\item $A = \{2, 4, 6\}$, $B = \{ 1, 3, 5\}$
+\item $A = \{1, 6\}$, $B = \{3, 4\}$
+\item $A = \{n \in \mathbb{N} \, | \, n\, \text{is even} \}$, $B = \{n \in \mathbb{N} \, | \, n\, \text{is odd} \}$
+\end{itemize}
+
+# Operations with sets: Union
+
+>- We have defined the union of \textcolor{red}{two} sets only to build intuition. 
+
+>- In your \textcolor{red}{Homework 5} you will see that the union operation is still well-defined even if we are not considering \textcolor{red}{two} sets at a time.
+
+# Operations with sets: Intersection
+
+>- Recall that the intersection of two sets $A$ and $B$, $(A \cap B)$, is the set whose members belong to both $A$ and $B$.
+
+>- Suppose we're dealing with the set of possible outcomes of the roll of one die. This is the set $\{1, 2, 3, 4, 5, 6 \}$
+
+>- Let $A = \{1, 2, 3, 4\}$ and $B = \{2, 3\}$. Then $(A \cap B) = \{ 2, 3\}$. To verify that this is the intersection of $A$ and $B$, we need to check that \textcolor{red}{all} the members of $(A \cap B)$ are in both $A$ and $B$.
+
+>- Exercise. Write down the intersection of the following two sets: \begin{itemize} \item $A = \{1, 2\}$, $B = \{ 2 \}$ 
+\item $A = \{2, 4, 6\}$, $B = \{1, 2, 4, 5\}$
+\item $A = \{3, 5, 6\}$, $B = \{1, 3, 5, 6\}$
+\item $A = \{n \in \mathbb{N} \, | \, n\, \text{is even} \}$, $B = \{n \in \mathbb{N} \, | \, n\, \text{is odd} \}$
+\end{itemize}
+
+# Operations with sets: Intersection
+
+>- Like in the case of the union of two sets, we have defined the intersection of \textcolor{red}{two} sets only to build intuition. 
+>- In your \textcolor{red}{Homework 5} you will see that the intersection operation is still well-defined even if we are not considering \textcolor{red}{two} sets at a time.
+
+# Operations with sets: Complement
+
+>- Recall that to every set $A$, there is a set $A^{c}$ called the complement of $A$ of those elements that do not belong to $A$. 
+
+>- If $a$ does not belong to $A$, we write $a \notin A$. Think of the negation $(\lnot p)$.
+
+>- But this definition isn't complete because we didn't specify what the universe of discourse $\mathcal{U}$ is. Unless we specify what $\mathcal{U}$ is, $A^{c}$ isn't quite well defined. $A^{c}$ can be "too big" to be a set. Remember the Russell Paradox?
+
+>- So although the complement always exists, we limit its size by only looking at the complement of $A$ in $\mathcal{U}$. What the universe of discourse is will vary with context. For example, in probability theory which we will talk about later, $\mathcal{U}$ has a special name: \textcolor{red}{the sample space}.
+
+# Operations with sets: Complement
+
+>- So, suppose we're dealing with the set of possible outcomes of the roll of one die. Here $\mathcal{U} = \{1, 2, 3, 4, 5, 6 \}$
+
+>- Let $A = \{1, 2, 3, 4\}$. Then $A^{c}$ in $\mathcal{U}$ is everything that is in $\mathcal{U}$ but \textcolor{red}{not} in $A$. $A^{c} = \{5, 6\}$. To verify that $A^{c}$ is the complement of $A$ in $\mathcal{U}$, we need to check that the members of $A^{c}$ are in $\mathcal{U}$ but not in $A$.
+
+>- Exercise. Write down the complement of $A$ for $\mathcal{U}$ given in the problem: \begin{itemize} \item $A = \{1, 2\}$, $\mathcal{U} = \{1, 2, 3, 4, 5, 6 \}$ 
+\item $A = \{2, 4, 6\}$, $\mathcal{U} = \{1, 2, 3, 4, 5, 6 \}$
+\item $A = \{3, 5, 6\}$, $\mathcal{U} = \{1, 2, 3, 4, 5, 6 \}$
+\item $A = \{n \in \mathbb{N} \, | \, n\, \text{is even} \}$, $\mathcal{U} = \mathbb{N}$
+\end{itemize}
+
+# Relationships between sets: Subset
+
+>- Recall that $A$ is a subset of $B$, written $A \subset B$, if every member of $A$ is also a member of $B$. When $A \subset B$, we sometimes say that $B$ \textcolor{red}{includes} $A$ or (more passively) $A$ is included in $B$.
+
+>- Suppose we're dealing with the set of possible outcomes of the roll of one die. This is the set $\{1, 2, 3, 4, 5, 6 \}$
+
+>- Let $B = \{1, 2, 3, 4\}$ and $A = \{2, 3\}$. Then $A \subset B$. To verify that $A \subset B$, we need to check that \textcolor{red}{for all} $x$, if $x \in A$, then $x \in B$. 
+
+>- Think of the conditional $\to$ here. $(p \to q)$ is false just in case $p$ is true but $q$ is false. Similarly, $A$ is \textcolor{red}{not} a subset of $B$ if there is a \textcolor{red}{counterexample}, i.e., $a \in A$ but $a \notin B$.
+
+# Relationships between sets: Subset
+
+>- Exercise. Determine whether $A \subset B$: \begin{itemize} \item $B = \{1, 2\}$, $A = \{ 2 \}$ 
+\item $B = \{2, 4, 6\}$, $A = \{1, 2, 4, 5\}$
+\item $A = \{3, 5, 6\}$, $B = \{1, 3, 5, 6\}$
+\item $A = \{n \in \mathbb{N} \, | \, n\, \text{is even} \}$, $B = \mathbb{N}$.
+\item $A = \emptyset$, $B = \{ 1, 2, 3\}$
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
