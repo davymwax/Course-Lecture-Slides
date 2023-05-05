@@ -1,0 +1,74 @@
+---
+title: | 
+  | Phil/LPS 31 Introduction to Inductive Logic
+  | Lecture 10
+author: |
+    | David Mwakima
+    | dmwakima@uci.edu
+    | University of California, Irvine
+date: "May 5th 2023"
+output: beamer_presentation
+header-includes:
+  - \setbeamertemplate{footline}[page number]
+---
+
+# Topics
+
+\begin{itemize}
+\item The logic of sets
+
+\item Fields
+
+\item Kolmogorov Axioms
+
+\item Sample space and Events
+\end{itemize}
+
+
+# The logic of sets
+
+
+A presence table will be like a truth table, except we will use it to study the algebra of sets. Recall $A \subset B$ if whenever $x \in A$, then $x \in B$. Think of the conditional $\to$. We can then construct the presence table for $A \subset B$ as follows:
+
+\begin{center}
+\begin{tabular}{c | c ||c}\hline
+$A$ & $B$ & $(A \subset B)$ \\ 
+\hline
+P & P &  1\\ 
+P & A &  0\\
+A & P &  1\\
+A & A &  1\\
+\hline
+\end{tabular}
+\end{center}
+
+In the first two columns, $P$ means some $x$ is present in $A$ and $A$ (for absent) means $x$ is not in $A$. 1 under the column for $A \subset B)$ means the sentence "A is a subset of B" is true. 0 under the column for $A \subset B$ means that on that row the sentence "A is a subset of B" is false.
+
+# The logic of sets
+
+
+
+
+# The logic of sets
+
+
+
+
+# The logic of sets
+
+
+
+
+# Fields
+
+
+
+# Kolmogorov Axioms
+
+
+
+# Sample Space and Events
+
+
+
+
