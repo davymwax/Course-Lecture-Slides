@@ -20,19 +20,27 @@ header-includes:
 \item Fields
 
 \item Kolmogorov Axioms
-
-\item Sample space and Events
 \end{itemize}
 
 
 # The logic of sets
 
+>- To study the logic of sets, we will use a useful tool that I will call a "presence table", following an idea due to Professor Brian Skyrms in LPS. A presence table will be like a truth table, except we will use it to study the \textcolor{red}{logic of sets}. 
 
-A presence table will be like a truth table, except we will use it to study the algebra of sets. Recall $A \subset B$ if whenever $x \in A$, then $x \in B$. Think of the conditional $\to$. We can then construct the presence table for $A \subset B$ as follows:
+>- The logic of sets will be like the logic of sentential logic. Recall that in sentential logic, we study the logic of combining simple sentences to form complex sentences using truth-functional connectives.
 
+>- Now we are going to use set operations (union $\cup$, intersection $\cap$, complement, $\cdot^{c}$,  powerset $\mathcal{P}$) to \textcolor{red}{combine simple sets} to form more complex sets using these operations.
+
+>- Then we are going to use the subset relation, $\subset$, and the identity relation, $=$, to study the \textcolor{red}{relationships between sets}.
+
+# The logic of sets
+
+>- Here's the first example of a presence table. Recall $A \subset B$ if whenever $x \in A$, then $x \in B$. Think of the conditional $\to$. 
+
+>- Here is the presence table for $A \subset B$:
 \begin{center}
 \begin{tabular}{c | c ||c}\hline
-$A$ & $B$ & $(A \subset B)$ \\ 
+$A$ & $B$ & $A \subset B$ \\ 
 \hline
 P & P &  1\\ 
 P & A &  0\\
@@ -42,32 +50,79 @@ A & A &  1\\
 \end{tabular}
 \end{center}
 
-In the first two columns, $P$ means some $x$ is present in $A$ and $A$ (for absent) means $x$ is not in $A$. 1 under the column for $A \subset B)$ means the sentence "A is a subset of B" is true. 0 under the column for $A \subset B$ means that on that row the sentence "A is a subset of B" is false.
 
 # The logic of sets
 
+>- Here's the presence table for $A \subset B$ for reference. \begin{center}
+\begin{tabular}{c | c ||c}\hline
+$A$ & $B$ & $A \subset B$ \\ 
+\hline
+P & P &  1\\ 
+P & A &  0\\
+A & P &  1\\
+A & A &  1\\
+\hline
+\end{tabular}
+\end{center}
 
+>- In the first column, $P$ means some $x$ is present in $A$ and $A$ (for "absent") means $x$ is not in $A$. 1 under the column for $A \subset B$ means the sentence "A is a subset of B" is true. 0 under the column for $A \subset B$ means that on that row the sentence "A is a subset of B" is false. So we see that $A \subset B$ is false if and only if \textcolor{red}{$x \in A$}, i.e., present in A; but \textcolor{red}{$x \notin B$}, i.e., absent in B.
+
+>- Exercise. Construct the presence table for: \begin{itemize} 
+\item $(A \cup B)$
+\item $(A \cap B)$
+\item $(A^{c} \cap B)$, where $B \subset \mathcal{U}$ and $\mathcal{U}$ is some universe of discourse or universal set in a given context.
+\end{itemize}
 
 
 # The logic of sets
 
+>- Once we know the presence tables for these basic set operations, we can study the relationships between more complex combinations of sets and certain equivalences between sets.
 
+>- For example, we can use presence tables to verify that $(A \cap B) \subset A$.
 
+>- In addition, we can use presence tables verify that $(A = B)$. Recall that to do this, we need to check that: (1) $A \subset B$ and (2) $B \subset A$. 
+
+>- If we use a presence table to verify $A = B$, we need to check whether the sentence "$(((A \subset B) \wedge (B \subset A)) \to A = B)$" is \textcolor{red}{a tautology}.
+
+>- In fact, we can show that $A = B \equiv ((A \subset B) \wedge (B \subset A))$ by showing that $(((A \subset B) \wedge (B \subset A)) \leftrightarrow A = B)$ is a tautology. The symbol $\equiv$ has been introduced in Homework 4.
 
 # The logic of sets
 
+>- Verify the following relationships between sets. \begin{itemize} \item $(B^c \cap A) \subset A$ \item $A \subset (A \cup B)$ \item $(A \cup B) = (B \cup A)$ \item $A \cup (B \cup C) = (A \cup B) \cup C$ \item $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$ \end{itemize}
 
-
+>- See \textcolor{red}{Homework 5} for more exercises.
 
 # Fields
 
+>- We are now ready to describe the logic of sets that we can use to define probability functions.
 
+>- The step we are taking here is analogous to the step we took in defining the formal system of sentential logic.
+
+>- We will call the formal system of the logic of sets that we will use to define probability functions \textcolor{red}{a field}. 
+
+>- We define a field $\mathcal{F}$ as a \textcolor{red}{non-empty collection} of sets $\Omega$ that is \textcolor{red}{closed under finite applications of set-theoretic operations}. 
+
+>- Compare with the definition of the formal system of sentential logic.
+
+# Properties of Fields
+
+>- To say that a field $\mathcal{F}$ is closed under finite applications of set theoretic operations means: \begin{itemize} \item[(1)] $\Omega \in \mathcal{F}$ \item[(2)] If $A \in \mathcal{F}$, then $A^{c} \in \mathcal{F}$ \item[(3)] If $A, B \in \mathcal{F}$, then $A \cup B \in \mathcal{F}$ \end{itemize}
+
+>- (1), (2) and (3) characterize what a field is completely. In your \textcolor{red}{Homework 5} you will verify additional properties of fields based on just these three properties.
 
 # Kolmogorov Axioms
 
+>- The Kolmogorov Axioms characterize what a probability function $P$ defined on a field is as follows:
+\begin{itemize} \item $P(\Omega) = 1$ (Normalized)
+\item $0 \leq P(A) \leq 1$ for $A \in \mathcal{F}$ (Non-negative)
+\item If $A \cap B = \emptyset$, then $P(A \cup B) = P(A) + P(B)$ (Additive)
+\end{itemize}
+
+>- A probability function is a \textcolor{red}{normalized}, \textcolor{red}{non-negative} and \textcolor{red}{additive} set function defined on a field.
+
+>- We will pick up from here next time!
 
 
-# Sample Space and Events
 
 
 
