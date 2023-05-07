@@ -100,15 +100,17 @@ A & A &  1\\
 
 >- We will call the formal system of the logic of sets that we will use to define probability functions \textcolor{red}{a field}. 
 
->- We define a field $\mathcal{F}$ as a \textcolor{red}{non-empty collection} of sets $\Omega$ that is \textcolor{red}{closed under finite applications of set-theoretic operations}. 
-
->- Compare with the definition of the formal system of sentential logic.
+>- We define a field $\mathcal{F}$ as a \textcolor{red}{non-empty collection} of sets $\Omega$ that is \textcolor{red}{closed under finite applications of set-theoretic operations} of taking \textcolor{red}{unions} and \textcolor{red}{complements}. 
 
 # Properties of Fields
 
 >- To say that a field $\mathcal{F}$ is closed under finite applications of set theoretic operations means: \begin{itemize} \item[(1)] $\Omega \in \mathcal{F}$ \item[(2)] If $A \in \mathcal{F}$, then $A^{c} \in \mathcal{F}$ \item[(3)] If $A, B \in \mathcal{F}$, then $A \cup B \in \mathcal{F}$ \end{itemize}
 
->- (1), (2) and (3) characterize what a field is completely. In your \textcolor{red}{Homework 5} you will verify additional properties of fields based on just these three properties.
+>- This is a good time to compare what a field is with the definition of the formal system of sentential logic. Do that!
+
+>- (1), (2) and (3) characterize what a field is completely. Other authors add that a field is closed under finite applications of the operation of taking \textcolor{red}{intersections}. 
+
+>- In your \textcolor{red}{Homework 5} you will show that taking the complement of a union of two sets gives you the intersection of their complements. So we can define intersections in terms of complements and unions.
 
 # Kolmogorov Axioms
 
@@ -118,7 +120,7 @@ A & A &  1\\
 \item If $A \cap B = \emptyset$, then $P(A \cup B) = P(A) + P(B)$ (Additive)
 \end{itemize}
 
->- A probability function is a \textcolor{red}{normalized}, \textcolor{red}{non-negative} and \textcolor{red}{additive} set function defined on a field.
+>- A probability function is a \textcolor{red}{normalized}, \textcolor{red}{non-negative} and \textcolor{red}{additive} \textcolor{red}{real-valued} set function defined on a field.
 
 >- We will pick up from here next time!
 
