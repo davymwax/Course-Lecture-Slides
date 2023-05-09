@@ -5,6 +5,7 @@ title: |
 author: |
     | David Mwakima
     | dmwakima@uci.edu
+    | Department of Logic and Philosophy of Science
     | University of California, Irvine
 date: "May 1st 2023"
 output: beamer_presentation
