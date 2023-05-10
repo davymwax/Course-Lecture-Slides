@@ -1,0 +1,32 @@
+---
+title: | 
+  | Phil/LPS 31 Introduction to Inductive Logic
+  | Lecture 12
+author: |
+    | David Mwakima
+    | dmwakima@uci.edu
+    | Department of Logic and Philosophy of Science
+    | University of California, Irvine
+date: "May 15th 2023"
+output: beamer_presentation
+header-includes:
+  - \setbeamertemplate{footline}[page number]
+---
+
+# Topics
+
+\begin{itemize}
+\item Joint Probability
+\item Marginal Probability
+\item Probabilistic Independence
+\item Conditional Probability
+\item Bayes' Theorem
+\end{itemize}
+
+# Joint Probability
+
+>- In \textcolor{blue}{Rule 7} we have $P(A \cap B)$ for two sets $A = E$ and $B = F$. But how do you calculate $P(A \cap B)$ if all we know is the $P(A)$ and $P(B)$ but not $P(A \cup B)$? 
+
+
+
+
