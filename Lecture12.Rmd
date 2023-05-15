@@ -23,9 +23,209 @@ header-includes:
 \item Bayes' Theorem
 \end{itemize}
 
-# Joint Probability
+# Joint Probability and Marginal Probability
 
->- In \textcolor{blue}{Rule 7} we have $P(A \cap B)$ for two sets $A = E$ and $B = F$. But how do you calculate $P(A \cap B)$ if all we know is the $P(A)$ and $P(B)$ but not $P(A \cup B)$? 
+>- In \textcolor{red}{Homework 6} you will prove \textcolor{red}{the General Disjunction Rule}, which will bring the total number of rules to 8, so far. \begin{itemize} \item[Rule 8] $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ \end{itemize}
+
+>- In \textcolor{blue}{Rule 8} we have $P(A \cap B)$ for two sets $A$ and $B$, which are not necessarily disjoint. But how do you calculate $P(A \cap B)$ if all we know is $P(A)$ and $P(B)$? Do we have a rule for that?!
+
+>- We call $P(A \cap B)$, the \textcolor{red}{joint probability} of $A$ and $B$.
+
+>- In the context of joint probability, and a concept we shall introduce later of \textcolor{red}{conditional probability}, $P(A)$ and $P(B)$ are called the \textcolor{red}{marginal probability} of $A$ and $B$, respectively. The reason for the adjective "marginal" will become clear in a minute.
+
+# Joint Probability and Marginal Probability: First Illustration
+
+\begin{center}
+\begin{tabular}{c | c c  c c || c}\hline
+    & Spades & Hearts & Diamonds & Clubs & \\ \hline
+Ace & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+2 & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+3 & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+4 & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+5 & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+6 & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+7 & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+8 & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+9 & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+10 & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+Jack & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+Queen & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+King & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline \hline
+    & $\frac{1}{4}$ & $\frac{1}{4}$ & $\frac{1}{4}$ & $\frac{1}{4}$ & 1 \\ \hline
+\end{tabular}
+\end{center}
+
+# Joint Probability and Marginal Probability: First Illustration
+
+\begin{itemize}
+\item What is $P(\text{King})$, $P(\text{Spades})$, $P(\text{Ace})$, $P(\text{Diamonds})$, $P(7)$, $P(\text{Hearts})$? All these are examples of \textcolor{red}{marginal probabilities}
+\vspace{0.5cm}
+\item What is $P(\text{King of Spades})$, $P(\text{Ace of Diamonds})$, $P(\text{7 of Hearts})$? All these are are examples of \textcolor{red}{joint probabilities}
+\vspace{0.5cm}
+\item What is $P(\text{King})\times P(\text{Spades})$, $P(\text{Ace}) \times P(\text{Diamonds})$, $P(7) \times P(\text{Hearts})$? Are the joint probabilities equal to the product of the respective marginal probabilities?
+\item We say that the suit and rank of a card are \textcolor{red}{probabilistically independent}.
+\end{itemize}
+
+# Joint Probability and Marginal Probability: Second Illustration
+
+\begin{center}
+\begin{tabular}{c| c c c c || c}\hline
+        & & \textbf{Hair Color} & & & \\ 
+\textbf{Eye Color} & Black & Brunette & Red & Blond & \\ \hline
+Brown  & 0.11 & 0.20 & 0.04 & 0.01 & 0.37 \\ 
+Blue & 0.03 & 0.14 & 0.03 & 0.16 & 0.36 \\ 
+Hazel & 0.03 & 0.09 & 0.02 & 0.02 & 0.16 \\  
+Green & 0.01 & 0.05 & 0.02 & 0.03 & 0.11 \\ \hline \hline
+     & 0.18 & 0.48 & 0.12 & 0.21 & 1 \\ \hline
+\end{tabular}
+\end{center}
+
+# Joint Probability and Marginal Probability: Second Illustration
+\begin{itemize}
+\item What is $P(\text{Brown eye color})$, $P(\text{Black Hair})$, $P(\text{Blue eye color})$, $P(\text{Red Hair color})$, $P(\text{Green eye color})$, $P(\text{Blond Hair color})$? All these are examples of \textcolor{red}{marginal probabilities}.
+\vspace{0.5cm}
+\item What is $P(\text{Brown eyes and Black Hair})$, $P(\text{Blue eyes and Red Hair})$, $P(\text{Green eyes and Blond Hair})$? All these are are examples of \textcolor{red}{joint probabilities}.
+\vspace{0.5cm}
+\item What is $P(\text{Brown Eye color})\times P(\text{Black Hair})$, $P(\text{Blue eye color}) \times P(\text{Red Hair color})$, $P(\text{Green Eyes}) \times P(\text{Blond Hair})$? Are the joint probabilities equal to the product of the respective marginal probabilities?
+\item We say that eye-color and hair color are \textcolor{red}{probabilistically dependent}.
+\end{itemize}
+
+# Probabilitistic Independence
+
+>- We say two events $E$ and $F$ are \textcolor{red}{probabilistically independent}, or simply just \textcolor{red}{independent}, if: \begin{center}
+$P(E \cap F) = P(E) \times P(F)$
+\end{center}
+
+>- From this we can get one way of computing $P(A \cap B)$ \textcolor{red}{only in the special case} where $A$ and $B$ are independent.\begin{itemize} \item[Rule 9] $P(E \cap F) = P(E) \times P(F)$ if $E$ and $F$ are (probabilistically) independent.\end{itemize} 
+
+>- How about when $A$ and $B$ are \textcolor{red}{dependent}, like in the eye color and hair color example? 
+
+>- For that we need the concept of \textcolor{red}{conditional probability}.
+
+>- But first let us talk about \textcolor{red}{the theorem of total probability}.
+
+# Joint Probability and Marginal Probability: Some Facts
+We begin with some facts. Consider the two illustrations once more.
+\begin{center}
+\begin{tabular}{c | c c  c c || c}\hline
+    & Spades & Hearts & Diamonds & Clubs & \\ \hline
+Ace & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+2 & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+3 & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+4 & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+5 & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+6 & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+7 & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+8 & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+9 & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+10 & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+Jack & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+Queen & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline
+King & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{52}$ & $\frac{1}{13}$ \\ \hline \hline
+    & $\frac{1}{4}$ & $\frac{1}{4}$ & $\frac{1}{4}$ & $\frac{1}{4}$ & 1 \\ \hline
+\end{tabular}
+\end{center}
+
+# Joint Probability and Marginal Probability: Some Facts
+
+\begin{center}
+\begin{tabular}{c| c c c c || c}\hline
+        & & \textbf{Hair Color} & & & \\ 
+\textbf{Eye Color} & Black & Brunette & Red & Blond & \\ \hline
+Brown  & 0.11 & 0.20 & 0.04 & 0.01 & 0.37 \\ 
+Blue & 0.03 & 0.14 & 0.03 & 0.16 & 0.36 \\ 
+Hazel & 0.03 & 0.09 & 0.02 & 0.02 & 0.16 \\  
+Green & 0.01 & 0.05 & 0.02 & 0.03 & 0.11 \\ \hline \hline
+     & 0.18 & 0.48 & 0.12 & 0.21 & 1 \\ \hline
+\end{tabular}
+\end{center}
+
+# Joint Probability and Marginal Probability: Some Facts
+
+>- The columns and rows of the table of joint probabilities are two different \textcolor{red}{partitions} of the set we are considering in a given context. For example, in the first illustration, the deck of cards is partitioned \textcolor{red}{by suit} column-wise and \textcolor{red}{by rank} row-wise. The set of people included in the eye and hair color data is partitioned \textcolor{red}{by hair color} column-wise and \textcolor{red}{by eye-color} row-wise.
+
+>- The \textcolor{red}{column totals} are the \textcolor{red}{marginal probabilities} of each set in the partition by column (suit or hair-color). This is an example of \textcolor{red}{the theorem of total probability}.
+
+>- The \textcolor{red}{row totals} are the \textcolor{red}{marginal probabilities} of each set in the partition by row (rank or eye-color). This is also an example of \textcolor{red}{the theorem of total probability}.
+
+>- The \textcolor{red}{grand total} of the marginal probabilities (by row or by column) is 1 (as it should be since the union of the sets in a partition is the whole set).
+
+# Theorem of Total Probability
+
+>- The Theorem of Total Probability is a generalization of \textcolor{blue}{Rule 7}, which we called the Partition of an Event Rule.
+
+>- Recall \textcolor{blue}{Rule 7} says that $P(E) = P(E \cap F) + P(E \cap F^{c})$. Here we have partitioned $E$ into disjoint sets $(E \cap F)$ and $(E \cap F^{c})$, whose union is $E$.
+
+>- The theorem of total probability provides an alternative way of computing $P(E)$ if we can somehow partition $E$.
+
+>- Suppose $\{E_{1}, E_{2}, E_{3}, \dots, E_{n}\}$ is partition of $E$. The theorem of total probability says that:\[\begin{aligned} 
+P(E) &= P(E \cap E_{1}) + P(E \cap E_{2}) + P(E \cap E_{3}) + \dots + P(E \cap E_{n}) \\
+&= \sum_{i}^{n} P(E \cap E_{i})
+\end{aligned}\]
+
+
+# Conditional Probability
+
+>- With the theorem of total probability under our belt, we can now finally talk about conditional probability.
+
+>- \textcolor{red}{The conditional probability} of $A$ given $B$ is written as \textcolor{red}{$P(A \,|\, B)$}. Key words that indicate you should use conditional probability in a problem include words like "given", "if", "dependent", "without replacement" etc. You will see lots of examples in your \textcolor{red}{Homework 6}.
+
+>- Suppose you have a bag containing 13 yellow and 17 white marbles. You decide to sample one marble at a time, \textcolor{red}{with replacement}. What is $P(\text{Yellow marble})$, $P(\text{White marble}\, | \, \text{Yellow marble})$, $P(\text{Yellow marble}\, | \,\text{White marble})$?
+
+# Conditional Probability
+
+>- Now suppose you decide to sample one marble at a time, \textcolor{red}{without replacement}? This kind of sampling introduces \textcolor{red}{dependency} between events. We need to \textcolor{red}{condition} on the \textcolor{red}{new information} we are \textcolor{red}{given} (or that we obtain) once we see the color of the marble we sampled \textcolor{red}{earlier in the sequence}. What is $P(\text{White marble}\, | \, \text{Yellow marble})$, $P(\text{Yellow marble}\, |\, \text{White marble})$?
+
+>- Notice that in general $P(E \,|\, F) \neq P(F \,|\, E)$. Recall that you showed in Quiz 1 that $\to$ is \textcolor{red}{not symmetric}. Be careful!
+
+>- Exercise. Consider the deck of cards illustration from earlier in the slides. Suppose you're drawing cards from a standard deck of 52 cards \textcolor{red}{with replacement}. What is: $P(\text{Ace of Hearts}\, |\, \text{King of Spades})$, $P(\text{Jack of Diamonds} \, | \, \text{Queen of Hearts})$, $P(\text{A red card}\, |\, \text{A black card})$?
+
+# Joint Probability from Conditional Probability
+
+>- Exercise. Consider the same deck of cards illustration from earlier in the slides. Suppose you're drawing cards from a standard deck of 52 cards \textcolor{red}{without replacement}. What is: $P(\text{Ace of Hearts}\, |\, \text{King of Spades})$, $P(\text{Jack of Diamonds} \, | \, \text{Queen of Hearts})$, $P(\text{A red card}\, |\, \text{A black card})$?
+
+>- See \textcolor{red}{Homework 6} for more exercises.
+
+>- These exercises illustrate a general principle concerning \textcolor{red}{independent events}: \vspace{0.1cm} \begin{center} Event $E$ is independent of $F$ if and only $P(E) = P(E \,| \, F)$. \end{center}
+
+>- So the independence between \textcolor{red}{two} events captures, in a sense, what we mean when we say that the occurrence of one event $E$ doesn't give \textcolor{red}{any information} we can \textcolor{red}{conditionalize upon} in order to learn about the chances of another event $F$ occurring.
+
+# Joint Probability from Conditional Probability
+
+>- Suppose we sample twice \textcolor{red}{with replacement} from the bag with 13 yellow marbles and 17 white marbles. What is: $P(\text{2 white marbles in a row})$, $P(\text{A white marble followed by a yellow marble})$, $P(\text{A yellow marble followed by a white marble})$?
+
+>- Sampling with replacement means that the sequence of samples are \textcolor{red}{independent}, i.e., the contents of the bag don't change, so we don't learn anything new that we can conditionalize upon. 
+
+>- Now suppose that we sample twice \textcolor{red}{without replacement} from the bag with 13 yellow marbles and 17 white marbles. What is: $P(\text{2 white marbles in a row})$, $P(\text{A white marble followed by a yellow marble})$, $P(\text{A yellow marble followed by a white marble})$?
+
+# Joint Probability from Conditional Probability
+
+>- Sampling without replacement means that the sequence of samples are \textcolor{red}{dependent}, i.e., the contents of the bag \textcolor{red}{change}. So after each sample we learn something new that we can conditionalize upon. 
+
+>- What these examples, have illustrated is that when two events ($E$ and $F$) are \textcolor{red}{dependent}, \textcolor{red}{their joint probability is not the product of the marginal probabilities}. In fact, you can use this fact as \textcolor{red}{a litmus test} for dependence.
+
+>- In general, when $E$ and $F$ are \textcolor{red}{not} independent, $P(E \cap F) = P(F) \times P(E | F)$. So we can add this as our final rule.\begin{itemize} \item[Rule 10] $P(E \cap F) = P(F) \times P(E | F)$ \end{itemize}
+
+>- From \textcolor{blue}{Rule 10} we define \textcolor{red}{the conditional probability} of $E$ \textcolor{red}{given} $F$ as: \vspace{0.1cm} \[
+\boxed{P(E\, | \,F) = \frac{P(E \cap F)}{P(F)}} \]
+
+
+# Bayes' Theorem
+
+>- A \textcolor{red}{very powerful} (immediate) consequence of the definition of conditional probability is Bayes' Theorem, named after Rev. Thomas Bayes. In \textcolor{red}{Homework 6} you will derive Bayes' Theorem. Here I just state this remarkable theorem, which we shall get a lot of mileage out of.
+\[
+\boxed{
+P(E \,| \, F) = \frac{P(F | E) P(E)}{P(F|E)P(E) + P(F|E^{c})P(E^{c})}
+}
+\]
+
+>- A slightly more general form of Bayes Theorem says that if $\{E_{1}, E_{2}, E_{3}, E_{4}, \dots, E_{n}\}$ is a partition of $E$, then:\[
+\boxed{
+P(E \,| \, F) = \frac{P(F | E) P(E)}{\sum_{i}^{n}P(F|E_{i})P(E_{i})}
+}
+\]
+
+>- Memorize this!
 
 
 
