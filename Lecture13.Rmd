@@ -1,0 +1,117 @@
+---
+title: | 
+  | Phil/LPS 31 Introduction to Inductive Logic
+  | Lecture 13
+author: |
+    | David Mwakima
+    | dmwakima@uci.edu
+    | Department of Logic and Philosophy of Science
+    | University of California, Irvine
+date: "May 17th 2023"
+output: beamer_presentation
+header-includes:
+  - \setbeamertemplate{footline}[page number]
+---
+
+# Topics
+
+\begin{itemize}
+\item Odds
+\item Expected Value (Discrete Case Only)
+\end{itemize}
+
+# Recap: Probability Rules
+
+\begin{itemize}
+\item[Rule 1] $P(S) = 1$ 
+\item[Rule 2] $0 \leq P(E) \leq 1$ 
+\item[Rule 3] If $E \cap F = \emptyset$, then $P(E \cup F) = P(E) + P(F)$ (Special Disjunction Rule)
+\item[Rule 4] $P(E \cup E^{c}) = 1$ 
+\item[Rule 5] $P(E^c) = 1 - P(E)$
+\item[Rule 6] $P(\emptyset) = 0$ 
+\item[Rule 7] $P(E) = P(E \cap F) + P(E \cap F^{c})$
+\item[Rule 8] $P(E \cup F) = P(E) + P(F) - P(E \cap F)$ (General Disjunction Rule)
+\item[Rule 9] $P(E \cap F) = P(E) \times P(F)$ if $E$ and $F$ are independent.
+\item[Rule 10] $P(E \cap F) = P(E) \times P(F | E)$ if $E$ and $F$ are dependent.
+\end{itemize}
+
+# Recap: Conditional Probability & Bayes' Theorem
+
+>- Conditional Probability. This is a consequence of Rule 10:
+
+\[
+P(E \,| \,F) = \frac{P(E \cap F)}{P(F)}
+\]
+
+>- Bayes' Theorem
+\[
+P(E \,|\, F) = \frac{P(F | E)P(E)}{P(F)}
+\]
+
+>- If $\{E_{1}, E_{2},\dots, E_{n}\}$ is a partition of $E$, then from the theorem of total probability:
+\begin{center}
+\[
+\begin{aligned}
+P(E \,| \, F) &= \frac{P(F\, |\, E)P(E)}{P(F\,|\,E_{1})P(E_{1}) +\dots + P(F\,|\,E_{n})P(E_{n})} \nonumber  \\
+              &= \frac{P(F \,|\, E)P(E)}{\sum_{i = 1}^{n}P(F\,|\,E_{i})P(E_{i})}
+\end{aligned}
+\]
+\end{center}
+
+
+# Alternative ways of talking about chance
+
+>- There are other ways that people talk about chances that are related to \textcolor{red}{but different} from probability. Let's talk about that today. 
+
+>- Consider the following sentences: 
+\begin{itemize}
+\item The \textcolor{red}{odds} are 3 to 2 in favor of Mage winning the 2023 Kentucky Derby. 
+\item The \textcolor{red}{odds are fifty fifty} that Real Madrid will beat Manchester City in the Champions League Semi-Final Today.
+\end{itemize}
+
+>- Odds are a useful way of talking about the chances of an event and many people often go back and forth between probability and odds as if they mean the same thing. They don't!
+
+>- In this lecture we will see why and also introduce ways of going (1) from probability to odds and (2) from odds to probability.
+
+# From Probabilities to Odds
+
+>- If the probability of an event $E$ is $p$, then we know by Rule 5, that the probability of $E^{c}$ is $1 - p$. We define the \textcolor{red}{odds in favor}, or simply just odds, of $E$ as: \[
+\mathcal{O}(E) = \frac{p}{1 - p}
+\]
+
+>- Examples. Calculate the odds in favor of the following events.\begin{itemize}
+\item[(1)] The probability that Manchester City win after being ahead by 2 - 0 at half time is 0.8.
+\item[(2)] The probability that a family has two children who are both girls is $\frac{1}{2}$. 
+\end{itemize}
+
+# From Probabilities to Odds
+
+>- Some properties of odds: \begin{itemize} 
+\item[(1)] $\mathcal{O}(E)$ can be any real number in the interval $[0, +\infty)$.
+\item[(2)] If $\mathcal{O}(E)$ > 1, then $P(E) > P(E^{c})$
+\item[(3)] If $\mathcal{O}(E)$ < 1, then $P(E) < P(E^{c})$
+\item[(4)] If $\mathcal{O}(E) = 1$, then $P(E) = P(E^{c})$
+\end{itemize}
+
+# From Probabilities to Odds
+
+>- We will see later that the \textcolor{red}{Odds Ratio} provides a good measure of association (or dependence) between two groups in the same way that we used joint and marginal probabilities to assess independence between groups.
+
+>- Odds can be extremely useful if what you are interested in is comparing the probability of an event $E$ and its complement $E^{c}$. 
+
+>- Examples of complementary events are usually binary events like "Success" or "Failure"; "Win" or "Lose"; "Adverse Health Effect" or "No adverse Effect".
+
+>- We will see later that the \textcolor{red}{Odds Ratio} provides a good measure of association (or dependence) between two groups in the same way that we used joint and marginal probabilities to assess independence between groups.
+
+
+
+# From odds to probabilities
+
+
+
+
+
+
+
+
+
