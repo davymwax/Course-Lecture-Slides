@@ -75,13 +75,17 @@ P(E \,| \, F) &= \frac{P(F\, |\, E)P(E)}{P(F\,|\,E_{1})P(E_{1}) +\dots + P(F\,|\
 
 # From Probabilities to Odds
 
->- If the probability of an event $E$ is $p$, then we know by Rule 5, that the probability of $E^{c}$ is $1 - p$. We define the \textcolor{red}{odds in favor}, or simply just odds, of $E$ as: \[
+>- If the probability of an event $E$ is $p$, then we know by Rule 5, that the probability of $E^{c}$ is $1 - p$. 
+
+>- We define the \textcolor{red}{odds in favor} of E, or simply just \textcolor{red}{odds} of $E$, as: \[
 \mathcal{O}(E) = \frac{p}{1 - p}
 \]
 
+>- We write $\mathcal{O}(E) = p:1 - p$ and read this as "Odds in favor of $E$ are p to 1 - p".
+
 >- Examples. Calculate the odds in favor of the following events.\begin{itemize}
-\item[(1)] The probability that Manchester City win after being ahead by 2 - 0 at half time is 0.8.
-\item[(2)] The probability that a family has two children who are both girls is $\frac{1}{2}$. 
+\item[(1)] The odds of Manchester City winning if the probability that Manchester City will win after being ahead 2 - 0 at half time is 0.8.
+\item[(2)] The odds of having two girls, if the probability that a family has two children who are both girls is $\frac{1}{4}$. 
 \end{itemize}
 
 # From Probabilities to Odds
@@ -91,21 +95,115 @@ P(E \,| \, F) &= \frac{P(F\, |\, E)P(E)}{P(F\,|\,E_{1})P(E_{1}) +\dots + P(F\,|\
 \item[(2)] If $\mathcal{O}(E)$ > 1, then $P(E) > P(E^{c})$
 \item[(3)] If $\mathcal{O}(E)$ < 1, then $P(E) < P(E^{c})$
 \item[(4)] If $\mathcal{O}(E) = 1$, then $P(E) = P(E^{c})$
+\item[(5)] $\mathcal{O}(E)$ is invariant to scaling.
+\item[(6)] $\mathcal{O}(E^{c})$, read as "odds against $E$" is given by the reciprocal of $\mathcal{O}(E)$
 \end{itemize}
+
+>- Exercise. What are the ways that probabilities are different from odds given these properties of odds?
 
 # From Probabilities to Odds
 
+>- Odds can be extremely useful if what you are interested in is \textcolor{red}{the relative likelihood} of an event $E$ and its complement $E^{c}$. 
+
+>- Examples of complementary events are usually \textcolor{red}{binary events} like "Success" or "Failure"; "Win" or "Lose"; "Adverse Health Effect" or "No adverse Effect".
+
+>- Later in the course we will see that on the Bayesian interpretation of probability, odds provide a useful way of going from fair bets (based on odds) to probabilities as \textcolor{red}{degrees of belief}.
+
 >- We will see later that the \textcolor{red}{Odds Ratio} provides a good measure of association (or dependence) between two groups in the same way that we used joint and marginal probabilities to assess independence between groups.
-
->- Odds can be extremely useful if what you are interested in is comparing the probability of an event $E$ and its complement $E^{c}$. 
-
->- Examples of complementary events are usually binary events like "Success" or "Failure"; "Win" or "Lose"; "Adverse Health Effect" or "No adverse Effect".
-
->- We will see later that the \textcolor{red}{Odds Ratio} provides a good measure of association (or dependence) between two groups in the same way that we used joint and marginal probabilities to assess independence between groups.
-
-
 
 # From odds to probabilities
+
+>- Going from odds to probabilities we just reverse the operations.
+
+>- Recall that: \[
+\mathcal{O}(E) = \frac{p}{1 - p}
+\]
+
+>- Solving this equation for $p$ we get:
+\[
+p = \frac{\mathcal{O}(E)}{1 + \mathcal{O}(E)}
+\]
+
+# From odds to probabilities
+
+>- Exercise. Given the following odds find the probability of the following events. \begin{itemize} \item[(1)] The odds of Real Madrid making it to the final after being 3 - 0 down at the 80th minute is 1:9.
+\item[(2)] There are even odds of getting a head after tossing a coin once.
+\end{itemize}
+
+>- See \textcolor{red}{Homework 7} for more exercises.
+
+
+# Expected Value (Discrete Case)
+
+>- The number of telephone calls received at a remote call center per minute show the following frequencies:
+\begin{center}
+\begin{tabular}{c c}\hline
+Number of Calls & Count \\ \hline
+1 & 10\\
+2 & 8\\
+3 & 4\\
+4 & 4\\
+5 & 2\\
+6 & 2\\
+7 & 1\\
+8 & 1 \\ \hline
+TOTAL & 32 \\
+\hline
+\end{tabular}
+\end{center}
+
+# Expected Value (Discrete Case)
+
+>- The number of calls received per minute at a remote call center is called \textcolor{red}{a random variable}. 
+
+>- What is a random variable? A random variable has a technical definition that we shall not consider in this class. But! Let me mention that a random variable is neither a variable nor "random", whatever that means.
+
+>- For our purposes it is enough to think that whenever we have an event that can occur with different probabilities, we can \textcolor{red}{model} the \textcolor{red}{number of occurrences} of that event using a \textcolor{red}{probability distribution}
+
+>- Using the probability distribution, we can then ask useful questions such as: what is the \textcolor{red}{expected value} or \textcolor{red}{expectation} of the random variable.
+
+# Expected Value (Discrete Case)
+
+>- The expected value $E(X)$, "read as the expected value of a random variable $X$, can be helpfully thought of as the \textcolor{red}{average} or \textcolor{red}{mean} of $X$.
+
+>- In fact $E(X)$ is \textcolor{red}{a weighted average}, where we weigh each possible value of $X$, $x_{i}$ say, by its probability $p_{i}$. 
+
+>- For example, in the call center example, we can let the number of calls received at the center be a random variable $X$. We can calculate its expected value of the number of calls received per minute in two ways. Let's do that.
+
+>- Here is the data for your convenience.
+
+# Expected Value (Discrete Case)
+
+\begin{center}
+\begin{tabular}{c c}\hline
+Number of Calls & Count \\ \hline
+1 & 10\\
+2 & 8\\
+3 & 4\\
+4 & 4\\
+5 & 2\\
+6 & 2\\
+7 & 1\\
+8 & 1 \\ \hline
+TOTAL & 32 \\
+\hline
+\end{tabular}
+\end{center}
+
+
+# Expected Value (Discrete Case)
+
+>- Let $\{ a_{1}, a_{2}, a_{3}, \dots, a_{n} \}$ be the possible values that a random variable $A$ can take and let $\{ p_{1}, p_{2}, p_{3}, \dots, p_{n}\}$ be the probabilities that it takes on these values.
+
+>- The \textcolor{red}{expected value} of $A$ is given by:
+\[
+\begin{aligned}
+E(A) &= a_{1}p_{1} + a_{2}p_{2} + a_{3}p_{3} + \dots + a_{n}p_{n} \\
+    &= \sum_{i = 1}^{n} a_{i}p_{i}
+\end{aligned}
+\]
+
+>- Commit this formula to memory!
 
 
 
