@@ -1,0 +1,105 @@
+---
+title: | 
+  | Phil/LPS 31 Introduction to Inductive Logic
+  | Lecture 14
+author: |
+    | David Mwakima
+    | dmwakima@uci.edu
+    | Department of Logic and Philosophy of Science
+    | University of California, Irvine
+date: "May 19th 2023"
+output: beamer_presentation
+header-includes:
+  - \setbeamertemplate{footline}[page number]
+---
+
+# Topics
+
+\begin{itemize}
+\item Recap: Is inductive logic possible?
+\item Introduction to Decision Theory
+\item Utilities and Losses
+\item Expected Utility and Risk
+\item Principles of Rational Choice
+\end{itemize}
+
+# Recap: Is inductive logic possible?
+
+Here's Hume (1748) \textit{An Enquiry Concerning Human Understanding}: 
+\bigskip
+\begin{quote}
+In vain do you pretend to have learned the nature of bodies from your past experience. Their secret nature, and consequently all their effects and influence, may change without any change in their sensible qualities. This happens sometimes, and with regard to some objects: why may it not happen always, and with regard to all objects? \textcolor{red}{What logic}, what process or argument secures you against this supposition? My practice, you say, refutes my doubts. But you mistake the purport of my question. As an agent, I am quite satisfied in the point; but as a philosopher...I want to learn the foundation of this inference. 
+\end{quote}
+
+
+# Recap: Is inductive logic possible?
+
+>- We think that is better to use the scientific method to make predictions rather than custom or habit, astrology, crystal gazing, palmistry, even simply guessing. But why are these rules of inductive inference bad?
+
+>- In the case of deductive logic, the justification of the rules of inference there was that the good rules of inference are precisely those rules of inference that are truth-preserving. But we have seen that these rules are truth-preserving because they are non-ampliative.
+
+>- Do we have a similar criterion for selecting the inductive rules of inference that are good? In other words, \textcolor{red}{is inductive logic possible?}
+
+# Is probability the very guide of life?
+
+\begin{quote} But to us, probability is the very guide of life.\end{quote} Joseph Butler (1736) \textit{The Analogy of Religion, Natural and Revealed, to the Constitution and Course of Nature}
+
+
+# Is probability the true logic for this world?
+
+\begin{quote}
+They say that Understanding ought to work by the rules of right reason. These rules are, or ought to be, contained in Logic; but the actual science of Logic is conversant at present only with things either certain, impossible, or entirely doubtful, none of which (fortunately) we have to reason on. Therefore the \textcolor{red}{the True Logic} for this world is the Calculus of Probabilities, which takes account of the magnitude of the probability (which is, or which ought to be in a reasonable man's mind). This branch of Math., which is generally thought to favor gambling, dicing, and wagering, and therefore highly immoral, is the only "Mathematics for Practical [People]', as we ought to be.
+\end{quote} James Clerk Maxwell's Letter to Lewis Campbell, c. July 1850
+
+# Introduction to Decision Theory
+
+>- Following Rudolf Carnap (1971) "Inductive Logic and Rational Decisions", we say \textcolor{red}{inductive logic is the logic of reliable on-going scientific inquiry or rational deliberation}.
+
+>- The goal, then, is to characterize good inductive rules of inferences as the rules that \textcolor{red}{maximize expected utility} or \textcolor{red}{minimize risk}.
+
+>- Such a characterization will give us a precise of way of saying what we mean when we say that good rules of inductive inference are those rules that lead to "favorable consequences most of the time."
+
+>- The way we do this is \textcolor{red}{by merging}: (1) probability theory (which gives us the "most of the time part" using \textcolor{red}{expected value}) and (2) decision theory (which gives principles we can use to "evaluate consequences", namely the concepts of \textcolor{red}{utility} and \textcolor{red}{loss}).
+
+
+# Introduction to Decision Theory
+
+>- The synthesis of (1) probability theory and (2) decision theory is part of \textcolor{red}{a promising and currently on-going} approach to formulating principles of inductive logic as the logic of reliable on-going scientific inquiry or rational deliberation.
+
+>- In fact, this kind of synthesis was at the foundation of the Bayesian interpretation of probability and the application of Bayesian methods in inductive inference.
+
+>- Here's how Rev. Thomas Bayes famous for Bayes' Theorem put it in the seminal "An Essay towards solving a problem in the Doctrine of Chances" published in 1763.
+\bigskip
+\begin{quote}
+The probability of any event is the ratio between the value at which an
+expectation depending on the happening of the event ought to be computed, and the chance of the thing expected upon it’s happening. 
+\end{quote} 
+
+# Introduction to Decision Theory
+
+>- In Proposition 2 of that essay he proves that:\bigskip
+\begin{quote}
+If a person has an expectation depending on the happening of an event, the probability of the event is to the probability of its failure as his loss if it fails to his gain if it happens.
+\end{quote}
+
+>- Essentially, what Thomas Bayes is saying here is that \textcolor{red}{rational decision making/deliberation} and the \textcolor{red}{probability} one assigns to events \textcolor{red}{are linked}. 
+
+>- This is quite remarkable! It means that you can: (1) use \textcolor{red}{the expected value} of the losses/gains on your decisions \textcolor{red}{to calibrate} your probabilities; and (2) you can use probabilities to decide upon which actions are "rational" to take based on their expected losses (risks) or expected gains.
+
+>- Let us see how we can do this more formally.
+
+# Introduction to Decision Theory
+
+
+
+# Introduction to Decision Theory
+
+
+
+
+
+
+
+
+
+
