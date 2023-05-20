@@ -227,7 +227,7 @@ Invoke  & -1 & -1 \\ \hline
 
 >- Suppose President Biden after returning from his trip from Japan knows that the odds that U.S. House of Representatives will agree to a deal are $3:5$, what is the risk of each act that President Biden may take?
 
->- How would you advice President Biden?
+>- How would you advise President Biden?
 
 
 
