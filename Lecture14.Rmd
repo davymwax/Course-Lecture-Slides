@@ -55,7 +55,7 @@ They say that Understanding ought to work by the rules of right reason. These ru
 
 >- Following Rudolf Carnap (1971) "Inductive Logic and Rational Decisions", we say \textcolor{red}{inductive logic is the logic of reliable on-going scientific inquiry or rational deliberation}.
 
->- The goal, then, is to characterize good inductive rules of inferences as the rules that \textcolor{red}{maximize expected utility} or \textcolor{red}{minimize risk}.
+>- The goal, then, is to characterize good inductive rules of inference as the rules that \textcolor{red}{maximize expected utility} or \textcolor{red}{minimize risk}.
 
 >- Such a characterization will give us a precise of way of saying what we mean when we say that good rules of inductive inference are those rules that lead to "favorable consequences most of the time."
 
@@ -203,7 +203,7 @@ Invoke  & -1 & -1 \\ \hline
 
 >- Then we can use this epistemic probability $p_{i}$ to weigh the states and compute the \textcolor{red}{expected value} of functions of these states.
 
->- Since consequences are joint functions of acts and states, we can calculate the expected value of taking and act $A_{i}$, given state $S_{i}$.
+>- Since consequences are joint functions of acts and states, we can calculate the expected value of taking an act $A_{i}$, given state $S_{i}$.
 
 >- This will lead to the concept of expected utility or expected loss (or risk)
 
