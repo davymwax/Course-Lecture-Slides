@@ -95,8 +95,8 @@ If a person has an expectation depending on the happening of an event, the proba
 
 # Decision Problems: Illustration 1
 
->- You cannot bring both to the dinner party because you're on a budget. So you are faced with \textcolor{red}{a decision problem} which we may represent in the following \textcolor{red}{decision table} (the right table) and corresponding
-\textcolor{red}{desirability table} (the left table).
+>- You cannot bring both to the dinner party because you're on a budget. So you are faced with \textcolor{red}{a decision problem} which we may represent in the following \textcolor{red}{decision table} (the left table) and corresponding
+\textcolor{red}{desirability table} (the right table).
 
 \bigskip
 \begin{columns}
