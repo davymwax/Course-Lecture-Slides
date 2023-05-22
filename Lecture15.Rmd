@@ -258,24 +258,57 @@ Rosé & 1 & 2 & 1 \\ \hline
 
 >- They also enjoy the right kind of properties that make calculations of expected values possible.
 
->- Some of these properties are: \begin{itemize}\item[(1)] Like ordinal utilities, cardinal utilities are unique up to \textcolor{red}{strictly increasing} transformations. \item[(2)] Cardinal utilities are invariant under \textcolor{red}{positive} scaling and \textcolor{red}{positive} translation. Barrett and Huttegger call this \textcolor{red}{positive affine transformation} So cardinal utilities are like hours and seconds or temperature intervals. \item[(3)] From (2) we \textcolor{red}{can calculate expected utilities} using cardinal utilities.
+>- Some of these properties are: \begin{itemize}\item[(1)] Like ordinal utilities, cardinal utilities are unique up to \textcolor{red}{strictly increasing} transformations. \item[(2)] Cardinal utilities are invariant under \textcolor{red}{positive} scaling and \textcolor{red}{positive} translation. Barrett and Huttegger call this \textcolor{red}{positive affine transformation} So cardinal utilities are like hours and seconds. \item[(3)] From (2) we \textcolor{red}{can calculate expected utilities} using cardinal utilities.
 \item[(4)] Provide \textcolor{red}{information} about \textcolor{red}{the strength of preferences}.\end{itemize}
 
-# Decision Problems Under Risk
+# Expected Utility
 
+>- The expected utility of an act is the weighted average of the consequences of that act where the weights on the consequences are determined by the probability distribution on states.
 
-
-
-# Expected Utility and Risk
-
+>- Suppose that the states in a decision problem are listed as $\{S_{1}, S_{2}, \dots, S_{n}\}$ and that there is a probability distribution on the states that assigns them probabilities $\{P(S_{1}), P(S_{2}), \dots, P(S_{n})\}$. Then the expected utility of an act $A$
 \[
 \begin{aligned}
-U(A_{1}) &= u(A | S_{1})P(S_{1}) + u(A | S_{2})P(S_{1}) + \dots u(A | S_{n})P(S_{n}) \nonumber \\
+U(A) &= u(A | S_{1})P(S_{1}) + u(A | S_{2})P(S_{2}) + \dots + u(A | S_{n})P(S_{n}) \nonumber \\
         &= \sum_{i}^{n} u(A \,|\,S_{i})P(S_{i})
 \end{aligned}
 \]
 
-# Maximize Expected Utility
+>- In other words, take the utility of that action given each state of the word multiplied by the probability that the state obtains and sum everything up.
+
+# Expected Utility
+
+>- Consider the dinner party example again. This time the entries are cardinal utilities. \begin{center}
+\begin{tabular}{|c |c |c|}\hline
+    & Fish  & Chicken \\ \hline
+White & 4 & 5 \\ 
+Red  & 2 & 1 \\ 
+Rosé & 3 & 3 \\ \hline
+\end{tabular}
+\end{center}
+
+>- Exercise.\begin{itemize} Suppose you know that there are even odds that the host will serve fish or chicken calculate the expected value of $A_{1}$, $A_{2}$ and $A_{3}$ \end{itemize}
+
+
+# Maximizing Expected Utility
+
+>- The \textcolor{red}{cardinal} principle (you see what I did there?) of decision problems under risk is the \textcolor{red}{principle of maximizing expected utility} if you're using a cardinal utility function.
+
+>- This means that in any decision problem, choose the act that maximizes expected utility with respect to your probability distribution on states.
+
+# Maximizing Expected Utility
+
+>- For the following exercise, refer to the following desirability table. \begin{center}
+\begin{tabular}{|c |c |c| c |}\hline
+    & Fish & Chicken & Lamb \\ \hline
+White & 3 & 4 & 1 \\ 
+Red  & 2 & 1 & 4 \\ 
+Rosé & 3 & 4 & 4 \\ \hline
+\end{tabular}
+\end{center}
+
+>- Suppose you know that because of rising tariffs on fish imports from Canada and recent shortages of lamb, you host is likely to serve chicken with probability 0.8, fish with probability 0.15 and lamb with probability 0.05. What wine should you choose to bring to the dinner party according to the principle of maximizing expected utility?
+
+# Minimizing Risk
 
 
 
