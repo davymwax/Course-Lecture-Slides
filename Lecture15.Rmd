@@ -1,0 +1,63 @@
+---
+title: | 
+  | Phil/LPS 31 Introduction to Inductive Logic
+  | Lecture 15
+author: |
+    | David Mwakima
+    | dmwakima@uci.edu
+    | Department of Logic and Philosophy of Science
+    | University of California, Irvine
+date: "May 22nd 2023"
+output: beamer_presentation
+header-includes:
+  - \setbeamertemplate{footline}[page number]
+---
+
+# Topics
+
+\begin{itemize}
+\item Ordinal and Cardinal Utilities
+\item Expected Utility and Risk
+\item Principles of Rational Choice
+\end{itemize}
+
+
+# Decision Problems: Rational Choice
+
+>- Specify the states of the dinner party example.
+
+>- Specify the acts that you may take.
+
+>- Suppose you know that there are even odds that the host will serve red meat or white meat, what is the expected utility of each act that you may take?
+
+>- Now suppose that because of the rising cost of beef, the host will serve white meat with probability 0.8, what is the expected utility of each act that you may take?
+
+>- What do think is the best decision here?
+
+# Decision Problems: Rational Choice
+
+>- Specify the states of President Biden's decision problem.
+
+>- Specify the acts that President Biden may take
+
+>- Suppose President Biden after returning from his trip from Japan knows that the odds that U.S. House of Representatives will agree to a deal are $3:5$, what is the risk of each act that President Biden may take?
+
+>- How would you advise President Biden?
+
+# Decision Problems: Rational Choice
+
+>- We are now in a position to formulate some principles of rational choice that could form the basis of an inductive logic as the logic of reliable on-going scientific inquiry or rational deliberation.
+
+>- First let us assume that states can be modeled as random variables with some probability distribution. That is, suppose that we have some \textcolor{red}{epistemic probability} $p_{i}$ that $S_{i}$ will happen.
+
+>- Then we can use this epistemic probability $p_{i}$ to weigh the states and compute the \textcolor{red}{expected value} of functions of these states.
+
+>- Since consequences are joint functions of acts and states, we can calculate the expected value of taking an act $A_{i}$, given state $S_{i}$.
+
+>- This will lead to the concept of expected utility or expected loss (or risk)
+
+# Ordinal and Cardinal Utilities
+
+
+
+

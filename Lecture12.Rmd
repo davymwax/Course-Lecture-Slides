@@ -219,7 +219,7 @@ P(E \,| \, F) = \frac{P(F | E) P(E)}{P(F|E)P(E) + P(F|E^{c})P(E^{c})}
 }
 \]
 
->- A slightly more general form of Bayes Theorem says that if $\{E_{1}, E_{2}, E_{3}, E_{4}, \dots, E_{n}\}$ is a partition of an event $E$, then for any $E_{i} \subset E$:\[
+>- A slightly more general form of Bayes Theorem says that if $\{E_{1}, E_{2}, E_{3}, E_{4}, \dots, E_{n}\}$ is a partition of $S$, then for any $E_{i} \subset S$:\[
 \boxed{
 P(E_{i} \,| \, F) = \frac{P(F | E_{i}) P(E_{i})}{\sum_{i = 1}^{n}P(F|E_{i})P(E_{i})}
 }

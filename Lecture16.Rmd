@@ -1,0 +1,20 @@
+---
+title: | 
+  | Phil/LPS 31 Introduction to Inductive Logic
+  | Lecture 16
+author: |
+    | David Mwakima
+    | dmwakima@uci.edu
+    | Department of Logic and Philosophy of Science
+    | University of California, Irvine
+date: "May 24th 2023"
+output: beamer_presentation
+header-includes:
+  - \setbeamertemplate{footline}[page number]
+---
+
+\begin{itemize}
+\item Dutch Books and Coherence
+\item Bayesian Interpretation of Probability
+\item Other Interpretations of Probability
+\end{itemize}
