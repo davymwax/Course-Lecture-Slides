@@ -16,15 +16,22 @@ header-includes:
 # Topics
 
 \begin{itemize}
+\item Part 1: Decision Problems under Ignorance
+\begin{itemize}
 \item Ordinal Utilities
-\item Strict Dominance Principle
+\item Dominance Principles
+\item Maximin
+\end{itemize}
+\item Part 2: Decision Problems under Information
+\begin{itemize}
 \item Cardinal Utilities
 \item Expected Utility and Risk
-\item Principles of Rational Choice
+\item Principles of Rational Choice under Information
+\end{itemize}
 \end{itemize}
 
 
-# Decision Problems: Rational Choice
+# Recap: Decision Problems: Acts, States, Consequences, Utility/Loss Functions
 
 >- Specify the states of the dinner party example.
 
@@ -36,7 +43,7 @@ header-includes:
 
 >- In any case, what is the rational choice for you?
 
-# Decision Problems: Rational Choice
+# Recap: Decision Problems: Acts, States, Consequences, Utility/Loss Functions
 
 >- Specify the states of President Biden's decision problem.
 
@@ -48,15 +55,17 @@ header-includes:
 
 >- In any case, what is the rational choice for President Biden?
 
-# Decision Problems Under Ignorance
+# Classes of Decision Problems
 
 >- In order to articulate the principles of rational choice in decision problems. We shall distinguish between decision problems under \textcolor{red}{ignorance} from decision problems under \textcolor{red}{information}.
 
->- Decision problems under ignorance are also known as decision problems under lack of information or decision problems under uncertainty.
+>- Decision problems under ignorance are also known as decision problems under lack of information or decision problems under uncertainty. The relevant sense of "information" here is information about the \textcolor{red}{probability distribution} of states. The relevant sense of "uncertainty" here is that we don't \textcolor{red}{know} \textcolor{red}{the probabilities} with which the states will occur \textcolor{red}{with certainty}.
 
->- The relevant sense of "information" here is information about the \textcolor{red}{probability distribution} of states. 
+>- Decision problems under information are also known as decision problems under certainty or risk. The relevant sense of "certainty" here is that one is certain about the \textcolor{red}{probability distribution} of states. So one \textcolor{red}{can compute the risk} associated with taking a decision.
 
->- The relevant sense of "uncertainty" here is that we don't \textcolor{red}{know} \textcolor{red}{the probabilities} with which the states will occur \textcolor{red}{with certainty}.
+# {.flexbox .vcenter}
+
+### Part 2: Decision Problems under Ignorance
 
 # Ordinal Utilities
 
@@ -158,9 +167,9 @@ Rosé & 3 & 3 \\ \hline
 \end{center}
 
 >- Exercise. Refer to the desirability table for the dinner party example to answer the following questions. \begin{itemize}
-\item $A_{1} \succeq A_{3}$?
-\item $A_{1} \succ A_{2}$?
-\item $A_{3} \succeq A_{2}$?
+\item Does $A_{1} \succeq A_{3}$?
+\item Does $A_{1} \succ A_{2}$?
+\item Does $A_{3} \succeq A_{2}$?
 \end{itemize}
 
 # Strict and Weak Dominance Principle
@@ -175,23 +184,86 @@ Rosé & 3 & 4 & 4 \\ \hline
 \end{center}
 
 >- Exercise. Refer to the desirability table for the dinner party example to answer the following questions. \begin{itemize}
-\item $A_{1} \succeq A_{3}$?
-\item $A_{3} \succ A_{1}$?
-\item $A_{3} \succeq A_{2}$?
-\item $A_{3} \succ A_{2}$?
+\item Does $A_{1} \succeq A_{3}$?
+\item Does $A_{3} \succ A_{1}$?
+\item Does $A_{3} \succeq A_{2}$?
+\item Does $A_{3} \succ A_{2}$?
 \item Does the strong dominance principle imply the weak dominance principle?
+\end{itemize}
+
+# Strict and Weak Dominance Principle
+
+>- Now suppose \begin{center}
+\begin{tabular}{|c |c |c| c |}\hline
+    & Fish  & Chicken & Lamb \\ \hline
+White & 3 & 4 & 4 \\ 
+Red  & 2 & 1 & 4 \\ 
+Rosé & 3 & 4 & 4 \\ \hline
+\end{tabular}
+\end{center}
+
+>- Exercise. Refer to the desirability table for the dinner party example above to answer the following questions. \begin{itemize}
+\item Does $A_{1} \succeq A_{3}$?
+\item Does $A_{3} \succeq A_{1}$?
+\item Does $A_{1} \succ A_{2}$?
+\item Does $A_{3} \succ A_{2}$?
+\item How would you decide in this case?
 \end{itemize}
 
 # Maximin Principle
 
+>- The last principle for decision problems under ignorance is known as the \textcolor{red}{maximin principle}.
+
+>- The maximin principle focuses on the worst possible outcome of each alternative act. Essentially, we're asking \textcolor{red}{what's the worst that can happen?}
+
+>- According to this principle, one should \textcolor{red}{MAX}imise the \textcolor{red}{MIN}imal value obtainable with each act. If the worst possible outcome of one alternative is better than that of another, then the former should be chosen.
+
+
+# Maximin Principle
+
+>- \begin{center}
+\begin{tabular}{|c |c |c| c |}\hline
+    & Fish  & Chicken & Lamb \\ \hline
+Red  & 0 & 1 & 4 \\ 
+Rosé & 1 & 2 & 1 \\ \hline
+\end{tabular}
+\end{center}
+
+>- Exercise. Refer to the desirability table for the dinner party example above to answer the following questions. \begin{itemize}
+\item What is the worst possible outcome for $A_{2}$? How about $A_{3}$? 
+\item Does $A_{3} \succeq A_{2}$?
+\item Why would an agent choose $A_{3}$?
+\end{itemize}
+
+>- There are other principles of rational choice in the context of decisions under ignorance. But we shall not cover them in this introductory course. The book by Martin Peterson \textit{An Introduction to Decision Theory} is highly recommended for this.
+
+# {.flexbox .vcenter}
+
+### Part 1: Decision Problems under Information
+
 
 # Cardinal Utilities
 
+>- The principles of rational choice under information require an agent to \textcolor{red}{make use} of this information to inform their decision.
 
-# Minimax: MINimize the MAXimum regret
+>- The available information which the agent is assumed to know with certainty is \textcolor{red}{the probability distribution of the states}. Here the agent is modeling the states of the world as a random variable.
 
+>- This means that the agent can also calculate the expected value of functions of these states, namely, consequences of an act.
+
+>- However, not just any concept of utility will do. We have seen that because ordinal utilities cannot be added or multiplied, we cannot use them to calculate expected values. Further ordinal utilities do not quantify the strength of preference, they simply respect the ordering of our preferences.
+
+# Cardinal Utilities
+
+>- Cardinal utilities are the right concept of utility to quantify the strength of preference.
+
+>- They also enjoy the right kind of properties that make calculations of expected values possible.
+
+>- Some of these properties are: \begin{itemize}\item[(1)] Like ordinal utilities, cardinal utilities are unique up to \textcolor{red}{strictly increasing} transformations. \item[(2)] Cardinal utilities are invariant under \textcolor{red}{positive} scaling and \textcolor{red}{positive} translation. Barrett and Huttegger call this \textcolor{red}{positive affine transformation} So cardinal utilities are like hours and seconds or temperature intervals. \item[(3)] From (2) we \textcolor{red}{can calculate expected utilities} using cardinal utilities.
+\item[(4)] Provide \textcolor{red}{information} about \textcolor{red}{the strength of preferences}.\end{itemize}
 
 # Decision Problems Under Risk
+
+
 
 
 # Expected Utility and Risk
