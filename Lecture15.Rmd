@@ -349,18 +349,17 @@ Rosé & 3 & 4 & 4 \\ \hline
 
 # Minimizing Risk
 
-Consider President Biden's modified \emph{hypothetical} loss function with the additional action that President Biden does nothing.
+Consider President Biden's modified \emph{hypothetical} loss function modified in such a way that President Biden does nothing.
 \bigskip
 \begin{center}
 \begin{tabular}{|p{0.2\textwidth}| p{0.2\textwidth} p{0.3\textwidth}|}\hline
        & Deal  & No Deal \\ 
-Invoke$^{c}$ & 0 & -10 \\ 
 Invoke  & -1 & -1 \\ 
 Do Nothing & 0 & -10 \\ \hline
 \end{tabular}
 \end{center}
 
-
+Exercise. Suppose you that President Biden knows that the odds are 3:5 that a deal will be reached with the U.S. House of Representative Majority Leader Kevin McCarthy. What act would you advice President Biden to take in order to avoid having the Federal Government default on its debt?
 
 
 
