@@ -37,9 +37,9 @@ header-includes:
 
 >- Specify the acts that you may take.
 
->- Suppose you do not know what the host will serve, how would you decide what wine to bring? You are making a decision under ignorance or lack of information.
+>- Suppose you do not know what the host will serve, how would you decide what wine to bring? You are making \textcolor{red}{a decision under ignorance or lack of information}.
 
->- Suppose you know that there are even odds that the host will serve red meat or white meat, how would you decide what to bring? You are making a decision under information.
+>- Suppose you know that there are even odds that the host will serve red meat or white meat, how would you decide what to bring? You are making a \textcolor{red}{decision under information}.
 
 >- In any case, what is the rational choice for you?
 
@@ -49,9 +49,9 @@ header-includes:
 
 >- Specify the acts that President Biden may take
 
->- Suppose President Biden after returning from his trip from Japan does not knows how the leaders of U.S. House of Representative will take his deal proposal. President Biden is faced with a decision under ignorance or lack of information.
+>- Suppose President Biden after returning from his trip from Japan does not know how the leaders of U.S. House of Representative will take his deal proposal. President Biden is faced with a \textcolor{red}{decision under ignorance or lack of information}.
 
->- Suppose that President Biden knows the odds are 3:5 that the U.S. House of Representative Leaders will take his deal. President Biden here is faced with a decision under information or certainty. 
+>- Suppose that President Biden knows the odds are 3:5 that the U.S. House of Representative Leaders will take his deal. President Biden here is faced with a \textcolor{red}{decision under information or certainty}. 
 
 >- In any case, what is the rational choice for President Biden?
 
@@ -59,7 +59,7 @@ header-includes:
 
 >- In order to articulate the principles of rational choice in decision problems. We shall distinguish between decision problems under \textcolor{red}{ignorance} from decision problems under \textcolor{red}{information}.
 
->- Decision problems under ignorance are also known as decision problems under lack of information or decision problems under uncertainty. The relevant sense of "information" here is information about the \textcolor{red}{probability distribution} of states. The relevant sense of "uncertainty" here is that we don't \textcolor{red}{know} \textcolor{red}{the probabilities} with which the states will occur \textcolor{red}{with certainty}.
+>- Decision problems under ignorance are also known as decision problems under lack of information or decision problems under uncertainty. The relevant sense of "information" here is information about the \textcolor{red}{probability distribution} of states. The relevant sense of "uncertainty" here is that we \textcolor{red}{don't know the probabilities} with which the states will occur \textcolor{red}{with certainty}.
 
 >- Decision problems under information are also known as decision problems under certainty or risk. The relevant sense of "certainty" here is that one is certain about the \textcolor{red}{probability distribution} of states. So one \textcolor{red}{can compute the risk} associated with taking a decision.
 
@@ -100,7 +100,7 @@ header-includes:
 
 >- Utilities on an ordinal scale have certain properties: \begin{itemize} 
 \item[(1)] They are unique up to \textcolor{red}{strictly increasing} transformations.
-\item[(2)] You \textcolor{red}{can't multiply or add} ordinal utilities. A fancy word for this you will often see is that transformations of ordinal utilities are not linear.
+\item[(2)] You \textcolor{red}{can't multiply or add} ordinal utilities to each other. A fancy word for this you will often see is that transformations of ordinal utilities are not linear.
 \item[(3)] From (2) we \textcolor{red}{can't calculate expected utility} using ordinal utilities. See Barrett and Huttegger Section 4.9.
 \item[(4)] Provide \textcolor{red}{no information} about \textcolor{red}{the strength of preferences}.
 \end{itemize}
@@ -216,7 +216,7 @@ Rosé & 3 & 4 & 4 \\ \hline
 
 >- The maximin principle focuses on the worst possible outcome of each alternative act. Essentially, we're asking \textcolor{red}{what's the worst that can happen?}
 
->- According to this principle, one should \textcolor{red}{MAX}imise the \textcolor{red}{MIN}imal value obtainable with each act. If the worst possible outcome of one alternative is better than that of another, then the former should be chosen.
+>- According to this principle, one should \textcolor{red}{MAX}imise the \textcolor{red}{MIN}imal value obtainable with each act. If the worst possible outcome of one alternative $A_{i}$ is better than the worst possible outcome of another alternative $A_{j}$, then choose $A_{i}$.
 
 
 # Maximin Principle
@@ -235,7 +235,7 @@ Rosé & 1 & 2 & 1 \\ \hline
 \item Why would an agent choose $A_{3}$?
 \end{itemize}
 
->- There are other principles of rational choice in the context of decisions under ignorance. But we shall not cover them in this introductory course. The book by Martin Peterson \textit{An Introduction to Decision Theory} is highly recommended for this.
+>- There are other principles of rational choice in the context of decisions under ignorance. What we have covered so far is more than enough for an introductory course to inductive logic. The book by Martin Peterson \textit{An Introduction to Decision Theory} is highly recommended reading!
 
 # {.flexbox .vcenter}
 
@@ -250,7 +250,7 @@ Rosé & 1 & 2 & 1 \\ \hline
 
 >- This means that the agent can also calculate the expected value of functions of these states, namely, consequences of an act.
 
->- However, not just any concept of utility will do. We have seen that because ordinal utilities cannot be added or multiplied, we cannot use them to calculate expected values. Further ordinal utilities do not quantify the strength of preference, they simply respect the ordering of our preferences.
+>- However, not just any concept of utility will do. We have seen that because ordinal utilities cannot be added or multiplied with each other, we cannot use them to calculate expected values. Further ordinal utilities do not quantify the strength of preference, they simply respect the ordering of our preferences.
 
 # Cardinal Utilities
 
@@ -258,27 +258,23 @@ Rosé & 1 & 2 & 1 \\ \hline
 
 >- They also enjoy the right kind of properties that make calculations of expected values possible.
 
->- Some of these properties are: \begin{itemize}\item[(1)] Like ordinal utilities, cardinal utilities are unique up to \textcolor{red}{strictly increasing} transformations. \item[(2)] Cardinal utilities are invariant under \textcolor{red}{positive} scaling and \textcolor{red}{positive} translation. Barrett and Huttegger call this \textcolor{red}{positive affine transformation} So cardinal utilities are like hours and seconds. \item[(3)] From (2) we \textcolor{red}{can calculate expected utilities} using cardinal utilities.
+>- Some of these properties are: \begin{itemize}\item[(1)] Like ordinal utilities, cardinal utilities are unique up to \textcolor{red}{strictly increasing} transformations. \item[(2)] Cardinal utilities are invariant under \textcolor{red}{positive} scaling and \textcolor{red}{positive} translation. Barrett and Huttegger call this \textcolor{red}{positive affine transformation}. Basically cardinal utilities are like hours and seconds. \item[(3)] From (2) we \textcolor{red}{can calculate expected utilities} using cardinal utilities.
 \item[(4)] Provide \textcolor{red}{information} about \textcolor{red}{the strength of preferences}.\end{itemize}
 
 # Expected Utility
 
 >- The expected utility of an act is the weighted average of the consequences of that act where the weights on the consequences are determined by the probability distribution on states.
 
->- Suppose that the states in a decision problem are listed as $\{S_{1}, S_{2}, \dots, S_{n}\}$ and that there is a probability distribution on the states that assigns them probabilities $\{P(S_{1}), P(S_{2}), \dots, P(S_{n})\}$. Then the expected utility of an act $A$
-
-\[
+>- Suppose that the states in a decision problem are listed as $\{S_{1}, S_{2}, \dots, S_{n}\}$ and that there is a probability distribution on the states that assigns them probabilities $\{P(S_{1}), P(S_{2}), \dots, P(S_{n})\}$. Then \textcolor{red}{the expected utility} of an act $A$ denoted as $U(A)$ is given by: \[
 \begin{aligned}
 U(A) &= u(A | S_{1})P(S_{1}) + u(A | S_{2})P(S_{2}) + \dots + u(A | S_{n})P(S_{n}) \nonumber \\
         &= \sum_{i}^{n} u(A \,|\,S_{i})P(S_{i})
 \end{aligned}
 \]
 
->- In other words, take the utility of that action given each state of the world multiplied by the probability that the state obtains and sum everything up.
-
 # Expected Utility
 
->- Consider the dinner party example again. This time the entries are cardinal utilities. \begin{center}
+>- Consider the dinner party example again. This time suppose that the entries are cardinal utilities. \begin{center}
 \begin{tabular}{|c |c |c|}\hline
     & Fish  & Chicken \\ \hline
 White & 4 & 5 \\ 
@@ -287,24 +283,20 @@ Rosé & 3 & 3 \\ \hline
 \end{tabular}
 \end{center}
 
->- Exercise. Suppose you know that there are even odds that the host will serve fish or chicken calculate the expected value of $A_{1}$, $A_{2}$ and $A_{3}$ 
+>- Exercise. Suppose you know that there are even odds that the host will serve fish or chicken. Calculate the expected value of $A_{1}$, $A_{2}$ and $A_{3}$ 
 
 # Risk
 
 >- The risk is of an act is just like the expected value of the act, except that we're using \textcolor{red}{a loss function} to assign loss values to possible consequences of an act. 
 
->- More specifically, the weighted average of \textcolor{red}{the unfavorable consequences of an act} where the weights on the consequences are determined by the probability distribution on states.
+>- More specifically, the weighted average of \textcolor{red}{the unfavorable consequences of an act} where the weights on the consequences are determined by the probability distribution on states is the risk of that act.
 
->- Suppose that the states in a decision problem are listed as $\{S_{1}, S_{2}, \dots, S_{n}\}$ and that there is a probability distribution on the states that assigns them probabilities $\{S(S_{1}), P(S_{2}), \dots, P(S_{n})\}$. Let the \textcolor{red}{loss} of an act $A_{i}$ given a state $S_{i}$ be denoted by $L(A_{i}\,|\,S_{i})$. Then the risk of an act $A$ denoted by $R(A)$ is given by:
-
-\[
+>- Suppose that the states in a decision problem are listed as $\{S_{1}, S_{2}, \dots, S_{n}\}$ and that there is a probability distribution on the states that assigns them probabilities $\{P(S_{1}), P(S_{2}), \dots, P(S_{n})\}$. Let the \textcolor{red}{loss} of an act $A_{i}$ given a state $S_{i}$ be denoted by $L(A_{i}\,|\,S_{i})$. Then the risk of an act $A$ denoted by $R(A)$ is given by:\[
 \begin{aligned}
 R(A) &= L(A | S_{1})P(S_{1}) + L(A | S_{2})P(S_{2}) + \dots + L(A | S_{n})P(S_{n}) \nonumber \\
-        &= \sum_{i}^{n} u(A \,|\,S_{i})P(S_{i})
+        &= \sum_{i}^{n} L(A \,|\,S_{i})P(S_{i})
 \end{aligned}
 \]
-
->- In other words, take the loss of that action given each state of the world multiplied by the probability that the state obtains and sum everything up.
 
 # Risk
 
@@ -318,11 +310,11 @@ Invoke  & -1 & -1 \\ \hline
 \end{tabular}
 \end{center}
 
->- Exercise. Suppose you that President Biden knows that the odds are 3:5 that a deal will be reached with the U.S. House of Representative Majority Leader Kevin McCarthy. What is the risk of the possible acts that Biden can take to avoid having the Federal Government default on its debt? 
+>- Exercise. Suppose you President Biden knows that the odds are 3:5 that a deal will be reached with the U.S. House of Representative Majority Leader Kevin McCarthy. What is the risk of the possible acts that Biden can take to avoid having the Federal Government default on its debt? 
 
 # Maximizing Expected Utility
 
->- The \textcolor{red}{cardinal} principle (you see what I did there?) of decision problems under risk is the \textcolor{red}{principle of maximizing expected utility} if you're using a cardinal utility function.
+>- The \textcolor{red}{cardinal} principle (you see what I did there?) of decision problems under certainty is the \textcolor{red}{principle of maximizing expected utility} if you're using a cardinal utility function.
 
 >- This means that in any decision problem, choose the act that maximizes expected utility with respect to your probability distribution on states.
 
@@ -337,7 +329,7 @@ Rosé & 3 & 4 & 4 \\ \hline
 \end{tabular}
 \end{center}
 
->- Suppose you know that because of rising tariffs on fish imports from Canada and recent shortages of lamb, you host is likely to serve chicken with probability 0.8, fish with probability 0.15 and lamb with probability 0.05. What wine should you choose to bring to the dinner party according to the principle of maximizing expected utility?
+>- Suppose you know that because of rising tariffs on fish imports from Canada and recent shortages of lamb, your host is likely to serve chicken with probability 0.8, fish with probability 0.15 and lamb with probability 0.05. What wine should you choose to bring to the dinner party according to the principle of maximizing expected utility?
 
 # Minimizing Risk
 
@@ -345,7 +337,7 @@ Rosé & 3 & 4 & 4 \\ \hline
 
 >- Let us call a person \textcolor{red}{risk averse} if given a choice between two actions with risk, they will tend to choose the act that is less risky. That is, they choose to minimize the risk.
 
->- There is an on-going debate about what the implications of risk for rationality. See Lara Buchak's \textit{Risk and Rationality}.
+>- There is an on-going debate about what the implications of risk for rationality. See Lara Buchak's \textit{Risk and Rationality}!
 
 # Minimizing Risk
 
@@ -359,7 +351,7 @@ Do Nothing & 0 & -10 \\ \hline
 \end{tabular}
 \end{center}
 
-Exercise. Suppose you that President Biden knows that the odds are 3:5 that a deal will be reached with the U.S. House of Representative Majority Leader Kevin McCarthy. What act would you advice President Biden to take in order to avoid having the Federal Government default on its debt?
+Exercise. Suppose that President Biden knows that the odds are 3:5 that a deal will be reached with the U.S. House of Representative Majority Leader Kevin McCarthy. What act would you advice President Biden to take in order to avoid having the Federal Government default on its debt?
 
 
 
