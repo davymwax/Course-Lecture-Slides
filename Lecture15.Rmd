@@ -142,9 +142,9 @@ Rosé & 3 & 3 \\ \hline
 
 >- We denote \textcolor{red}{strict dominance} using $\succ$ and write $A_{i}  \succ A_{j}$ to mean $A_{i}$ \textcolor{blue}{strictly dominates} $A_{j}$
 
->- Weak Dominance: $A_{i} \succeq A_{j}$ if and only if $u(A_{i} | S) \geq u(A_{j} | S)$ for \textcolor{red}{every} state $S$ (at least as good)
+>- \textbf{Weak Dominance}: $A_{i} \succeq A_{j}$ if and only if $u(A_{i} | S) \geq u(A_{j} | S)$ for \textcolor{red}{every} state $S$ (at least as good)
 
->- Strict Dominance: $A_{i} \succ A_{j}$ if and only if (1) $u(A_{i} | S_{n}) \geq u(A_{j} | S_{n})$ for \textcolor{red}{every} state $S_{n}$ (at least as good) and (2) there exists a state $S_{m}$ such that $u(A_{i} | S_{m}) > u(A_{j} | S_{m})$ (at least one better).
+>- \textbf{Strict Dominance}: $A_{i} \succ A_{j}$ if and only if (1) $u(A_{i} | S_{n}) \geq u(A_{j} | S_{n})$ for \textcolor{red}{every} state $S_{n}$ (at least as good) and (2) there exists a state $S_{m}$ such that $u(A_{i} | S_{m}) > u(A_{j} | S_{m})$ (at least one better).
 
 # Strict and Weak Dominance Principle
 
@@ -178,6 +178,7 @@ Rosé & 3 & 4 & 4 \\ \hline
 \item $A_{1} \succeq A_{3}$?
 \item $A_{3} \succ A_{1}$?
 \item $A_{3} \succeq A_{2}$?
+\item $A_{3} \succ A_{2}$?
 \item Does the strong dominance principle imply the weak dominance principle?
 \end{itemize}
 
