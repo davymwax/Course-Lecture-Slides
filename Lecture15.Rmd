@@ -30,11 +30,11 @@ header-includes:
 
 >- Specify the acts that you may take.
 
->- Suppose you know that there are even odds that the host will serve red meat or white meat, what is the expected utility of each act that you may take?
+>- Suppose you do not know what the host will serve, how would you decide what wine to bring? You are making a decision under ignorance or lack of information.
 
->- Now suppose that because of the rising cost of beef, the host will serve white meat with probability 0.8, what is the expected utility of each act that you may take?
+>- Suppose you know that there are even odds that the host will serve red meat or white meat, how would you decide what to bring? You are making a decision under information.
 
->- What do think is the best decision here?
+>- In any case, what is the rational choice for you?
 
 # Decision Problems: Rational Choice
 
@@ -42,29 +42,144 @@ header-includes:
 
 >- Specify the acts that President Biden may take
 
->- Suppose President Biden after returning from his trip from Japan knows that the odds that U.S. House of Representatives will agree to a deal are $3:5$, what is the risk of each act that President Biden may take?
+>- Suppose President Biden after returning from his trip from Japan does not knows how the leaders of U.S. House of Representative will take his deal proposal. President Biden is faced with a decision under ignorance or lack of information.
 
->- How would you advise President Biden?
+>- Suppose that President Biden knows the odds are 3:5 that the U.S. House of Representative Leaders will take his deal. President Biden here is faced with a decision under information or certainty. 
 
-# Decision Problems: Rational Choice
-
->- We are now in a position to formulate some principles of rational choice that could form the basis of an inductive logic as the logic of reliable on-going scientific inquiry or rational deliberation.
-
->- First let us assume that states can be modeled as random variables with some probability distribution. That is, suppose that we have some \textcolor{red}{epistemic probability} $p_{i}$ that $S_{i}$ will happen.
-
->- Then we can use this epistemic probability $p_{i}$ to weigh the states and compute the \textcolor{red}{expected value} of functions of these states.
-
->- Since consequences are joint functions of acts and states, we can calculate the expected value of taking an act $A_{i}$, given state $S_{i}$.
-
->- This will lead to the concept of expected utility or expected loss (or risk)
+>- In any case, what is the rational choice for President Biden?
 
 # Decision Problems Under Ignorance
 
+>- In order to articulate the principles of rational choice in decision problems. We shall distinguish between decision problems under \textcolor{red}{ignorance} from decision problems under \textcolor{red}{information}.
+
+>- Decision problems under ignorance are also known as decision problems under lack of information or decision problems under uncertainty.
+
+>- The relevant sense of "information" here is information about the \textcolor{red}{probability distribution} of states. 
+
+>- The relevant sense of "uncertainty" here is that we don't \textcolor{red}{know} \textcolor{red}{the probabilities} with which the states will occur \textcolor{red}{with certainty}.
+
 # Ordinal Utilities
 
+>- The principles of rational choice \textcolor{red}{under ignorance} can be formulated by \textcolor{red}{ranking} or \textcolor{red}{ordering} utilities based on the desirability of their consequences. This leads to the concept of \textcolor{red}{ordinal utilities}.
 
-# Strict Dominance Principle
+>- In what follows, we shall use lower case $u$ to denote the utility of an act $A$ given a state $S$ and write $u(A \,| \,S)$
 
+>- We write $A_{i} \succ A_{j}$ to mean Act $i$ is \textcolor{red}{preferred more} than Act $j$.
+
+>- We write $A_{i} \sim A_{j}$ to mean Act $i$ is \textcolor{red}{preferred equally} to Act $j$.
+
+# Ordinal Utilities
+
+>- Let $A_{1}, A_{2}, A_{3}$ denote the acts of bringing white wine, red wine or rosé to the dinner party, respectively. And let $S_{1}, S_{2}$ denote the state in which the host serves fish or chicken, respectively.
+
+>- Suppose that given $S_{1}$, we can \textcolor{red}{order} our preferences as $A_{1} \succ A_{3} \succ A_{2}$. This means that if our host serves fish, we would prefer bringing white wine more than we would prefer bringing either rosé or red wine; and we would prefer to bring rosé more than we would prefer to bring red wine.
+
+>- An \textcolor{red}{ordinal} utility function is an assignment of utilities to acts that \textcolor{red}{respects the preference ordering} or ranking of the acts.
+
+>- Consider the following utility function: $u(A_{1} \, |\, S_{1})  = 4$, $u(A_{2} \, | \, S_{1}) = 2$ and $u(A_{3} \, | \, S_{1}) = 3$
+
+>- Here we see that $4 > 3 > 2$. So this utility function respects the preference ordering of the acts. 4, 3 and 2 are \textcolor{red}{ordinal utilities}.
+
+
+# Ordinal Utilities
+
+>- Suppose now that the host serves chicken, $S_{2}$. You think that if the host serves chicken you'd much rather bring white wine than either red wine or rosé. Assume also that if you can't find white wine at Trader Joe's you'd much rather bring rosé than red wine.
+
+>- Exercise. \begin{itemize} \item[1] Write down the preference ordering on the Acts. \item[2] Using the following set of utility values $\{1, 3, 5\}$ determine your ordinal utility function. \item[3] Verify that your utility function respects your preference ordering. \end{itemize}
+
+# Properties of Ordinal Utilities
+
+>- Utilities on an ordinal scale have certain properties: \begin{itemize} 
+\item[(1)] They are unique up to \textcolor{red}{strictly increasing} transformations.
+\item[(2)] You \textcolor{red}{can't multiply or add} ordinal utilities. A fancy word for this you will often see is that transformations of ordinal utilities are not linear.
+\item[(3)] From (2) we \textcolor{red}{can't calculate expected utility} using ordinal utilities. See Barrett and Huttegger Section 4.9.
+\item[(4)] Provide \textcolor{red}{no information} about \textcolor{red}{the strength of preferences}.
+\end{itemize}
+
+# Making Decisions with Ordinal Utilities
+
+>- From the previous exercises we obtain the following desirability table for acts based on our ordinal utility function. \begin{center}
+\begin{tabular}{|c |c |c|}\hline
+    & Fish  & Chicken \\ \hline
+White & 4 & 5 \\ 
+Red  & 2 & 1 \\ 
+Rosé & 3 & 3 \\ \hline
+\end{tabular}
+\end{center}
+
+>- Suppose that you are faced with a decision problem under ignorance of bringing either white wine, red wine or rosé. How would you decide?
+
+>- Decision theorists propose the following principles: \begin{itemize}
+\item Decide on the basis of \textcolor{red}{the weak dominance principle}.
+\item Decide on the basis of \textcolor{red}{the strong dominance principle}.
+\item Decide on the basis of \textcolor{red}{the maximin principle}.
+\end{itemize}
+
+# Strict and Weak Dominance Principles
+
+>- \begin{center}
+\begin{tabular}{|c |c |c|}\hline
+    & Fish  & Chicken \\ \hline
+White & 4 & 5 \\ 
+Red  & 2 & 1 \\ 
+Rosé & 3 & 3 \\ \hline
+\end{tabular}
+\end{center}
+
+>- Here \textcolor{red}{no matter} what the true state of world turns out to be we'd prefer to bring white wine rather than either red wine or rosé. 
+
+>- We say that $A_{1}$ "\textcolor{red}{dominates}" both $A_{2}$ and $A_{3}$.
+
+>- Similarly $A_{3}$ "\textcolor{red}{dominates}" $A_{2}$.
+
+>- A widely accepted \textcolor{red}{dominance principle} in decision theory prescribes that \textcolor{red}{dominated acts must not be chosen}.
+
+# Strict and Weak Dominance Principle
+
+>- An act can be dominant in one of two ways: which we call \textcolor{red}{strict} and \textcolor{red}{weak}.
+
+>- We denote \textcolor{red}{weak dominance} using $\succeq$ and write $A_{i} \succeq A_{j}$ to mean $A_{i}$ \textcolor{blue}{weakly dominates} $A_{j}$.
+
+>- We denote \textcolor{red}{strict dominance} using $\succ$ and write $A_{i}  \succ A_{j}$ to mean $A_{i}$ \textcolor{blue}{strictly dominates} $A_{j}$
+
+>- Weak Dominance: $A_{i} \succeq A_{j}$ if and only if $u(A_{i} | S) \geq u(A_{j} | S)$ for \textcolor{red}{every} state $S$ (at least as good)
+
+>- Strict Dominance: $A_{i} \succ A_{j}$ if and only if (1) $u(A_{i} | S_{n}) \geq u(A_{j} | S_{n})$ for \textcolor{red}{every} state $S_{n}$ (at least as good) and (2) there exists a state $S_{m}$ such that $u(A_{i} | S_{m}) > u(A_{j} | S_{m})$ (at least one better).
+
+# Strict and Weak Dominance Principle
+
+>- \begin{center}
+\begin{tabular}{|c |c |c|}\hline
+    & Fish  & Chicken \\ \hline
+White & 4 & 5 \\ 
+Red  & 2 & 1 \\ 
+Rosé & 3 & 3 \\ \hline
+\end{tabular}
+\end{center}
+
+>- Exercise. Refer to the desirability table for the dinner party example to answer the following questions. \begin{itemize}
+\item $A_{1} \succeq A_{3}$?
+\item $A_{1} \succ A_{2}$?
+\item $A_{3} \succeq A_{2}$?
+\end{itemize}
+
+# Strict and Weak Dominance Principle
+
+>- \begin{center}
+\begin{tabular}{|c |c |c| c |}\hline
+    & Fish  & Chicken & Lamb \\ \hline
+White & 3 & 4 & 1 \\ 
+Red  & 2 & 1 & 4 \\ 
+Rosé & 3 & 4 & 4 \\ \hline
+\end{tabular}
+\end{center}
+
+>- Exercise. Refer to the desirability table for the dinner party example to answer the following questions. \begin{itemize}
+\item $A_{1} \succeq A_{3}$?
+\item $A_{3} \succ A_{1}$?
+\item $A_{3} \succeq A_{2}$?
+\item Does the strong dominance principle imply the weak dominance principle?
+\end{itemize}
 
 # Maximin Principle
 
@@ -75,7 +190,7 @@ header-includes:
 # Minimax: MINimize the MAXimum regret
 
 
-# Decision Problems Under Uncertainty
+# Decision Problems Under Risk
 
 
 # Expected Utility and Risk
