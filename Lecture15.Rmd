@@ -16,7 +16,9 @@ header-includes:
 # Topics
 
 \begin{itemize}
-\item Ordinal and Cardinal Utilities
+\item Ordinal Utilities
+\item Strict Dominance Principle
+\item Cardinal Utilities
 \item Expected Utility and Risk
 \item Principles of Rational Choice
 \end{itemize}
@@ -56,8 +58,36 @@ header-includes:
 
 >- This will lead to the concept of expected utility or expected loss (or risk)
 
-# Ordinal and Cardinal Utilities
+# Decision Problems Under Ignorance
 
+# Ordinal Utilities
+
+
+# Strict Dominance Principle
+
+
+# Maximin Principle
+
+
+# Cardinal Utilities
+
+
+# Minimax: MINimize the MAXimum regret
+
+
+# Decision Problems Under Uncertainty
+
+
+# Expected Utility and Risk
+
+\[
+\begin{aligned}
+U(A_{1}) &= u(A | S_{1})P(S_{1}) + u(A | S_{2})P(S_{1}) + \dots u(A | S_{n})P(S_{n}) \nonumber \\
+        &= \sum_{i}^{n} u(A \,|\,S_{i})P(S_{i})
+\end{aligned}
+\]
+
+# Maximize Expected Utility
 
 
 
