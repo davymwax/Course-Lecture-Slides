@@ -266,6 +266,7 @@ Rosé & 1 & 2 & 1 \\ \hline
 >- The expected utility of an act is the weighted average of the consequences of that act where the weights on the consequences are determined by the probability distribution on states.
 
 >- Suppose that the states in a decision problem are listed as $\{S_{1}, S_{2}, \dots, S_{n}\}$ and that there is a probability distribution on the states that assigns them probabilities $\{P(S_{1}), P(S_{2}), \dots, P(S_{n})\}$. Then the expected utility of an act $A$
+
 \[
 \begin{aligned}
 U(A) &= u(A | S_{1})P(S_{1}) + u(A | S_{2})P(S_{2}) + \dots + u(A | S_{n})P(S_{n}) \nonumber \\
@@ -273,7 +274,7 @@ U(A) &= u(A | S_{1})P(S_{1}) + u(A | S_{2})P(S_{2}) + \dots + u(A | S_{n})P(S_{n
 \end{aligned}
 \]
 
->- In other words, take the utility of that action given each state of the word multiplied by the probability that the state obtains and sum everything up.
+>- In other words, take the utility of that action given each state of the world multiplied by the probability that the state obtains and sum everything up.
 
 # Expected Utility
 
@@ -286,8 +287,38 @@ Rosé & 3 & 3 \\ \hline
 \end{tabular}
 \end{center}
 
->- Exercise.\begin{itemize} Suppose you know that there are even odds that the host will serve fish or chicken calculate the expected value of $A_{1}$, $A_{2}$ and $A_{3}$ \end{itemize}
+>- Exercise. Suppose you know that there are even odds that the host will serve fish or chicken calculate the expected value of $A_{1}$, $A_{2}$ and $A_{3}$ 
 
+# Risk
+
+>- The risk is of an act is just like the expected value of the act, except that we're using \textcolor{red}{a loss function} to assign loss values to possible consequences of an act. 
+
+>- More specifically, the weighted average of \textcolor{red}{the unfavorable consequences of an act} where the weights on the consequences are determined by the probability distribution on states.
+
+>- Suppose that the states in a decision problem are listed as $\{S_{1}, S_{2}, \dots, S_{n}\}$ and that there is a probability distribution on the states that assigns them probabilities $\{S(S_{1}), P(S_{2}), \dots, P(S_{n})\}$. Let the \textcolor{red}{loss} of an act $A_{i}$ given a state $S_{i}$ be denoted by $L(A_{i}\,|\,S_{i})$. Then the risk of an act $A$ denoted by $R(A)$ is given by:
+
+\[
+\begin{aligned}
+R(A) &= L(A | S_{1})P(S_{1}) + L(A | S_{2})P(S_{2}) + \dots + L(A | S_{n})P(S_{n}) \nonumber \\
+        &= \sum_{i}^{n} u(A \,|\,S_{i})P(S_{i})
+\end{aligned}
+\]
+
+>- In other words, take the loss of that action given each state of the world multiplied by the probability that the state obtains and sum everything up.
+
+# Risk
+
+>- Consider President Biden's \emph{hypothetical} loss function.
+\bigskip
+\begin{center}
+\begin{tabular}{|p{0.2\textwidth}| p{0.2\textwidth} p{0.3\textwidth}|}\hline
+       & Deal  & No Deal \\ 
+Invoke$^{c}$ & 0 & -10 \\ 
+Invoke  & -1 & -1 \\ \hline
+\end{tabular}
+\end{center}
+
+>- Exercise. Suppose you that President Biden knows that the odds are 3:5 that a deal will be reached with the U.S. House of Representative Majority Leader Kevin McCarthy. What is the risk of the possible acts that Biden can take to avoid having the Federal Government default on its debt? 
 
 # Maximizing Expected Utility
 
@@ -309,6 +340,27 @@ Rosé & 3 & 4 & 4 \\ \hline
 >- Suppose you know that because of rising tariffs on fish imports from Canada and recent shortages of lamb, you host is likely to serve chicken with probability 0.8, fish with probability 0.15 and lamb with probability 0.05. What wine should you choose to bring to the dinner party according to the principle of maximizing expected utility?
 
 # Minimizing Risk
+
+>- The principle of minimizing risk is to risk as the principle of maximizing expected utility is to expected utility. 
+
+>- Let us call a person \textcolor{red}{risk averse} if given a choice between two actions with risk, they will tend to choose the act that is less risky. That is, they choose to minimize the risk.
+
+>- There is an on-going debate about what the implications of risk for rationality. See Lara Buchak's \textit{Risk and Rationality}.
+
+# Minimizing Risk
+
+Consider President Biden's modified \emph{hypothetical} loss function with the additional action that President Biden does nothing.
+\bigskip
+\begin{center}
+\begin{tabular}{|p{0.2\textwidth}| p{0.2\textwidth} p{0.3\textwidth}|}\hline
+       & Deal  & No Deal \\ 
+Invoke$^{c}$ & 0 & -10 \\ 
+Invoke  & -1 & -1 \\ 
+Do Nothing & 0 & -10 \\ \hline
+\end{tabular}
+\end{center}
+
+
 
 
 
