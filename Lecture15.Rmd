@@ -263,7 +263,7 @@ Rosé & 1 & 2 & 1 \\ \hline
 
 # Expected Utility
 
->- The expected utility of an act is the weighted average of the consequences of that act where the weights on the consequences are determined by the probability distribution on states.
+>- The expected utility of an act is the weighted average of the utility of the consequences of that act, where the weights on the consequences are determined by the probability distribution on states.
 
 >- Suppose that the states in a decision problem are listed as $\{S_{1}, S_{2}, \dots, S_{n}\}$ and that there is a probability distribution on the states that assigns them probabilities $\{P(S_{1}), P(S_{2}), \dots, P(S_{n})\}$. Then \textcolor{red}{the expected utility} of an act $A$ denoted as $U(A)$ is given by: \[
 \begin{aligned}
@@ -287,9 +287,9 @@ Rosé & 3 & 3 \\ \hline
 
 # Risk
 
->- The risk is of an act is just like the expected value of the act, except that we're using \textcolor{red}{a loss function} to assign loss values to possible consequences of an act. 
+>- The risk of an act is just like the expected utility of the act, except that we're using \textcolor{red}{a loss function} to assign loss values to possible consequences of an act. 
 
->- More specifically, the weighted average of \textcolor{red}{the unfavorable consequences of an act} where the weights on the consequences are determined by the probability distribution on states is the risk of that act.
+>- More specifically, the weighted average of \textcolor{red}{the loss values we attach to unfavorable consequences of an act} where the weights on the consequences are determined by the probability distribution on states is the risk of that act.
 
 >- Suppose that the states in a decision problem are listed as $\{S_{1}, S_{2}, \dots, S_{n}\}$ and that there is a probability distribution on the states that assigns them probabilities $\{P(S_{1}), P(S_{2}), \dots, P(S_{n})\}$. Let the \textcolor{red}{loss} of an act $A_{i}$ given a state $S_{i}$ be denoted by $L(A_{i}\,|\,S_{i})$. Then the risk of an act $A$ denoted by $R(A)$ is given by:\[
 \begin{aligned}
@@ -351,7 +351,7 @@ Do Nothing & 0 & -10 \\ \hline
 \end{tabular}
 \end{center}
 
-Exercise. Suppose that President Biden knows that the odds are 3:5 that a deal will be reached with the U.S. House of Representative Majority Leader Kevin McCarthy. What act would you advice President Biden to take in order to avoid having the Federal Government default on its debt?
+Exercise. Suppose that President Biden knows that the odds are 3:5 that a deal will be reached with the U.S. House of Representative Majority Leader Kevin McCarthy. What act would you advise President Biden to take in order to avoid having the Federal Government default on its debt?
 
 
 
