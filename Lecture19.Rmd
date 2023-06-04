@@ -1,22 +1,36 @@
 ---
 title: | 
   | Phil/LPS 31 Introduction to Inductive Logic
-  | Lecture 17
+  | Lecture 18
 author: |
     | David Mwakima
     | dmwakima@uci.edu
     | Department of Logic and Philosophy of Science
     | University of California, Irvine
-date: "June 5th 2023"
+date: "June 9th 2023"
 output: beamer_presentation
 header-includes:
   - \setbeamertemplate{footline}[page number]
 ---
 
+
 # Topics
 
 \begin{itemize}
-\item  \begin{itemize} \item Subjective Bayesian Interpretation of Probability
-  \end{itemize}
-\item Evaluating Evidence within the Two Interpretations
+\item Relative Risk
+\item Odds Ratio
+\item Simpson's Paradox
 \end{itemize}
+
+# Measures of Association in $2 \times 2$ contingency tables
+
+
+# Relative Risk
+
+
+# Odds Ratio
+
+
+# Simpson's Paradox
+
+

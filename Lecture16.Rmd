@@ -7,14 +7,121 @@ author: |
     | dmwakima@uci.edu
     | Department of Logic and Philosophy of Science
     | University of California, Irvine
-date: "May 24th 2023"
+date: "June 2nd 2023"
 output: beamer_presentation
 header-includes:
   - \setbeamertemplate{footline}[page number]
 ---
 
 \begin{itemize}
-\item Dutch Books and Coherence
-\item Bayesian Interpretation of Probability
-\item Other Interpretations of Probability
+\item Interpretations of Probability
+  \begin{itemize} \item Frequentist Interpretation of Probability
+  \end{itemize}
 \end{itemize}
+
+
+# Motivation: Form and Content
+
+>- At the beginning of the quarter we considered sentential logic as a formal system for representing the sentential structure of a natural language.
+
+>- In doing so we introduced \textcolor{red}{formal symbols} like $p$, $q$, $r$, $s$, $t$, $\lnot$, $\vee$, $($ , $)$.
+
+>- We also said that logicians distinguish between the \textcolor{red}{form} and \textcolor{red}{content} of these symbols. And we said that the content of these formal symbols is their \textcolor{red}{interpretation} or intended meaning.
+
+>- Similarly, when we introduced quantified relational logic we added formal symbols for variables, constants and quantifiers to capture more of the structure of sentences than sentential logic could capture. Here, the interpretation of the symbols was given using a \textcolor{red}{model}. 
+
+
+# Motivation: Form and Content
+
+>- In the last 4 weeks or so, we have studied probability and its application in decision theory as an inductive logic, \textcolor{red}{in a formal way} too!
+
+>- Here we used \textcolor{red}{the formal language of set theory} to describe events and \textcolor{red}{the formal system} given by the Kolmogorov Axioms to characterize probability functions. We said a probability function is a function which obeys the Kolmogorov axioms or rules.
+
+>- The Kolmogorov Axioms (or rules) for probability functions are formal \textcolor{red}{in the same way} that the truth-preserving rules of deductive logic are formal.
+
+>- By "in the same way", I mean that both are formulated \textcolor{red}{in a general way} that allows the possibility of \textcolor{red}{many}, and \textcolor{red}{different}, applications or interpretations.
+
+# Motivation: Application
+
+>- Here's what I mean. The formal system of sentential logic can be applied or interpreted in natural languages like Swahili, English, German, Chinese, Spanish and so on. It can also be applied or interpreted in artificial languages like Python, Java, C++ and so on.
+
+>- The situation is similar in the case of probability functions characterized by the Kolmogorov Axioms. There are lots of applications or interpretations because there are lots of things that \textcolor{red}{satisfy}, \textcolor{red}{faithfully represent} or \textcolor{red}{model} the Kolmogorov Axioms.
+
+
+# Motivation: Application
+
+>- Here are some examples: \begin{itemize} \item Any non-negative normalized additive set function defined on a finite or countable set is a probability function. \item The distribution function of a random variable is a probability function. \item On the standard formulation of Quantum Mechanics, the norm squared of the wave function gives the probability of collapse to a given state when a measurement is made.
+\item Weather forecasters give the probability that it will rain in Southern California as less than 3$\%$.
+\item I think the probability that Manchester City will win this weekend's derby is 50$\%$ given how well Manchester United are currently playing.
+\end{itemize}
+
+>- What these examples have in common is that they all \textcolor{red}{appear to interpret} or \textcolor{red}{apply} probability functions in different contexts and to address different problems.
+
+# Motivation: Interpreting Probability Functions
+
+>- In mathematics, we study probability functions, you might say, for their own sake. (How fun!) In statistics (which is what I study), we \textcolor{red}{apply} probability functions to model the distribution function of our data. The data either follows that distribution or it doesn't. This is an \textcolor{red}{objective} fact. But do statisticians \textcolor{red}{know} this fact or do they just \textcolor{red}{subjectively believe} this to be true?
+
+>- In physics, probability functions are applied in Quantum Mechanics. It is an \textcolor{red}{objective} fact that an electron in a superposition of spin states will collapse with a certain probability to one of the spin states when a measurement is made. Are quantum probabilities objective or subjective (once a measurement is made)?
+
+>- Weather forecasters (and the Instructor) seem to be talking about \textcolor{red}{their beliefs}. The beliefs here can be objective (based on precise measurements of wind patterns) or subjective (the Instructor doesn't know for sure).
+
+# Objective and Subjective Interpretations of Probability
+
+>- So we may distinguish between two main interpretations of probability and within each of the main interpretations we can, as philosophers typically do, make finer distinctions:
+\begin{itemize} \item Objective Interpretations of Probability \begin{itemize} \item Classical \item Frequentist \item Propensity \item Logical \end{itemize}
+\item Subjective Interpretations of Probability \begin{itemize} \item Subjective Bayesian \item "Objective" Bayesian \end{itemize} \end{itemize}
+
+>- In this course we're only going to talk about one interpretation from each of the major interpretations, namely, the \textcolor{red}{Frequentist Interpretation of Probability} and the \textcolor{red}{Subjective Bayesian Interpretation of Probability}.
+
+>- For each of these interpretations, I want you to know: (1) the main ideas behind it; (2) the main advantages and drawbacks; (3) how evidence is evaluated.
+
+# Frequentist Interpretation of Probability
+
+>- Aristotle (4th century B.C.) said that the probable is that which happens often.
+
+>- First elaborated with precision and in detail by the English logician John Venn in the 19th century and later by von Mises.
+
+>- To say that a random experiment has a stable objective probability $P(E)$ associated with one of its possible outcomes $E$ is to say that it has a characteristic \textcolor{red}{tendency} to do so. 
+
+>- The \textcolor{red}{magnitude} of this tendency is measured by the \textcolor{red}{limiting or long-run relative frequency} with which the outcome in question is actually produced. \[ P(E) = \lim_{n \to \infty} \frac{\text{Number of times E occurs in $n$ trials}}{\text{$n$}} \]
+
+# Frequentist Interpretation of Probability
+
+>- Consider an ordinary coin that is being flipped in the standard way. As it is flipped \textcolor{red}{repeatedly} a sequence of outcomes is generated:
+
+\[
+\begin{aligned}
+<H, T, H, T, T, T, H, H, T, T, H, T, T,\\ \nonumber T, T, H, T, H, T, T, T, H, H, H, H, \dots>
+\end{aligned}
+\]
+
+>- We can associate with this sequence of results a sequence of relative frequencies as follows:
+\[
+\begin{aligned}
+<&1/1, 1/2, 2/3, 2/4, 2/5, 2/6, 3/7, 4/8, 4/9, 4/10,  5/11, 5/12, \\ \nonumber &5/13, 5/14, 5/15, 6/16, 7/18, 7/19, 7/20, 7/21, 8/22, 9/23, \\ \nonumber &10/24, 11/25, \dots >
+\end{aligned}
+\]
+>- The frequentist interpretation involves an idealization which says that \textcolor{red}{in the limit}, the relative frequencies in this sequence approach 1/2.
+
+# Frequentist Interpretation of Probability: Advantages
+
+>- It is \textcolor{red}{objective}. The half life of $C^{14}$ atoms is 5730 years. This means that the relative frequency of spontaneous disintegration of $C^{14}$ within 5730 years is 1/2. We can use this as an objective measure of the probability that the next sample of $C^{14}$ will decay and for carbon dating.
+
+>- It is a \textcolor{red}{faithful} interpretation of the Kolmogorov Axioms for probability functions. This means that it can be shown that the identification of probability with the limit of relative frequencies  is consistent with the Kolmogorov Axioms. $P(E)$ is whatever this limit is (if it exists).
+
+# Frequentist Interpretation of Probability: Disadvantages
+
+>- "The long run is a misleading guide to current affairs. In the long run we are all dead," wrote John Maynard Keynes in his 1923 work, \textit{A Tract on Monetary Reform}. Although this is not what Keynes meant, a similar point has often been made against the frequentist interpretation. The point is that the use of the limit definition invites the objection that \textcolor{red}{we can never in principle}, not just in practice, \textcolor{red}{observe} an infinite sequence.
+
+>- Although the notion of a limit involves an \textcolor{red}{idealization}, a more serious objection is that the limiting value of the sequence of the relative frequency of $E$ \textcolor{red}{might not exist}. We \textcolor{red}{only} know that in the case where the experiment can be modeled using \textcolor{red}{Bernoulli random variable} (a random variable that can take on 1 of 2 possible values) the limit exists because of the \textcolor{red}{Strong Law of Large Numbers}. 
+
+>- The \textcolor{red}{observed} relative frequency in any \textcolor{red}{finite} sample is irrelevant to \textcolor{red}{the limiting} frequency. This should remind us of Hume's problem of induction.
+
+# Frequentist Interpretation of Probability: Disadvantages
+
+>- Pollsters predict outcomes of election outcomes, which are single and non-repeatable events. Similarly, we talk about the probability that it will rain tomorrow, which is also a single and non-repeatable event.
+
+>- If, however, probability is defined as a limiting frequency where \textcolor{red}{the event is repeated} potentially infinite many times, then it does not seem to make any sense to talk about probabilities of single occurrences (an election, tomorrow). This \textcolor{red}{problem of the single case} raises a problem about the \textcolor{red}{applicability} of the frequency interpretation of probability.
+
+
+

@@ -1,0 +1,189 @@
+---
+title: | 
+  | Phil/LPS 31 Introduction to Inductive Logic
+  | Lecture 18
+author: |
+    | David Mwakima
+    | dmwakima@uci.edu
+    | Department of Logic and Philosophy of Science
+    | University of California, Irvine
+date: "June 7th 2023"
+output: beamer_presentation
+header-includes:
+  - \setbeamertemplate{footline}[page number]
+---
+
+# Topics
+
+\begin{itemize}
+\item Causal Inference
+\item Observational Studies (No intervention)
+\begin{itemize} \item Case-control studies: Retrospective Studies
+\item Cohort studies: Prospective Studies
+\end{itemize}
+\item Experimental Studies (Intervention)
+\begin{itemize}
+\item Randomized Control Studies
+\end{itemize}
+\item Internal and External Validity of Studies
+\end{itemize}
+
+
+# Hume and Causal Inference
+
+>- Recall that in his \textit{A Treatise of Human Nature}, David Hume (1711 - 1776) called into serious question the thesis that we have any logical or rational basis for inductive reasoning about \textcolor{red}{causality}, i.e., reasoning of the form $A$ \textcolor{red}{causes} $B$.
+
+>- More generally, since Hume was what philosophers call an \textcolor{red}{empiricist}, Hume's question was: \textcolor{red}{what empirical justification} do we have to validate inferences, like causal inference, which extend our empirical knowledge beyond pre-existing empirical knowledge? 
+>- The answer he wanted was that the only empirical justification was \textcolor{red}{custom and habit}. But before he could say that this was \textcolor{red}{the only} empirical justification, he had to show that \textcolor{red}{no other non-empirical justification} was possible!
+
+# Science and Causal Inference
+
+>- Hume was concerned with both the metaphysics and theory of knowledge about causation.
+
+>- It is fair to say that Hume's arguments, which raised the problem of induction, are sound. The problem of induction (what is the rational justification for good rules of inductive inference?) is still an open problem.
+
+>- But what does \textcolor{red}{modern science} have to say about causation (bracketing the issue of the metaphysics and the rational justification of causal inference as a form of inductive inference)?
+
+>- Let us spend the next two lectures discussing that.
+
+# Two kinds of studies in science
+
+>- A scientific inquiry, say in medicine or psychology, typically takes the form of two major types of studies: \textcolor{red}{observational studies} and \textcolor{red}{experimental studies}.
+
+>- Broadly speaking, observational studies (which involve \textcolor{red}{no intervention or manipulation of the study subjects}) are studies in which subjects or individuals are observed in order to answer two kinds of questions: (1) what happened? (2) what will happen?
+
+>- Broadly speaking, experimental studies are studies (which involve \textcolor{red}{an intervention or manipulation of the study subjects}) in which the effect $E$ of an intervention $C$ is observed in order to  questions like: why did $E$ happen? Does $C$ \textcolor{red}{possibly} cause $E$?
+
+>- We shall see more distinguishing features of these two major kinds of studies when we look at each more closely below, starting with observational studies.
+
+# Observational Studies
+
+>- Observational studies may be:\begin{itemize} \item Cohort studies (forward-looking) \item Case-control (backward-looking) \item Cross-sectional studies, surveys or polls \end{itemize}
+
+>- In this introductory class to inductive logic we will only talk about \textcolor{red}{cohort studies} and \textcolor{red}{case-control studies}.
+
+>- For each of these kinds of observational studies, I want you to know: (1) what it is; (2) what are the key measures looked for by scientists; (3) what are the advantages and drawbacks of each kind of study.
+
+
+# Observational Studies: Cohort Studies
+
+>- A \textcolor{red}{cohort} is a group of people who have something in common and who remain part of a group over an extended time.
+
+>- Cohort studies ask the question \textcolor{red}{"What will happen?"} and thus, the direction of the research program in cohort studies is \textcolor{red}{forward in time}.
+
+>- Researchers select subjects at the onset of the study and then determine whether they have \textcolor{red}{the risk factor} or \textcolor{red}{have been exposed}. 
+
+>- All subjects are then followed \textcolor{red}{over a certain period} to observe the \textcolor{red}{effect of the risk factor} or exposure. Because the events of interest transpire \textcolor{red}{after the study is begun}, these studies are sometimes called \textcolor{red}{prospective studies}.
+
+# An Example of a Cohort Study 
+
+>- The Framingham Study, began in 1948, followed up a sample of 5,209 men and women residing in Framingham, Mass. with the use of clinical examinations, conducted every 2 years, and continuous surveillance of morbidity and mortality. On each examination a variety of characteristics were measured, including blood chemistry values and blood pressure; an electrocardiogram is taken; and a
+thorough cardiovascular evaluation is made after obtaining a routine history and physical examination.
+
+>- Their results showed that persons at \textcolor{red}{high risk} of cardiovascular disease can be effectively identified from a measurement of their serum cholesterol and blood pressure, a smoking history, an electrocardiogram and a determination of glucose intolerance. 
+
+# Advantages and Draw-backs of Cohort Studies
+
+
+
+# Observational Studies: Case-control Studies
+
+>- Case–control studies begin with the absence or presence of an outcome and then \textcolor{red}{look backward in time} to try to detect possible causes or risk factors. For reason, they are also called \textcolor{red}{retrospective studies}. We can characterize case–control studies as studies that ask "What happened?"
+
+>- The \textcolor{red}{cases} in case–control studies are individuals selected on the basis of some disease or outcome; the \textcolor{red}{controls} are individuals \textcolor{red}{without} the disease or outcome. 
+
+>- The history of both cases and controls are analyzed in an attempt to identify a characteristic or risk factor \textcolor{red}{present} in the cases’ histories but \textcolor{red}{absent} the controls’ histories.
+
+# An Example of a Case-Control Study
+
+Margaret A. Olsen and colleagues (2003) studied data obtained in patients between 1996 and 1999 who had undergone laminectomy or spinal fusion. Forty-one patients with surgical site infections (SSI) or meningitis were identified, and data were compared with those acquired in 178 uninfected control patients. For patients with SSI the postoperative hospital length of stay was significantly longer than that in uninfected patients. The study concluded that postoperative incontinence, posterior approach, surgery for tumor resection, and morbid obesity were independent risk factors predictive of SSI following spinal surgery. Interventions to reduce the risk for these potentially devastating infections need to be developed.
+
+# Advantages and Draw-backs of Case-Control Studies
+
+
+
+
+# Experimental Studies: Basic Ideas
+
+>- An experimental study is a type of study designed specifically to answer the question of whether there is a \textcolor{red}{causal relationship} between two variables. In other words, whether changes in one variable (referred to as an independent variable) cause a change in another variable (referred to as a dependent variable).
+
+>- Experiments have \textcolor{red}{two} fundamental features: (1) Intervention/Manipulation of conditions; (2) Control.
+
+>- The first fundamental feature is that the researchers manipulate, or systematically vary, the level of the independent variable. For example, drug vs. placebo; exposure to sunlight vs. no exposure to sunlight.
+
+>- The second fundamental feature of an experiment is that the researcher exerts \textcolor{red}{control over}, or \textcolor{red}{minimizes the variability in}, variables \textcolor{red}{other than} the independent and dependent variable.
+
+# Experimental Studies: Manipulation
+
+>- Notice that although the words manipulation and control have similar meanings in everyday language, researchers make a clear distinction between them. 
+
+>- They manipulate the independent variable by systematically changing its levels and control other variables by holding them constant.
+
+>- The manipulation of an independent variable must involve the \textcolor{red}{active intervention} of the researcher. Comparing groups of people who differ on the independent variable before the study begins is not the same as manipulating that variable.
+
+>- The active manipulation of the independent variable is crucial for eliminating potential alternative explanations for the results.
+
+
+# Experimental Studies: Manipulation
+
+>- Independent variables can be manipulated to create two conditions and experiments involving a single independent variable with two conditions are often referred to as a \textcolor{red}{single factor two-level} design. 
+
+>- However, sometimes greater insights can be gained by adding more conditions to an experiment. When an experiment has one independent variable that is manipulated to produce more than two conditions it is referred to as a \textcolor{red}{single factor multi-level} design.
+
+
+# Experimental Studies: Control
+
+>- An \textcolor{red}{extraneous variable} is anything that varies in the context of a study other than the independent and dependent variables.
+
+>- Extraneous variables make it difficult to detect the effect of the independent variable in \textcolor{red}{two ways}. One is by adding variability or \textcolor{red}{"noise"} to the data (in a non-systematic way across different levels of the independent variable) The other way is by \textcolor{red}{confounding} (which is systematic variation, on average, across the different levels of the independent variable due to that extraneous variable)
+
+>- To confound means to confuse, and this effect is exactly why \textcolor{red}{confounding variables} are undesirable. Because they differ systematically across conditions -- just like the independent variable -- they \textcolor{red}{provide an alternative (causal) explanation} for any observed difference in the dependent variable. See Simpson's Paradox later.
+
+
+# Experimental Studies: Control
+
+>- For example, in almost all experiments, participants’ intelligence quotients (IQs) will be an extraneous variable. But as long as there are participants with lower and higher IQs in each condition so that the average IQ is roughly equal across the conditions, then this variation is probably acceptable (and may even be desirable). This is "noise".
+
+>- What would be bad, however, would be for participants in one condition to have substantially lower IQs on average and participants in another condition to have substantially higher IQs on average. In this case, IQ would be a confounding variable.
+
+# Experimental Studies: Randomized Control Studies
+
+>- \textcolor{red}{One way} we avoid extraneous variables, especially of the confounding type, is by holding extraneous variables constant, i.e., by controlling or accounting for them. For example, one could prevent IQ from becoming a confounding variable by limiting participants only to those with IQs of exactly 100.
+
+>- But this approach is not always desirable because of potential bias. \textcolor{red}{A second} and much more general approach is \textcolor{red}{random assignment to conditions}.
+
+>- This is the basis of randomized control studies.
+
+
+# Experimental Studies: Randomized Control Studies
+
+>- In psychological and medical research, a treatment is any intervention meant to change a subjects' behavior or health outcomes. These interventions include psychotherapies, medical drugs and procedures. 
+
+>- In a \textcolor{red}{randomized control experiment} to determine whether a treatment works, participants are \textcolor{red}{randomly assigned} to either a \textcolor{red}{treatment condition (or arm)}, in which they receive the treatment, or a \textcolor{red}{control condition (or arm)}, in which they do not receive the treatment.
+
+>- In medicine, randomized control experiments \textcolor{red}{that involve humans} are called \textcolor{red}{randomized clinical trials} because their purpose is to draw conclusions about a particular procedure or treatment.
+
+>- If participants in the treatment arm end up better off than participants in the control arm, then the researcher can conclude that the treatment is \textcolor{red}{effective}.
+
+# Experimental Studies: Blinding
+
+>- The experimental and control groups should be treated alike in all ways except for the procedure itself so that any differences between the groups will be due to the procedure and not to other factors. 
+
+>- The best way to ensure that the groups are treated similarly is to plan interventions for both groups for the same time period in the same study. In this way, the study achieves \textcolor{red}{concurrent control}. 
+
+>- To reduce the chances that subjects or investigators see what they expect to see, researchers can design \textcolor{red}{double-blind trials} in which neither subjects nor investigators know whether the subject is in the treatment or the control group. When only the subject is unaware, the study is called \textcolor{red}{a blind trial}.
+
+# An Example of a Randomized Control Study
+
+The Physicians’ Health Study (Steering Committee of the Physicians’ Health Study Research Group, 1989), which investigated the role of aspirin in reducing the risk of cardiovascular disease. One purpose was to learn whether aspirin in low doses reduces the mortality rate from cardiovascular disease. Participants in this clinical trial were over 22,000 healthy male physicians who were randomly assigned to receive aspirin or placebo and were followed over an average period of 60 months. The investigators found that fewer physicians in the aspirin group experienced a myocardial infarction during the course of the study than did physicians in the group receiving placebo.
+
+
+# Advantages and Draw-backs of Randomized Control Studies
+
+
+# Internal vs. External Validity of Studies
+
+
+
+
+
