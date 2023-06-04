@@ -16,7 +16,6 @@ header-includes:
 # Topics
 
 \begin{itemize}
-\item  \begin{itemize} \item Subjective Bayesian Interpretation of Probability
-  \end{itemize}
+\item Subjective Bayesian Interpretation of Probability
 \item Evaluating Evidence within the Two Interpretations
 \end{itemize}
