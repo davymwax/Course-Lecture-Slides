@@ -25,7 +25,7 @@ header-includes:
 \begin{itemize}
 \item Randomized Control Studies
 \end{itemize}
-\item Internal and External Validity of Studies
+\item Evaluating Studies
 \end{itemize}
 
 
@@ -82,9 +82,17 @@ thorough cardiovascular evaluation is made after obtaining a routine history and
 
 >- Their results showed that persons at \textcolor{red}{high risk} of cardiovascular disease can be effectively identified from a measurement of their serum cholesterol and blood pressure, a smoking history, an electrocardiogram and a determination of glucose intolerance. 
 
-# Advantages and Draw-backs of Cohort Studies
+# Advantages of Cohort Studies
 
+>- Cohort studies are the design of choice for studying the risk factors of a condition, the course of a disease because they are longitudinal and follow a group of subjects over a period of time. 
 
+>- Causation generally cannot be proved with cohort studies because they are observational and do not involve interventions. However, because they follow a cohort of patients forward through time, they possess the correct time sequence to provide strong evidence for possible causes and effects.
+
+# Draw-backs of Cohort Studies
+
+>- With diseases that develop over a long period of time or with conditions that occur as a result of long-term exposure to some causative agent, many years are needed for study. Extended time periods make such studies costly.
+
+>- Cohort studies that require a long time to complete are especially vulnerable to problems associated with patient follow-up, particularly patient attrition (patients stop participating in the study) and patient migration (patients move to other communities).
 
 # Observational Studies: Case-control Studies
 
@@ -98,10 +106,19 @@ thorough cardiovascular evaluation is made after obtaining a routine history and
 
 Margaret A. Olsen and colleagues (2003) studied data obtained in patients between 1996 and 1999 who had undergone laminectomy or spinal fusion. Forty-one patients with surgical site infections (SSI) or meningitis were identified, and data were compared with those acquired in 178 uninfected control patients. For patients with SSI the postoperative hospital length of stay was significantly longer than that in uninfected patients. The study concluded that postoperative incontinence, posterior approach, surgery for tumor resection, and morbid obesity were independent risk factors predictive of SSI following spinal surgery. Interventions to reduce the risk for these potentially devastating infections need to be developed.
 
-# Advantages and Draw-backs of Case-Control Studies
+# Advantages of Case-Control Studies
 
+>- Case–control studies are especially appropriate for studying rare diseases or events, for examining conditions that develop over a long time, and for investigating a preliminary hypothesis. 
 
+>- They are generally the quickest and least expensive studies to undertake and are ideal for investigators who need to obtain some preliminary data prior to writing a proposal for a more complete, expensive, and time-consuming study.
 
+>- They are also a good choice for someone who needs to complete a clinical research project in a specific amount of time.
+
+# Draw-backs of Case-Control Studies
+
+>- Of all study methods, they have the largest number of possible biases or errors, and they depend completely on high-quality existing records.
+
+>- One of the greatest problems in a case–control study is selection of an appropriate control group. The cases in a case–control study are relatively easy to identify, but deciding on a group of persons who provide a relevant comparison is more difficult.
 
 # Experimental Studies: Basic Ideas
 
@@ -175,13 +192,46 @@ Margaret A. Olsen and colleagues (2003) studied data obtained in patients betwee
 
 # An Example of a Randomized Control Study
 
-The Physicians’ Health Study (Steering Committee of the Physicians’ Health Study Research Group, 1989), which investigated the role of aspirin in reducing the risk of cardiovascular disease. One purpose was to learn whether aspirin in low doses reduces the mortality rate from cardiovascular disease. Participants in this clinical trial were over 22,000 healthy male physicians who were randomly assigned to receive aspirin or placebo and were followed over an average period of 60 months. The investigators found that fewer physicians in the aspirin group experienced a myocardial infarction during the course of the study than did physicians in the group receiving placebo.
+The Physicians’ Health Study (Steering Committee of the Physicians’ Health Study Research Group, 1989) investigated the role of aspirin in reducing the risk of cardiovascular disease. One purpose was to learn whether aspirin in low doses reduces the mortality rate from cardiovascular disease. Participants in this clinical trial were over 22,000 healthy male physicians who were randomly assigned to receive aspirin or placebo and were followed over an average period of 60 months. The investigators found that fewer physicians in the aspirin group experienced a myocardial infarction during the course of the study than did physicians in the group receiving placebo.
 
 
 # Advantages and Draw-backs of Randomized Control Studies
 
 
-# Internal vs. External Validity of Studies
+# Evaluating Studies: Internal Validity
+
+>- An empirical study is said to be high in \textcolor{red}{internal validity} if the way it was conducted supports the conclusion that the independent variable caused any observed differences in the dependent variable. 
+
+>- Experiments are \textcolor{red}{high in internal validity} because the way they are conducted -- with the manipulation of the independent variable and the control of extraneous variables (such as through the use of random assignment to minimize confounds) -- \textcolor{red}{provides strong support} for causal conclusions. 
+
+>- In contrast, non-experimental research designs (e.g., correlational designs), in which variables are measured but are not manipulated by an experimenter, are low in internal validity.
+
+# Evaluating Studies: External Validity
+
+>- An empirical study is high in external validity if the way it was conducted supports generalizing the results to people and situations beyond those actually studied. 
+
+>- As a general rule, studies are higher in external validity when the participants and the situation studied are similar to those that the researchers want to generalize to.
+
+# Evaluating Studies: Construct Validity
+
+>- The construct validity of an experimental study evaluates the experiment’s manipulations and whether they \textcolor{red}{operationalize} the research question faithfully.
+
+>- Operationalization is how researchers convert the research question into an experimental design to answer it.
+
+
+# Evaluating Studies: Statistical Validity
+
+>- Statistical validity concerns \textcolor{red}{the proper statistical treatment of data} and the soundness of the researchers’ statistical conclusions. 
+
+>- There are many different types of inferential statistics tests (e.g., t-tests, ANOVA, regression, correlation) and statistical validity concerns the use of the proper type of test to analyze the data. 
+
+>- When considering the proper type of test, researchers must consider the scale of measure their dependent variable was measured on (ratio/interval, nominal, ordinal) and the design of their study. 
+
+>- Further, many inferential statistics tests carry certain assumptions (e.g., the data are normally distributed) and statistical validity is threatened when these assumptions are not met but the statistics are used nonetheless.
+
+
+
+
 
 
 
