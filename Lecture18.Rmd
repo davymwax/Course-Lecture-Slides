@@ -195,8 +195,17 @@ Margaret A. Olsen and colleagues (2003) studied data obtained in patients betwee
 The Physicians’ Health Study (Steering Committee of the Physicians’ Health Study Research Group, 1989) investigated the role of aspirin in reducing the risk of cardiovascular disease. One purpose was to learn whether aspirin in low doses reduces the mortality rate from cardiovascular disease. Participants in this clinical trial were over 22,000 healthy male physicians who were randomly assigned to receive aspirin or placebo and were followed over an average period of 60 months. The investigators found that fewer physicians in the aspirin group experienced a myocardial infarction during the course of the study than did physicians in the group receiving placebo.
 
 
-# Advantages and Draw-backs of Randomized Control Studies
+# Advantages of Randomized Control Studies
 
+>- The randomized control study provides the greatest justification for concluding causality and is subject to the least number of problems or biases. 
+
+>- Randomized clinical trials are the best type of study to use when the objective is to establish the efficacy of a treatment or a procedure.
+
+# Draw-backs of Randomized Control Studies
+
+>- Although clinical trials provide the greatest justification for determining causation, obstacles to using them include their great expense and long duration. 
+
+>- Another potential obstacle to using clinical trials occurs when certain practices become established and accepted by the medical community, even though they have not been properly justified.
 
 # Evaluating Studies: Internal Validity
 
