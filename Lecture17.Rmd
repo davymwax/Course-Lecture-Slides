@@ -19,3 +19,177 @@ header-includes:
 \item Subjective Bayesian Interpretation of Probability
 \item Evaluating Evidence within the Two Interpretations
 \end{itemize}
+
+
+# Motivation for the subjective view
+
+>- Subjective interpretation of probability is partly motivated by \textcolor{red}{the problem of the single case} about the applicability of the frequentist interpretation of probability.
+
+>- Recall that this was the problem raised by the fact that we talk about \textcolor{red}{the probability of single and non-repeatable events}.
+
+>- Moreover, \textcolor{red}{different people} can attach \textcolor{red}{different probability judgments} on the likelihood of events. For example, I thought that the probability that Manchester City would win this past weekend’s derby was 50% given how well Manchester United were currently playing. But you could have thought that this probability was higher than 50%, say 80%, because you think Pep Guardiola is a better coach than Erik ten Hag. Is there an \textcolor{red}{objective fact} about whose belief is right?
+
+# Probabilities don't exist (objectively)
+
+>- The subjective interpretation of probability is jointly attributed to the work of Bruno de Finetti, Frank Ramsey, and Leonard Savage.
+
+>- de Finetti is famous for saying:\bigskip \begin{quote} 
+My thesis, paradoxically, and a little provocatively, but nonetheless genuinely, is simply this: PROBABILITY DOES NOT EXIST \dots [I]n the conception we follow and sustain here, \textcolor{red}{only} subjective probabilities exist – i.e., \textcolor{red}{the degree of belief} in the occurrence of an event attributed by a given person at a given instant and with a given set of information.
+\end{quote}
+
+# Coherent fair betting quotients are subjective probabilities
+
+>- All three authors proposed essentially the same approach to a subjective probability, which has roots in Rev. Thomas Bayes's essay from 1763.
+
+>- For an event $E$, subjective epistemic probability $P(E)$ is the rate at which an individual is willing to bet on the occurrence $E$. So \textcolor{red}{fair} betting rates or quotients are measurements that reveal your subjective probabilities or someone else’s probabilities.
+
+>- Starting with this idea, some of the subjective theorists I have mentioned proved what are known as \textcolor{red}{representation theorems}
+
+>- Essentially what representation theorems show is that an agent's \textcolor{red}{preference ordering on bets} she is willing to make \textcolor{red}{represent} that agent's subjective graded beliefs about the events the bets are on.
+
+# Coherent fair betting quotients are subjective probabilities
+
+>- Although these graded beliefs, degrees of belief or epistemic probabilities are \textcolor{red}{purely subjective}; you have seen in Homework 7 that these beliefs have to be constrained by coherence.
+
+>- The \textcolor{red}{constraint of coherence} says:\bigskip \begin{quote}
+A person’s graded beliefs are coherent if and only if they are consistent with the Kolmogorov Axioms (or the rules of probability).
+\end{quote}
+
+>- You have also seen in your homework that \textcolor{red}{one argument} why the constraint of coherence is desirable is \textcolor{red}{the Dutch-Book Argument}. This argument shows that if an agent has incoherent graded beliefs, then it is possible for them to enter into a \textcolor{red}{sure-loss contract} (i.e., a Dutch Book).
+
+# Subjective Bayesian Interpretation of Probability
+
+>- The subjective interpretation of probability becomes a subjective \textcolor{red}{Bayesian} interpretation of probability when one adds \textcolor{red}{Bayes' theorem} as an inductive rule. \[
+\begin{aligned}
+P(H \,|\, E) &= \frac{P(E| H)P(H)}{P(E)} \\
+             &= \frac{P(E| H)P(H)}{P(E\,|\,H)P(H) + P(E\,|H^c )P(H^c)}
+\end{aligned}
+\]
+
+>- The subjective Bayesian interpretation of probability also goes by the name of \textcolor{red}{Bayesianism} or \textcolor{red}{Bayesian confirmation theory} when it is used as \textcolor{red}{a philosophical approach} to questions in the theory of knowledge and confirmation of theory.
+
+# Bayesian Confirmation Theory
+
+>- In the context of Bayesianism, the terms that appear in Bayes' Theorem receive special names, which you may see in the literature. \[
+\begin{aligned}
+P(H \,|\, E) &= \frac{P(E| H)P(H)}{P(E)} \\
+             &= \frac{P(E| H)P(H)}{P(E\,|\,H)P(H) + P(E\,|H^c )P(H^c)}
+\end{aligned}
+\]
+
+>- $H$ is called a \textcolor{red}{hypothesis}; $E$ is called \textcolor{red}{evidence}.
+
+>- $P(H)$ is called the \textcolor{red}{prior probability} of $H$. It is the epistemic probability one has about $H$ \textcolor{red}{before} one sees the evidence.
+
+>- $P(H | E)$ is called the \textcolor{red}{posterior probability} of $H$. It is the epistemic probability one has about $H$ \textcolor{red}{after} one sees the evidence.
+
+
+# Bayesian Confirmation Theory as an Inductive Logic
+
+>- The inductive rule of going from $P(H)$ to $P(H | E)$ through Bayes' theorem is known as \textcolor{red}{conditionalization} or \textcolor{red}{updating} (on the evidence) and it is the other \textcolor{red}{distinctive feature} of Bayesianism apart from its subjective interpretation of probability.
+
+>- There are different kinds of conditionalization or updating rules. We shall not cover all the different kinds in this introductory class. The thing they have in common is that they are all \textcolor{red}{inductive rules of learning} from what has been observed.
+
+>- Bayesian Confirmation Theory is an inductive logic. 
+
+# Advantages of the Subjective Bayesian Interpretation 
+
+>- Provided a person's epistemic probabilities or graded beliefs are coherent, the subjective Bayesian interpretation of probability is a faithful interpretation of the Kolmogorov Axioms.
+
+>- It avoids the problem of the single case, which was an obstacle in the application of the frequentist interpretation.
+
+>- There are lots of advantages of using Bayesian methods in statistical decision theory, but that subject is beyond the scope of this introductory class. 
+
+# Disadvantages of the Subjective Bayesian Interpretation 
+
+>- The main disadvantage of the subjective Bayesian interpretation is that it it requires us to have prior epistemic probabilities. Often two or more individuals can differ radically on their prior epistemic probabilities about a hypothesis $H$. In this case, even for the \textcolor{red}{same} evidence, they could still differ on their posterior epistemic probabilities.
+
+>- Although there are well-known responses to this disadvantage (these are \textcolor{red}{the merging of opinion theorems}), a more serious problem for Bayesianism is the problem of the \textcolor{red}{Catch-All Hypothesis}
+
+# The problem of the Catch-All Hypothesis
+
+>- Bayes' Theorem looks simple when we're just looking at \textcolor{red}{two competing hypotheses} $H$ and $H^{c}$.
+\[
+\begin{aligned}
+P(H \,|\, E) &= \frac{P(E| H)P(H)}{P(E\,|\,H)P(H) + P(E\,|H^c )P(H^c)}
+\end{aligned}
+\]
+
+>- Typically, however, we don't know whether the set of hypotheses we are considering is a genuine partition of the space of hypotheses. So in order to apply the general form of Bayes' theorem to update our graded belief about a hypothesis, say $H_{1}$:
+\[
+P(H_{1} \,| \, E) = \frac{P( E|H_{1} ) P(H_{1})}{\sum_{i = 1}^{n}P(H|E_{i})P(H_{i})}
+\] we need not only $P(H_{1})$ and $P(H_{2})$ but also the probability of every other hypothesis besides $H_{1}$ and $H_{2}$. This probability of "everything else besides" is the probability of the catch-all.
+
+# Frequentist Measure of Evidence
+
+>- We can now compare the two interpretations of probability with respect to how they quantify or evaluate \textcolor{red}{statistical evidence} in the context of statistical hypothesis testing or model comparison.
+
+>- Let's begin with some terms. $H_{0}$ denotes the null hypothesis, which is the hypothesis we wish to test with our data. $H_{1}$ denotes the alternative hypothesis, which we would consider if the null hypothesis is inconsistent with the data.
+
+>- In testing statistical hypotheses, $H_{0}$ may say that a parameter $\boldsymbol{\theta}$ about the population is in some set $\Omega_{0}$ or $\Omega_{1}$ where $\{\Omega_{0},  \Omega_{1}\}$ is a partition of the parameter space $\Omega$. So we are testing: \[
+\begin{aligned}
+H_{0}&: \boldsymbol{\theta} \in \Omega_{0} \\
+H_{1}&: \boldsymbol{\theta} \in \Omega_{1}
+\end{aligned}
+\]
+
+# Frequentist Measure of Evidence
+
+>- In evaluating statistical evidence within the frequentist interpretation of probability, we are interested in \textcolor{red}{minimizing} two kinds of \textcolor{red}{error probabilities}. \textcolor{red}{Type I} and \textcolor{red}{Type II} error probabilities. 
+
+>- A Type I error probability is the probability of rejecting $H_{0}$ when $\boldsymbol{\theta} \in \Omega_{0}$. A Type II error probability is the probability of not rejecting $H_{0}$ when $\boldsymbol{\theta} \in \Omega_{1}$. Think of the error probabilities as the risk with a 0-1 loss function. (Note that with the loss function more negative numbers quantify greater losses) \bigskip\begin{center}
+\begin{tabular}{|c |c |c|}\hline
+    & $\boldsymbol{\theta} \in \Omega_{0}$ & $\boldsymbol{\theta} \in \Omega_{1}$ \\ \hline
+Reject $H_{0}$ & 1 & 0 \\ 
+Do not reject $H_{0}$ & 0 & 1 \\ \hline
+\end{tabular}
+\end{center}
+
+# Frequentist Measure of Evidence
+
+>- The weights for calculating the risk depend on the probability of seeing data $X$ either when $\boldsymbol{\theta} \in \Omega_{0}$ or when $\boldsymbol{\theta} \in \Omega_{1}$. This probability will come from your the distribution of your observed sample. Known as the sampling model.
+
+>- Let $\alpha$ be the maximum risk of rejecting $H_{0}$ when $\boldsymbol{\theta} \in \Omega$, i.e., the Type I error rate. $\alpha$ is a measure of how often we expect to make a Type I error. It is usually \textcolor{red}{chosen} to be small, say 0.05 or 0.001; we're MINimizing the MAXimum risk, after all.
+
+>- The frequentist interpretation will find \textcolor{red}{evidence against $H_{0}$} if the probability of seeing data $X$ when $\boldsymbol{\theta} \in \Omega$ is less than $\alpha$. This probability is known as the $p$-value.
+
+# Bayesian Measure of Evidence
+
+>- In quantifying statistical evidence from a Bayesian perspective, we use Bayes' Theorem, we get the following relation.(How?) \[
+\text{posterior odds} \propto \text{likelihood} \times \text{prior odds}
+\] 
+
+>- Suppose $\frac{\pi(H_{0})}{\pi(H_{1})}$ measures our \textbf{prior odds} for two hypothesis $H_{0}$ and $H_{1}$. Then we expect the \textbf{posterior odds} $\frac{p(H_{0}|X)}{p(H_{1}|X)}$ to be given by:
+\[
+\frac{p(H_{0}|X)}{p(H_{1}|X)} = U \frac{\pi(H_{0})}{\pi(H_{1})}
+\]
+
+>- \textcolor{red}{Bayes Factor} $B_{01}$ is the updating factor $U$ that \textcolor{red}{quantifies the evidence} in favor of $M_{0}$.
+\[
+B_{01} = \frac{f(X | H_{0})}{f(X|H_{1})}
+\]
+
+# Comparing the two measures
+
+>- The frequentist measure of evidence involves minimizing risk in making a decision to reject or to fail to reject a null hypothesis. It is thus less straightfoward than the Bayesian measure of evidence where no such risk calculations are made as of this day.
+
+>- Because the Bayesian measure of evidence has no risk, philosophers object that is possible to draw erroneous conclusions for claims that have been poorly tested. See Deborah Mayo \textit{Statistical Inference as Severe Testing: How to Get Beyond the Statistics Wars}
+
+>- The frequentist measure of evidence is not a conditional probability because on the frequentist interpretation of probability, hypotheses are not random variables.
+
+>- The Bayesian measure of evidence bears directly on our beliefs regarding hypotheses through updating by Bayes' theorem. The Frequentist measure of evidence doesn't bear on our beliefs, instead it is a decision criterion based on minimizing risk.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
