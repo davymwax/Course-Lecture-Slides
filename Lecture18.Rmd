@@ -9,6 +9,9 @@ author: |
     | University of California, Irvine
 date: "June 7th 2023"
 output: beamer_presentation
+citation_package: natbib
+bibliography: ["StudiesBibliography.bib"]
+biblio-style: "apalike"
 header-includes:
   - \setbeamertemplate{footline}[page number]
 ---
@@ -44,7 +47,7 @@ header-includes:
 
 >- But what does \textcolor{red}{modern science} have to say about causation (bracketing the issue of the metaphysics and the rational justification of causal inference as a form of inductive inference)?
 
->- Let us spend the next two lectures discussing that.
+>- Let us spend the next two lectures discussing that. In what follows I rely on the excellent resources by @White2019 and @Jhangiani2019.
 
 # Two kinds of studies in science
 
@@ -84,7 +87,7 @@ thorough cardiovascular evaluation is made after obtaining a routine history and
 
 # Advantages of Cohort Studies
 
->- Cohort studies are the design of choice for studying the risk factors of a condition, the course of a disease because they are longitudinal and follow a group of subjects over a period of time. 
+>- Cohort studies are the design of choice for studying the risk factors of a condition and the course of a disease because they are longitudinal and follow a group of subjects over a period of time. 
 
 >- Causation generally cannot be proved with cohort studies because they are observational and do not involve interventions. However, because they follow a cohort of patients forward through time, they possess the correct time sequence to provide strong evidence for possible causes and effects.
 
@@ -96,7 +99,7 @@ thorough cardiovascular evaluation is made after obtaining a routine history and
 
 # Observational Studies: Case-control Studies
 
->- Case–control studies begin with the absence or presence of an outcome and then \textcolor{red}{look backward in time} to try to detect possible causes or risk factors. For reason, they are also called \textcolor{red}{retrospective studies}. We can characterize case–control studies as studies that ask "What happened?"
+>- Case–control studies begin with the absence or presence of an outcome and then \textcolor{red}{look backward in time} to try to detect possible causes or risk factors. For this reason, they are also called \textcolor{red}{retrospective studies}. We can characterize case–control studies as studies that make observations seeking to answer the question: \textcolor{red}{"What happened?"}
 
 >- The \textcolor{red}{cases} in case–control studies are individuals selected on the basis of some disease or outcome; the \textcolor{red}{controls} are individuals \textcolor{red}{without} the disease or outcome. 
 
@@ -104,7 +107,7 @@ thorough cardiovascular evaluation is made after obtaining a routine history and
 
 # An Example of a Case-Control Study
 
-Margaret A. Olsen and colleagues (2003) studied data obtained in patients between 1996 and 1999 who had undergone laminectomy or spinal fusion. Forty-one patients with surgical site infections (SSI) or meningitis were identified, and data were compared with those acquired in 178 uninfected control patients. For patients with SSI the postoperative hospital length of stay was significantly longer than that in uninfected patients. The study concluded that postoperative incontinence, posterior approach, surgery for tumor resection, and morbid obesity were independent risk factors predictive of SSI following spinal surgery. Interventions to reduce the risk for these potentially devastating infections need to be developed.
+Margaret A. Olsen and colleagues (2003) studied data obtained in patients between 1996 and 1999 who had undergone laminectomy or spinal fusion. Forty-one patients with surgical site infections (SSI) or meningitis were identified, and data were compared with those acquired in 178 uninfected control patients. For patients with SSI the postoperative hospital length of stay was significantly longer than that in uninfected patients. The study concluded that postoperative incontinence, posterior approach, surgery for tumor resection, and morbid obesity were independent risk factors predictive of SSI following spinal surgery. The study recommended the development of interventions to reduce the risk for these potentially devastating infections.
 
 # Advantages of Case-Control Studies
 
@@ -122,24 +125,23 @@ Margaret A. Olsen and colleagues (2003) studied data obtained in patients betwee
 
 # Experimental Studies: Basic Ideas
 
->- An experimental study is a type of study designed specifically to answer the question of whether there is a \textcolor{red}{causal relationship} between two variables. In other words, whether changes in one variable (referred to as an independent variable) cause a change in another variable (referred to as a dependent variable).
+>- An experimental study is a type of study designed specifically to answer the question of whether there is a \textcolor{red}{causal relationship} between two variables. In other words, whether changes in one variable (referred to as an \textcolor{red}{independent variable}) cause a change in another variable (referred to as a \textcolor{red}{dependent variable}).
 
->- Experiments have \textcolor{red}{two} fundamental features: (1) Intervention/Manipulation of conditions; (2) Control.
+>- Experiments have \textcolor{red}{two} fundamental features: (1) \textcolor{red}{Intervention} or manipulation of conditions; (2) \textcolor{red}{Control}.
 
->- The first fundamental feature is that the researchers manipulate, or systematically vary, the level of the independent variable. For example, drug vs. placebo; exposure to sunlight vs. no exposure to sunlight.
+>- The first fundamental feature is that the researchers intervene on, manipulate, or systematically vary, the level of the independent variable. For example, drug vs. placebo; exposure to sunlight vs. no exposure to sunlight.
 
->- The second fundamental feature of an experiment is that the researcher exerts \textcolor{red}{control over}, or \textcolor{red}{minimizes the variability in}, variables \textcolor{red}{other than} the independent and dependent variable.
+>- The second fundamental feature of an experiment is that the researcher exerts \textcolor{red}{control over}, or \textcolor{red}{minimizes the variability in}, \textcolor{red}{variables other than} the independent and dependent variable.
 
 # Experimental Studies: Manipulation
 
->- Notice that although the words manipulation and control have similar meanings in everyday language, researchers make a clear distinction between them. 
+>- Notice that although the words manipulation and control have similar meanings in everyday language, researchers make a \textcolor{red}{clear distinction} between them. 
 
->- They manipulate the independent variable by systematically changing its levels and control other variables by holding them constant.
+>- They \textcolor{red}{manipulate} the independent variable by \textcolor{red}{systematically changing} its levels and \textcolor{red}{control} other variables \textcolor{red}{by holding them constant}.
 
->- The manipulation of an independent variable must involve the \textcolor{red}{active intervention} of the researcher. Comparing groups of people who differ on the independent variable before the study begins is not the same as manipulating that variable.
+>- The \textcolor{red}{manipulation} of an independent variable \textcolor{red}{must involve the active intervention} of the researcher. Comparing groups of people who differ on the independent variable \textcolor{red}{before the study begins} is not the same as manipulating that variable.
 
 >- The active manipulation of the independent variable is crucial for eliminating potential alternative explanations for the results.
-
 
 # Experimental Studies: Manipulation
 
@@ -152,9 +154,9 @@ Margaret A. Olsen and colleagues (2003) studied data obtained in patients betwee
 
 >- An \textcolor{red}{extraneous variable} is anything that varies in the context of a study other than the independent and dependent variables.
 
->- Extraneous variables make it difficult to detect the effect of the independent variable in \textcolor{red}{two ways}. One is by adding variability or \textcolor{red}{"noise"} to the data (in a non-systematic way across different levels of the independent variable) The other way is by \textcolor{red}{confounding} (which is systematic variation, on average, across the different levels of the independent variable due to that extraneous variable)
+>- Extraneous variables make it difficult to detect the effect of the independent variable in \textcolor{red}{two ways}. One is by adding variability or \textcolor{red}{"noise"} to the data (in a non-systematic way across different levels of the independent variable) The other way is by \textcolor{red}{confounding} (which is systematic variation, on average, across the different levels of the independent variable due to that extraneous variable).
 
->- To confound means to confuse, and this effect is exactly why \textcolor{red}{confounding variables} are undesirable. Because they differ systematically across conditions -- just like the independent variable -- they \textcolor{red}{provide an alternative (causal) explanation} for any observed difference in the dependent variable. See Simpson's Paradox later.
+>- To confound means to confuse, and this effect is exactly why \textcolor{red}{confounding variables} are undesirable. Because they differ systematically across conditions -- just like the independent variable -- they \textcolor{red}{provide an alternative (causal) explanation} for any observed difference in the dependent variable. We shall see this in \textcolor{red}{Simpson's Paradox} later.
 
 
 # Experimental Studies: Control
@@ -174,9 +176,9 @@ Margaret A. Olsen and colleagues (2003) studied data obtained in patients betwee
 
 # Experimental Studies: Randomized Control Studies
 
->- In psychological and medical research, a treatment is any intervention meant to change a subjects' behavior or health outcomes. These interventions include psychotherapies, medical drugs and procedures. 
+>- In psychological and medical research, a \textcolor{red}{treatment} is any intervention meant to change a subjects' behavior or health outcomes. These interventions include psychotherapies, medical drugs and procedures. 
 
->- In a \textcolor{red}{randomized control experiment} to determine whether a treatment works, participants are \textcolor{red}{randomly assigned} to either a \textcolor{red}{treatment condition (or arm)}, in which they receive the treatment, or a \textcolor{red}{control condition (or arm)}, in which they do not receive the treatment.
+>- In a \textcolor{red}{randomized control experiment} to determine whether a treatment works, participants are \textcolor{red}{randomly assigned} to either a \textcolor{red}{treatment condition (or arm)}, in which they receive the treatment; or a \textcolor{red}{control condition (or arm)}, in which they do not receive the treatment.
 
 >- In medicine, randomized control experiments \textcolor{red}{that involve humans} are called \textcolor{red}{randomized clinical trials} because their purpose is to draw conclusions about a particular procedure or treatment.
 
@@ -217,20 +219,19 @@ The Physicians’ Health Study (Steering Committee of the Physicians’ Health S
 
 # Evaluating Studies: External Validity
 
->- An empirical study is high in external validity if the way it was conducted supports generalizing the results to people and situations beyond those actually studied. 
+>- An empirical study is \textcolor{red}{high in external validity} if the way it was conducted \textcolor{red}{supports generalizing} the results to people and situations beyond those actually studied. 
 
 >- As a general rule, studies are higher in external validity when the participants and the situation studied are similar to those that the researchers want to generalize to.
 
 # Evaluating Studies: Construct Validity
 
->- The construct validity of an experimental study evaluates the experiment’s manipulations and whether they \textcolor{red}{operationalize} the research question faithfully.
+>- The \textcolor{red}{construct validity} of an experimental study evaluates the experiment's manipulations and whether they \textcolor{red}{operationalize} the research question faithfully.
 
 >- Operationalization is how researchers convert the research question into an experimental design to answer it.
 
-
 # Evaluating Studies: Statistical Validity
 
->- Statistical validity concerns \textcolor{red}{the proper statistical treatment of data} and the soundness of the researchers’ statistical conclusions. 
+>- \textcolor{red}{Statistical validity} concerns \textcolor{red}{the proper statistical treatment of data} and the soundness of the researchers’ statistical conclusions. 
 
 >- There are many different types of inferential statistics tests (e.g., t-tests, ANOVA, regression, correlation) and statistical validity concerns the use of the proper type of test to analyze the data. 
 
@@ -238,8 +239,7 @@ The Physicians’ Health Study (Steering Committee of the Physicians’ Health S
 
 >- Further, many inferential statistics tests carry certain assumptions (e.g., the data are normally distributed) and statistical validity is threatened when these assumptions are not met but the statistics are used nonetheless.
 
-
-
+# References
 
 
 
