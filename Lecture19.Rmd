@@ -133,25 +133,25 @@ Total & 709 & 709 \\ \hline
 
 # Odds Ratio
 
->- In $2 \times 2$ tables the \textcolor{red}{odds ratio}, $\Omega$ is the appropriate measure of association for detecting possible risk factors in \textcolor{red}{a case-control study}.\[
-\Omega = \frac{\text{Odds of outcome E for those in Group 1}}{\text{Odds of outcome E for those in Group 2}} = \frac{\frac{P_{1}(E)}{1 - P_{1}(E)}}{\frac{P_{2}(E)}{1 - P_{2}(E)}}
+>- In $2 \times 2$ tables the \textcolor{red}{odds ratio}, $\theta$ is the appropriate measure of association for detecting possible risk factors in \textcolor{red}{a case-control study}.\[
+\theta = \frac{\text{Odds of outcome E for those in Group 1}}{\text{Odds of outcome E for those in Group 2}} = \frac{\frac{P_{1}(E)}{1 - P_{1}(E)}}{\frac{P_{2}(E)}{1 - P_{2}(E)}}
 \]
 
->- The odds ratio $\Omega$ can be calculated directly from the cell counts using the formula:\[
-\Omega = \frac{\frac{P_{1}(E)}{1 - P_{1}(E)}}{\frac{P_{2}(E)}{1 - P_{2}(E)}} = \frac{n_{11}/n_{12}}{n_{21}/n_{22}} = \frac{n_{11}n_{22}}{n_{12}n_{21}}
+>- The odds ratio $\theta$ can be calculated directly from the cell counts using the formula:\[
+\theta = \frac{\frac{P_{1}(E)}{1 - P_{1}(E)}}{\frac{P_{2}(E)}{1 - P_{2}(E)}} = \frac{n_{11}/n_{12}}{n_{21}/n_{22}} = \frac{n_{11}n_{22}}{n_{12}n_{21}}
 \]
 
->- Because $\Omega = \frac{n_{11}n_{22}}{n_{12}n_{21}}$ some authors use the term odds ratio interchangeably with the \textcolor{red}{cross-product ratio}.
+>- Because $\theta = \frac{n_{11}n_{22}}{n_{12}n_{21}}$ some authors use the term odds ratio interchangeably with the \textcolor{red}{cross-product ratio}.
 
 # Intepreting the Odds Ratio
 
->- The odds ratio can equal any non-negative number. When X and Y are independent $\Omega = 1$. 
+>- The odds ratio can equal any non-negative number. When X and Y are independent $\theta = 1$. 
 
->- Odds ratios on each side of 1 reflect certain types of associations. When $\Omega > 1$, the odds of outcome $E$ are higher for Group 1 than for Group 2. 
+>- Odds ratios on each side of 1 reflect certain types of associations. When $\theta > 1$, the odds of outcome $E$ are higher for Group 1 than for Group 2. 
 
->- For instance, when $\Omega = 4$, the odds of outcome $E$ in Group 1 are four times the odds of outcome $E$ in Group 2. 
+>- For instance, when $\theta = 4$, the odds of outcome $E$ in Group 1 are four times the odds of outcome $E$ in Group 2. 
 
->- Values of $\Omega$ farther from 1 in a given direction represent a stronger association. An odds ratio of 4 is farther from independence than an odds ratio of 2, and an odds ratio of 0.25 is farther from independence than an odds ratio of 0.50.
+>- Values of $\theta$ farther from 1 in a given direction represent a stronger association. An odds ratio of 4 is farther from independence than an odds ratio of 2, and an odds ratio of 0.25 is farther from independence than an odds ratio of 0.50.
 
 # Facts about the Odds Ratio: Direction of Interest
 
@@ -227,7 +227,6 @@ Totals & 800 & 216 & 0.270 & & 800 & 220 & 0.275 \\
 # Simpson's Paradox: Second Illustration
 
 >- The following 2 × 2 × 2 contingency table is from an article that studied the effects of racial characteristics on whether subjects convicted of homicides receive the death penalty. The 674 subjects were the defendants in indictments involving cases with multiple murders, in Florida during a 12-year period. The variables are Y = death penalty verdict, X = race of defendant, and Z = race of victims. The question of interest was \textcolor{red}{to study the association between a defendant’s race and whether they received the death penalty verdict, controlling for the victims' race}.
-
 
 # Simpson's Paradox: Second Illustration
 
