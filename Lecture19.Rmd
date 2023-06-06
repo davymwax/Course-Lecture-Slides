@@ -103,7 +103,7 @@ Aspirin & 104 & 10933 & 11037 \\
 \end{tabular}
 \end{center}
 
->- Exercise. Let $E$ be an incident of myocardial infarction (i.e., heart attack) and $E^{c}$ an no incident of myocardial infarction. Find $RR(E)$ for physicians who took the placebo compared to those who took aspirin. Interpet the result.
+>- Exercise. Let $E$ be an incident of myocardial infarction (i.e., heart attack) and $E^{c}$ an no incident of myocardial infarction. Find $RR(E)$ for physicians who took the placebo compared to those who took aspirin. Interpret the result.
 
 
 # Odds Ratio
