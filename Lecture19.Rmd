@@ -1,7 +1,7 @@
 ---
 title: | 
   | Phil/LPS 31 Introduction to Inductive Logic
-  | Lecture 18
+  | Lecture 19
 author: |
     | David Mwakima
     | dmwakima@uci.edu
@@ -103,7 +103,8 @@ Aspirin & 104 & 10933 & 11037 \\
 \end{tabular}
 \end{center}
 
->- Exercise. Let $E$ be an incident of myocardial infarction (i.e., heart attack) and $E^{c}$ an no incident of myocardial infarction. Find $RR(E)$ for physicians who took the placebo compared to those who took aspirin. Interpret the result.
+>- Exercise. \begin{itemize} \item Let $E$ be an incident of myocardial infarction (i.e., heart attack) and $E^{c}$ an no incident of myocardial infarction. Find $RR(E)$ for physicians who took the placebo compared to those who took aspirin. Interpret the result. \item Is $RR(E) = RR(E^{c})$?
+\end{itemize}
 
 
 # Odds Ratio
@@ -112,7 +113,7 @@ The following table comes from one of the first studies of the association betwe
 
 # Odds Ratio
 
->- Here is the table. \begin{center}
+>- Here is the table.\bigskip \begin{center}
 \begin{tabular}{c c c}\hline
 & \multicolumn{2}{c}{Lung Cancer} \\
 \cline{2 - 3}
@@ -131,6 +132,8 @@ Total & 709 & 709 \\ \hline
 
 >- In contrast, case-control studies provide proportions in \textcolor{red}{the reverse direction}. Here we're interested in the conditional distribution of smoking behavior, given lung cancer status.
 
+>- We shall see that Odds Ratio \textcolor{red}{(unlike relative risk)} can be usefully used to quantify this reverse direction of association in $2 \times 2$ table.
+
 # Odds Ratio
 
 >- In $2 \times 2$ tables the \textcolor{red}{odds ratio}, $\theta$ is the appropriate measure of association for detecting possible risk factors in \textcolor{red}{a case-control study}.\[
@@ -145,7 +148,7 @@ Total & 709 & 709 \\ \hline
 
 # Intepreting the Odds Ratio
 
->- The odds ratio can equal any non-negative number. When X and Y are independent $\theta = 1$. 
+>- The odds ratio can equal any non-negative number. An important fact is that \textcolor{red}{when X and Y are independent $\theta = 1$}. 
 
 >- Odds ratios on each side of 1 reflect certain types of associations. When $\theta > 1$, the odds of outcome $E$ are higher for Group 1 than for Group 2. 
 
@@ -180,9 +183,9 @@ Total & 709 & 709 \\ \hline
 
 >- At the beginning of this lecture I mentioned that the analysis of contingency tables leads to some interesting puzzles, which emphasize the need for greater control of lurking or confounding variables in our studies. 
 
->- In studying the effect of an explanatory variable X on a response variable $Y$, we should adjust for confounding variables $Z$ that can influence that relationship because they are associated both with X and with Y. 
+>- In studying the effect of an explanatory variable X on a response variable $Y$, we should adjust for \textcolor{red}{a confounding variable $Z$ that can influence that relationship because they are associated both with X and with Y}. 
 
->- Without controlling for $Z$, an observed XY association may merely reflect an association of $Z$ with X and Y. This is \textcolor{red}{especially vital for observational studies}, for which one cannot remove effects of such variables by randomly assigning subjects to different treatments.
+>- \textcolor{red}{Without controlling} for $Z$, an observed XY association may merely reflect an association of $Z$ with X and Y. This is \textcolor{red}{especially vital for observational studies}, for which one cannot remove effects of such variables by randomly assigning subjects to different treatments.
 
 >- When we add control variables like $Z$ we get a three-way contingency table.
 
@@ -245,19 +248,19 @@ Race & & Race & & Yes & No\\
 \end{tabular}
 \end{center}
 
->- Exercise.\begin{itemize} \item Write down the marginal table for the association between the defendant's race and whether they received the death penalty verdict. Calculate the odds ratio. This is called the \textcolor{red}{marginal odds ratio}. Interpret it. \item Write down the partial table if the victim's race is white and calculate the odds ratio. This is also a \textcolor{red}{marginal odds ratio}. Interpret it. 
+>- Exercise.\begin{itemize} \item Write down the marginal table for the association between the defendant's race and whether they received the death penalty verdict. Calculate the odds ratio. This is called the \textcolor{red}{marginal odds ratio}. Interpret it. \item Write down the partial table if the victim's race is white and calculate the odds ratio. This is called a \textcolor{red}{conditional odds ratio}. Interpret it. 
 \end{itemize}
 
 # Simpson's Paradox: Second Illustration Cont'd.
 
 >- Exercise (Cont'd.) \begin{itemize}
-\item Write down the partial table if the victim's race as black and calculate the odds ratio. This is called the \textcolor{red}{conditional odds ratio} Interpret it. \item Compare the direction of conditional association to the direction of marginal association, is this Simpson's Paradox? \end{itemize}
+\item Write down the partial table if the victim's race as black and calculate the odds ratio. This is also called a \textcolor{red}{conditional odds ratio} Interpret it. \item Compare the direction of conditional association to the direction of marginal association, is this Simpson's Paradox? \end{itemize}
 
 # Conditional Independence
 
 >- If the population has $X$ and $Y$ independent in each partial table, then $X$ and $Y$ are said to be conditionally independent, given $Z$. 
 
->- To check for conditional independence check that all the conditional odds ratios between $X$ and $Y$ are equal 1. 
+>- To check for \textcolor{red}{conditional independence} between $X$ and $Y$ given $Z$, check that \textcolor{red}{all} the conditional odds ratios between $X$ and $Y$ at each level of $Z$ are equal 1.
 
 >- In general, conditional independence of $X$ and $Y$, given $Z$, does not imply marginal independence of $X$ and $Y$.
 

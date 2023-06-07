@@ -147,11 +147,11 @@ Do not reject $H_{0}$ & 0 & 1 \\ \hline
 
 # Frequentist Measure of Evidence
 
->- The weights for calculating the risk depend on the probability of seeing data $X$ either when $\boldsymbol{\theta} \in \Omega_{0}$ or when $\boldsymbol{\theta} \in \Omega_{1}$. This probability will come from your the distribution of your observed sample. Known as the sampling model, $f(X)$.
+>- The weights for calculating the risk depend on the probability of seeing data $X$ either when $\boldsymbol{\theta} \in \Omega_{0}$ or when $\boldsymbol{\theta} \in \Omega_{1}$. This probability will come from the distribution of your observed sample. Known as the \textcolor{red}{sampling model}, $f(X)$.
 
 >- Let $\alpha$ be the maximum risk of rejecting $H_{0}$ when $\boldsymbol{\theta} \in \Omega_{0}$, i.e., the Type I error rate. $\alpha$ is a measure of how often we expect to make a Type I error \textcolor{red}{if we could repeat the experiment many many times under identical conditions}. It is usually \textcolor{red}{chosen} in accordance to some optimality criterion to be small, usually 0.05 or 0.001.
 
->- The frequentist interpretation will find \textcolor{red}{evidence against $H_{0}$} if the probability of seeing data $X$ when $\boldsymbol{\theta} \in \Omega_{0}$ is less than $\alpha$. This probability is known as the \textcolor{red}{$p$-value}. It is the main measure of statistical evidence from a frequentist perspective.
+>- The frequentist interpretation will find \textcolor{red}{evidence against $H_{0}$} if \textcolor{red}{the probability of seeing data $X$ when $\boldsymbol{\theta} \in \Omega_{0}$ is less than $\alpha$}. This probability is known as the \textcolor{red}{$p$-value}. It is the main measure of statistical evidence from a frequentist perspective.
 
 # Bayesian Measure of Evidence
 
@@ -175,11 +175,11 @@ B_{01} = \frac{f(X | H_{0})}{f(X|H_{1})}
 
 >- Because the Bayesian measure of evidence has no associated risk involved with it, philosophers object that is possible to draw erroneous conclusions for claims that have been poorly tested. See Deborah Mayo \textit{Statistical Inference as Severe Testing: How to Get Beyond the Statistics Wars}
 
->- The frequentist measure of evidence is not a conditional probability because on the frequentist interpretation of probability hypotheses are not random variables (i.e., cannot be modeled as repeatable events).
+>- The frequentist measure of evidence is not a conditional probability. This is because on the frequentist interpretation of probability, hypotheses are not random variables (i.e., cannot be modeled as repeatable events).
 
 # Comparing the two measures
 
->- The Bayesian measure of evidence bears directly on our beliefs regarding hypotheses through the updating feature provided by Bayes' theorem. The Frequentist measure of evidence doesn't bear on our beliefs at all! Instead, it is a decision criterion based on minimizing risk.
+>- The Bayesian measure of evidence bears directly on our beliefs regarding hypotheses through the updating feature provided by Bayes' theorem. \textcolor{red}{The Frequentist measure of evidence doesn't bear on our beliefs at all!} Instead, it is a decision criterion based on minimizing risk.
 
 
 

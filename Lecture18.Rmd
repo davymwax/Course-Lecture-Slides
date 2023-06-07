@@ -89,7 +89,7 @@ thorough cardiovascular evaluation is made after obtaining a routine history and
 
 >- Cohort studies are the design of choice for studying the risk factors of a condition and the course of a disease because they are longitudinal and follow a group of subjects over a period of time. 
 
->- Causation generally cannot be proved with cohort studies because they are observational and do not involve interventions. However, because they follow a cohort of patients forward through time, they possess the correct time sequence to provide strong evidence for possible causes and effects.
+>- Causation generally cannot be proved with cohort studies because they are observational and do not involve interventions. However, because they follow a cohort of patients forward through time, they possess the correct time sequence to provide strong evidence for possible risk factors and their potential effects.
 
 # Draw-backs of Cohort Studies
 
